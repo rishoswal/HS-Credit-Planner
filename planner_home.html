@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <script src="course_catalog.js"></script>
+    <title>High School Credits Planner</title>
+    <script>
+        function runtest() {
+            let schoolCatalog = GetCatalog("LWSD");
+            document.getElementById("test").innerHTML = schoolCatalog.class9.english[0].name;
+            // alert(schoolCatalog.class9.english[0].name);
+        }
+    </script>
+</head>
+<body onload="runtest()">
+    <h1>High School Credit Planner</h1>
+    <br /><br />
+    <table width="30%">
+        <tr>
+            <td>
+                School District
+            </td>
+            <td>
+                <select>
+                    <option value="select">Select</option>
+                    <option value="lwsd">Lake Washington School District</option>
+                    <option value="issaquah">Issaquah School District</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                School
+            </td>
+            <td>
+                <select>
+                    <option value="select">Select</option>
+                    <option value="rhs">Redmond High School</option>
+                    <option value="juanita">Juanita High School</option>
+                    <option value="eastlake">Eastlake High School</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+    <br /><br />
+    <div id="test" style="text-emphasis-style:circle">Hello World!</div>
+    <br /><br />
+    <table>
+        <tr>
+            <td>
+                <table border="1" width="50%">
+                    <tr style="height: 50px;background-color:lightblue">
+                        <td width="20%">Period</td>
+                        <td width="20%">9th Grade</td>
+                        <td width="20%">10th Grade</td>
+                        <td width="20%">11th Grade</td>
+                        <td width="20%">12th Grade</td>
+                    </tr>
+                    <tr>
+                        <td>Period #1</td>
+                        <td>
+                            <select name="English9" id="english9" size="10" style="width: 150px;">
+                                <option value="select">select</option>
+                                <option value="eng121">English 9</option>
+                                <option value="eng171">Honors English 9</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="English10" id="english10" size="10" style="width: 150px;">
+                                <option value="select">select</option>
+                                <option value="eng221">English 10</option>
+                                <option value="eng271">Honors English 10</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="English11" id="english11" size="10" style="width: 150px;">
+                                <option value="select">select</option>
+                                <option value="eng321">English 11</option>
+                                <option value="eng371">Honors English 11</option>
+                                <option value="eng491">AP English Language</option>
+                                <option value="eng495">AP English Literature</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="English12" id="english12" size="10" style="width: 150px;">
+                                <option value="select">select</option>
+                                <option value="eng321">English 12</option>
+                                <option value="eng371">Honors English 11</option>
+                                <option value="eng491">AP English Language</option>
+                                <option value="eng495">AP English Literature</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table border="1" width="50%">
+                    <tr style="height: 50px;background-color:lightblue">
+                        <td width="20%" style="width: 150px;">Subject</td>
+                        <td width="20%" style="width: 150px;">Required Credits</td>
+                        <td width="20%" style="width: 150px;">Credits for Currently Selected Subjects</td>
+                        <td width="20%" style="width: 150px;">11th Grade</td>
+                        <td width="20%" style="width: 150px;">12th Grade</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
