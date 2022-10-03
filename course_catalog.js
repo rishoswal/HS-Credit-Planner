@@ -1,4 +1,4 @@
-// JavaScript source code
+
 
 let course_collection =
     [
