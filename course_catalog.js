@@ -3,12 +3,12 @@
 let course_collection =
     [
         {
-            "school_id": "LWSD",
+            "school_id": "redmond",
             "class9":
             {
                 "english":
                     [
-                        { "name": "English 9", "course_id": "" },
+                        { "name": "English 9 Redmond", "course_id": "" },
                         { "name": "English 9 Honors", "course_id": "" }
                     ],
                 "social_studies":
@@ -22,8 +22,8 @@ let course_collection =
             {
                 "english":
                     [
-                        { "name": "English 9", "course_id": "" },
-                        { "name": "English 9 Honors", "course_id": "" }
+                        { "name": "English 10", "course_id": "" },
+                        { "name": "English 10 Honors", "course_id": "" }
                     ],
                 "social_studies":
                     [
@@ -36,8 +36,22 @@ let course_collection =
             {
                 "english":
                     [
-                        { "name": "English 9", "course_id": "" },
-                        { "name": "English 9 Honors", "course_id": "" }
+                        { "name": "English 11", "course_id": "" },
+                        { "name": "English 11 Honors", "course_id": "" }
+                    ],
+                "social_studies":
+                    [
+                        { "name": "", "course_id": "" },
+                        { "name": "", "course_id": "" },
+                        { "name": "", "course_id": "" },
+                    ]
+            },
+            "class12":
+            {
+                "english":
+                    [
+                        { "name": "English 12", "course_id": "" },
+                        { "name": "English 12 Honors", "course_id": "" }
                     ],
                 "social_studies":
                     [
@@ -49,12 +63,12 @@ let course_collection =
         },
 
         {
-            "school_id": "Eastlake",
+            "school_id": "eastlake",
             "class9":
             {
                 "english":
                     [
-                        { "name": "English 9", "course_id": "" },
+                        { "name": "English 9 Eastlake", "course_id": "" },
                         { "name": "English 9 Honors", "course_id": "" }
                     ],
                 "social_studies":
@@ -76,7 +90,6 @@ function GetCatalog(schoolId)
         if (school.school_id === schoolId)
         {
             match = school;
-            // alert("Found a match! - " + school.school_id);
         }
 
     });

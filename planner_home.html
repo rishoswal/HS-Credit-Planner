@@ -7,9 +7,23 @@
     <title>High School Credits Planner</title>
     <script>
         function runtest() {
-            let schoolCatalog = GetCatalog("LWSD");
-            document.getElementById("test").innerHTML = schoolCatalog.class9.english[0].name;
+            let schoolCatalog = GetCatalog("redmond");
+            // document.getElementById("test").innerHTML = schoolCatalog.class9.english[0].name;
             // alert(schoolCatalog.class9.english[0].name);
+        }
+        function getSelected(ddl_id1, ddl_id2) {
+            var selectedDistrict = document.getElementById(ddl_id1);
+            var selectedSchool = document.getElementById(ddl_id2);
+
+            var districtText = selectedDistrict.options[selectedDistrict.selectedIndex].text;
+            document.getElementById("district").innerHTML = districtText;
+
+            var schoolText = selectedSchool.options[selectedSchool.selectedIndex].text;
+            document.getElementById("school").innerHTML = schoolText;
+            let schoolCatalog = GetCatalog(selectedSchool.options[selectedSchool.selectedIndex].value);
+            alert(schoolCatalog.class9.english[0].name);
+            
+            alert("District: " + districtText + "\n" + "School: " + schoolText);
         }
     </script>
 </head>
@@ -22,10 +36,9 @@
                 School District
             </td>
             <td>
-                <select>
+                <select id="districtDDL">
                     <option value="select">Select</option>
                     <option value="lwsd">Lake Washington School District</option>
-                    <option value="issaquah">Issaquah School District</option>
                 </select>
             </td>
         </tr>
@@ -34,17 +47,25 @@
                 School
             </td>
             <td>
-                <select>
+                <select id="schoolDDL">
                     <option value="select">Select</option>
-                    <option value="rhs">Redmond High School</option>
+                    <option value="redmond">Redmond High School</option>
                     <option value="juanita">Juanita High School</option>
                     <option value="eastlake">Eastlake High School</option>
                 </select>
             </td>
         </tr>
+        <tr>
+            <td> 
+                <button type="confirmationButton" onclick='getSelected("districtDDL", "schoolDDL")'>Confirm</button>
+            </td>
+        </tr>
+        
     </table>
     <br /><br />
-    <div id="test" style="text-emphasis-style:circle">Hello World!</div>
+    <div id="district"><b>District</b></div>
+    <br />
+    <div id="school"><b>School</b></div>
     <br /><br />
     <table>
         <tr>
