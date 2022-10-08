@@ -3,14 +3,44 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+
+    <script src="jquery-3.6.0.min.js"></script>
     <script src="course_catalog.js"></script>
+
     <title>High School Credits Planner</title>
     <script>
+
         function runtest() {
-            let schoolCatalog = GetCatalog("redmond");
+
+            let districtDDL = document.getElementById("districtDDL");
+            var districtOptions = [];
+
+            school_districts_collection.forEach(district => {
+                var option = document.createElement('option');
+                option.text = district.school_district_name;
+                option.value = district.school_district_id;
+                districtOptions.push(option);
+            });
+
+            districtOptions = districtOptions.sort(function (a, b) {
+                return a.text == b.text ? 0 : a.text > b.text ? 1 : -1;
+            });
+
+            districtOptions.forEach(o => {
+                districtDDL.add(o);
+            });
+
+            // let schoolCatalog = GetCatalog("redmond");
             // document.getElementById("test").innerHTML = schoolCatalog.class9.english[0].name;
             // alert(schoolCatalog.class9.english[0].name);
         }
+
+        function OnDistrictSelectionChanged() {
+            var selectedDistrict = document.getElementById("districtDDL");
+            var districtText = selectedDistrict.options[selectedDistrict.selectedIndex].text;
+            document.getElementById("district").innerHTML = districtText;
+        }
+
         function getSelected(ddl_id1, ddl_id2) {
             var selectedDistrict = document.getElementById(ddl_id1);
             var selectedSchool = document.getElementById(ddl_id2);
@@ -22,7 +52,7 @@
             document.getElementById("school").innerHTML = schoolText;
             let schoolCatalog = GetCatalog(selectedSchool.options[selectedSchool.selectedIndex].value);
             alert(schoolCatalog.class9.english[0].name);
-            
+
             alert("District: " + districtText + "\n" + "School: " + schoolText);
         }
     </script>
@@ -36,9 +66,8 @@
                 School District
             </td>
             <td>
-                <select id="districtDDL">
+                <select id="districtDDL" onchange="OnDistrictSelectionChanged();">
                     <option value="select">Select</option>
-                    <option value="lwsd">Lake Washington School District</option>
                 </select>
             </td>
         </tr>
@@ -56,11 +85,11 @@
             </td>
         </tr>
         <tr>
-            <td> 
+            <td>
                 <button type="confirmationButton" onclick='getSelected("districtDDL", "schoolDDL")'>Confirm</button>
             </td>
         </tr>
-        
+
     </table>
     <br /><br />
     <div id="district"><b>District</b></div>
