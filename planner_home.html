@@ -17,11 +17,11 @@
             // creates empty array for loading in district options
             var districtOptions = [];
 
-            /*  
+            /*
                 for each value in the school districts collection (course_catalog.js),
                 create a new option, change the name and id to the district info,
                 and push the option into the districtOptions array
-            */ 
+            */
             school_districts_collection.forEach(district => {
                 var option = document.createElement('option');
                 option.text = district.school_district_name;
@@ -29,7 +29,7 @@
                 districtOptions.push(option);
             });
 
-            /* 
+            /*
                 array option sorting
             */
             districtOptions = districtOptions.sort(function (a, b) {
@@ -42,7 +42,7 @@
             */
             districtDDL.options.length = 0;
             var option = document.createElement('option');
-            
+
             option.text = "select";
             option.value = 0;
             districtDDL.add(option);
@@ -50,6 +50,12 @@
             districtOptions.forEach(o => {
                 districtDDL.add(o);
             });
+
+            // TODO: Remove this code
+            districtDDL.value = "101";
+            OnDistrictSelectionChanged();
+            var schoolDDL = document.getElementById("schoolDDL");
+            schoolDDL.value = "1001";
         }
 
 
@@ -88,54 +94,65 @@
             });
         }
 
-        function GetSelected(ddl_id1, ddl_id2) {
+        function GetCatalog(schoolId) {
+            var match = null;
+
+            course_collection.forEach(school => {
+
+                if (school.school_id === schoolId) {
+                    match = school;
+                }
+
+            });
+
+            return match;
+        }
+
+
+        function PopulateCoursesInDDL(subject_ddl_id, courses) {
+
+            var subjectOptions = [];
+            var subjectDDL = document.getElementById(subject_ddl_id);
+            subjectDDL.options.length = 0;
+
+            var option = document.createElement('option');
+            option.text = "select";
+            option.value = 0;
+            subjectDDL.add(option);
+
+            var s = "";
+
+            courses.forEach(c => {
+                s += c.name + " " + c.course_id;
+                var option = document.createElement('option');
+                option.text = c.name;
+                option.value = c.course_id;
+                subjectOptions.push(option);
+                subjectDDL.options.add(option);
+            });
+
+            document.getElementById("debugInfo").innerHTML = "debug - " + s;
+        }
+
+        function PopulateCoursesLists(ddl_id1, ddl_id2) {
             var selectedDistrict = document.getElementById(ddl_id1);
             var selectedSchool = document.getElementById(ddl_id2);
 
             var districtText = selectedDistrict.options[selectedDistrict.selectedIndex].text;
             document.getElementById("district").innerHTML = districtText;
 
-            var schoolText = selectedSchool.options[selectedSchool.selectedIndex].text;
-            document.getElementById("school").innerHTML = schoolText;
-            let schoolCatalog = GetCatalog(selectedSchool.options[selectedSchool.selectedIndex].value);
-            alert(schoolCatalog.class9.english[0].name);
+            var selectedSchoolText = selectedSchool.options[selectedSchool.selectedIndex].text;
+            var selectedSchoolId = selectedSchool.options[selectedSchool.selectedIndex].value;
+            document.getElementById("school").innerHTML = selectedSchoolText;
 
-            alert("District: " + districtText + "\n" + "School: " + schoolText);
+            let catalog = GetCatalog(selectedSchoolId);
+
+            PopulateCoursesInDDL("english91", catalog.class9.english);
+            PopulateCoursesInDDL("english92", catalog.class9.english);
+
+            PopulateCoursesInDDL("english101", catalog.class10.english);
+            PopulateCoursesInDDL("english102", catalog.class10.english);
         }
-
-        // function GradeNineUpdateInfo() {
-        //     var schoolDDL = document.getElementById("schoolDDL");
-        //     var grade9DDL = document.getElementById("grade9period1");
-
-        //     var schoolText = schoolDDL.options[schoolDDL.selectedIndex].text;
-
-        //     var districtId = selectedDistrict.options[selectedDistrict.selectedIndex].value;
-        //     var schoolOptions = [];
-
-        //     course_collection.forEach(school => {
-        //         if (school.school_district_id === districtId) {
-        //             var option = document.createElement('option');
-        //             option.text = school.school_name;
-        //             option.value = school.school_id;
-        //             schoolOptions.push(option);
-        //         }
-        //     });
-
-        //     schoolOptions = schoolOptions.sort(function (a, b) {
-        //         return a.text == b.text ? 0 : a.text > b.text ? 1 : -1;
-        //     });
-
-        //     schoolDDL.options.length = 0;
-
-        //     var option = document.createElement('option');
-        //     option.text = "select";
-        //     option.value = 0;
-        //     schoolDDL.add(option);
-
-        //     schoolOptions.forEach(o => {
-        //         schoolDDL.add(o);
-        //     });
-        // }
 
     </script>
 </head>
@@ -164,7 +181,7 @@
         </tr>
         <tr>
             <td>
-                <button type="confirmationButton" onclick='GetSelected("districtDDL", "schoolDDL")'>Confirm</button>
+                <button type="confirmationButton" onclick='PopulateCoursesLists("districtDDL", "schoolDDL")'>Confirm</button>
             </td>
         </tr>
 
@@ -173,6 +190,8 @@
     <div id="district"><b>District</b></div>
     <br />
     <div id="school"><b>School</b></div>
+    <br />
+    <div id="debugInfo"><b>Debug Info</b></div>
     <br /><br />
     <table>
         <tr>
@@ -352,7 +371,7 @@
                             </select>
                         </td>
                     </tr>
-                    
+
                     <tr>
                         <td>Career & Tech. Ed.</td>
                         <td>

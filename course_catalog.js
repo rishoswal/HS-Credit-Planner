@@ -56,8 +56,8 @@ let course_collection =
             {
                 "english":
                     [
-                        { "name": "English 9 Redmond", "course_id": "" },
-                        { "name": "English 9 Honors", "course_id": "" }
+                        { "name": "English 9 Redmond", "course_id": "eng91" },
+                        { "name": "English 9 Honors", "course_id": "eng9h" }
                     ],
                 "social_studies":
                     [
@@ -152,21 +152,6 @@ let course_collection =
 
     ];
 
-function GetCatalog(schoolId)
-{
-    var match = null;
-
-    course_collection.forEach(school => {
-
-        if (school.school_id === schoolId)
-        {
-            match = school;
-        }
-
-    });
-
-    return match;
-}
 
 
 
