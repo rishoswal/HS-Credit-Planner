@@ -138,7 +138,7 @@ let course_collection =
             {
                 "english":
                     [
-                        { "name": "English 9 Eastlake", "course_id": "" },
+                        { "name": "English 9 Arlington", "course_id": "" },
                         { "name": "English 9 Honors", "course_id": "" }
                     ],
                 "social_studies":
