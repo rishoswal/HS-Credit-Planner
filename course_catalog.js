@@ -128,7 +128,28 @@ let course_collection =
                         { "name": "", "course_id": "" },
                     ]
             },
+        },
+
+        {
+            "school_id": "1003",
+            "school_name": "Arlington High School",
+            "school_district_id": "110",
+            "class9":
+            {
+                "english":
+                    [
+                        { "name": "English 9 Eastlake", "course_id": "" },
+                        { "name": "English 9 Honors", "course_id": "" }
+                    ],
+                "social_studies":
+                    [
+                        { "name": "", "course_id": "" },
+                        { "name": "", "course_id": "" },
+                        { "name": "", "course_id": "" },
+                    ]
+            },
         }
+
     ];
 
 function GetCatalog(schoolId)

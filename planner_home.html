@@ -10,7 +10,7 @@
     <title>High School Credits Planner</title>
     <script>
 
-        function runtest() {
+        function LoadSchoolDistrictsList() {
 
             let districtDDL = document.getElementById("districtDDL");
             var districtOptions = [];
@@ -26,19 +26,51 @@
                 return a.text == b.text ? 0 : a.text > b.text ? 1 : -1;
             });
 
+            districtDDL.options.length = 0;
+            var option = document.createElement('option');
+            option.text = "select";
+            option.value = 0;
+            districtDDL.add(option);
+
             districtOptions.forEach(o => {
                 districtDDL.add(o);
             });
-
-            // let schoolCatalog = GetCatalog("redmond");
-            // document.getElementById("test").innerHTML = schoolCatalog.class9.english[0].name;
-            // alert(schoolCatalog.class9.english[0].name);
         }
+
 
         function OnDistrictSelectionChanged() {
             var selectedDistrict = document.getElementById("districtDDL");
+            var schoolDDL = document.getElementById("schoolDDL");
+
             var districtText = selectedDistrict.options[selectedDistrict.selectedIndex].text;
             document.getElementById("district").innerHTML = districtText;
+
+            var districtId = selectedDistrict.options[selectedDistrict.selectedIndex].value;
+            var schoolOptions = [];
+
+            course_collection.forEach(school => {
+                if (school.school_district_id === districtId) {
+                    var option = document.createElement('option');
+                    option.text = school.school_name;
+                    option.value = school.school_id;
+                    schoolOptions.push(option);
+                }
+            });
+
+            schoolOptions = schoolOptions.sort(function (a, b) {
+                return a.text == b.text ? 0 : a.text > b.text ? 1 : -1;
+            });
+
+            schoolDDL.options.length = 0;
+
+            var option = document.createElement('option');
+            option.text = "select";
+            option.value = 0;
+            schoolDDL.add(option);
+
+            schoolOptions.forEach(o => {
+                schoolDDL.add(o);
+            });
         }
 
         function getSelected(ddl_id1, ddl_id2) {
@@ -57,7 +89,7 @@
         }
     </script>
 </head>
-<body onload="runtest()">
+<body onload="LoadSchoolDistrictsList()">
     <h1>High School Credit Planner</h1>
     <br /><br />
     <table width="30%">
@@ -66,7 +98,7 @@
                 School District
             </td>
             <td>
-                <select id="districtDDL" onchange="OnDistrictSelectionChanged();">
+                <select id="districtDDL" onchange="OnDistrictSelectionChanged();" style="width: 75%;">
                     <option value="select">Select</option>
                 </select>
             </td>
@@ -76,11 +108,7 @@
                 School
             </td>
             <td>
-                <select id="schoolDDL">
-                    <option value="select">Select</option>
-                    <option value="redmond">Redmond High School</option>
-                    <option value="juanita">Juanita High School</option>
-                    <option value="eastlake">Eastlake High School</option>
+                <select id="schoolDDL" style="width: 75%;">
                 </select>
             </td>
         </tr>
