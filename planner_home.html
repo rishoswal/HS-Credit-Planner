@@ -115,10 +115,15 @@
             var subjectDDL = document.getElementById(subject_ddl_id);
             subjectDDL.options.length = 0;
 
-            var option = document.createElement('option');
-            option.text = "select";
-            option.value = 0;
-            subjectDDL.add(option);
+            var defaultOption = document.createElement('option');
+            defaultOption.text = "select";
+            defaultOption.value = 0;
+            subjectDDL.add(defaultOption);
+
+            var noneOption = document.createElement('option');
+            noneOption.text = "none";
+            noneOption.value = 1;
+            subjectDDL.add(noneOption);
 
             var s = "";
 
@@ -167,6 +172,14 @@
 
             PopulateCoursesInDDL("history111", catalog.class11.social_studies);
             PopulateCoursesInDDL("history112", catalog.class11.social_studies);
+
+            PopulateCoursesInDDL("history121", catalog.class12.social_studies);
+            PopulateCoursesInDDL("history122", catalog.class12.social_studies);
+        
+            PopulateCoursesInDDL("math91", catalog.class9.mathematics);
+            PopulateCoursesInDDL("math101", catalog.class10.mathematics);
+            PopulateCoursesInDDL("math111", catalog.class11.mathematics);
+            PopulateCoursesInDDL("math121", catalog.class12.mathematics);
         }
 
     </script>
