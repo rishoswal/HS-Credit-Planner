@@ -265,7 +265,7 @@ let course_collection =
                             "CADR": "true"
                         }
                     ],
-                "cte_b&m":
+                "cte_bm":
                     [
                         {   
                             "name": "Business & Marketing", 
@@ -1086,7 +1086,7 @@ let course_collection =
                             "CADR": "true"
                         }
                     ],
-                "cte_b&m":
+                "cte_bm":
                     [
                         {   
                             "name": "Business & Marketing", 
@@ -2432,7 +2432,7 @@ let course_collection =
                             "CADR": "true"
                         }
                     ],
-                "cte_b&m":
+                "cte_bm":
                     [
                         {   
                             "name": "Business & Marketing", 
@@ -3990,7 +3990,7 @@ let course_collection =
                             "CADR": "true"
                         }
                     ],
-                "cte_b&m":
+                "cte_bm":
                     [
                         {   
                             "name": "Business & Marketing", 
