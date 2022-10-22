@@ -69,7 +69,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "english"
                         },
                         {   
                             "name": "Honors English 9", 
@@ -84,7 +85,8 @@ let course_collection =
                             "honors_course" : "true",
                             "ap_course": "false",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "english"
                         },
                         {   
                             "name": "Speech & Debate", 
@@ -99,7 +101,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "true",
-                            "CADR": "false"
+                            "CADR": "false",
+                            "credit_category": "english"
                         }
                     ],
                 "social_studies":
@@ -117,7 +120,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "soc1"
                         },
                         {   
                             "name": "Honors World History", 
@@ -132,7 +136,8 @@ let course_collection =
                             "honors_course" : "true",
                             "ap_course": "false",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "soc1"
                         }
                     ],
                 "mathematics":
@@ -150,7 +155,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "mathematics"
                         },
                         {   
                             "name": "Geometry", 
@@ -165,7 +171,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "mathematics"
                         },
                         {   
                             "name": "Algebra 2", 
@@ -180,7 +187,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "mathematics"
                         },
                         {   
                             "name": "Honors Algebra 2", 
@@ -195,7 +203,8 @@ let course_collection =
                             "honors_course" : "true",
                             "ap_course": "false",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "mathematics"
                         },
                         {   
                             "name": "Precalculus", 
@@ -210,7 +219,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "mathematics"
                         },
                         {   
                             "name": "Honors Precalculus", 
@@ -225,7 +235,8 @@ let course_collection =
                             "honors_course" : "true",
                             "ap_course": "false",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "mathematics"
                         }
                     ],
                 "science":
@@ -245,7 +256,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "lab_science"
                         },
                         {
                             "name": "Honors Biology", 
@@ -262,7 +274,8 @@ let course_collection =
                             "honors_course" : "true",
                             "ap_course": "false",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "lab_science"
                         }
                     ],
                 "cte_bm":
@@ -283,7 +296,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "true",
                             "credit_equivalency": "false",
-                            "multi_credit_category": ""
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "Sports & Entertainment Marketing", 
@@ -301,7 +314,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "true",
                             "credit_equivalency": "false",
-                            "multi_credit_category": ""
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "Leadership 1", 
@@ -319,7 +332,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "false",
-                            "multi_credit_category": ""
+                            "credit_category": "cte"
                         }
                     ],
                 "cte_it":
@@ -348,7 +361,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, health"
+                            "credit_category": "cte, health"
                         },
                         {   
                             "name": "American Sign Language 1", 
@@ -366,7 +379,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, world_lang"
+                            "credit_category": "cte, world_lang"
                         },
                         {   
                             "name": "Child Development 1", 
@@ -384,7 +397,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "false",
-                            "multi_credit_category": ""
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "Culinary Arts 1", 
@@ -402,7 +415,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, lab_science"
+                            "credit_category": "cte, lab_science"
                         }
                     ],
                 "cte_tech_science":
@@ -423,7 +436,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "false",
-                            "multi_credit_category": ""
+                            "credit_category": "cte"
                         }
                     ],
                 "cte_tech_art":
@@ -444,7 +457,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, art"
+                            "credit_category": "cte, art"
                         },
                         {
                             "name": "Graphic Design", 
@@ -462,7 +475,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, art"
+                            "credit_category": "cte, art"
                         },
                         {
                             "name": "Technical Theater", 
@@ -480,7 +493,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, art"
+                            "credit_category": "cte, art"
                         },
                         {
                             "name": "Art and Design", 
@@ -498,7 +511,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, art"
+                            "credit_category": "cte, art"
                         },
                         {
                             "name": "Industrial Design - 3D Printing", 
@@ -516,7 +529,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, art"
+                            "credit_category": "cte, art"
                         },
                         {
                             "name": "Photography 1", 
@@ -534,7 +547,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, art"
+                            "credit_category": "cte, art"
                         }
                     ],
                 "cte_stem":
@@ -555,7 +568,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, mathematics"
+                            "credit_category": "cte, mathematics"
                         }
                     ],
                 "health_pe":
@@ -614,6 +627,138 @@ let course_collection =
                             "credit_equivalency": "false",
                             "credit_category": "pe"
                         }
+                    ],
+                "visual_perf_arts":
+                    [
+                        {
+                            "name": "Art 1", 
+                            "sem1_course_id": "art011", 
+                            "sem2_course_id": "",
+                            "pre_req_all": "",
+                            "pre_req_any": "",
+                            "grade_req": "",
+                            "sem_count": "1",
+                            "credit_count": "0.5",
+                            "hw_time": "",
+                            "honors_course" : "false",
+                            "ap_course": "true",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "false",
+                            "credit_equivalency": "false",
+                            "credit_category": "art"
+                        },
+                        {
+                            "name": "Honors Art 1", 
+                            "sem1_course_id": "art016", 
+                            "sem2_course_id": "",
+                            "pre_req_all": "",
+                            "pre_req_any": "",
+                            "grade_req": "",
+                            "sem_count": "1",
+                            "credit_count": "0.5",
+                            "hw_time": "",
+                            "honors_course" : "true",
+                            "ap_course": "false",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "false",
+                            "credit_equivalency": "false",
+                            "credit_category": "art"
+                        }
+                    ],
+                "world_lang":
+                    [
+                        {
+                            "name": "American Sign Lang 1", 
+                            "sem1_course_id": "cdl011", 
+                            "sem2_course_id": "cdl012",
+                            "pre_req_all": "",
+                            "pre_req_any": "",
+                            "grade_req": "",
+                            "sem_count": "2",
+                            "credit_count": "1.0",
+                            "hw_time": "",
+                            "honors_course" : "false",
+                            "ap_course": "false",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "true",
+                            "credit_equivalency": "true",
+                            "credit_category": "cte, world_lang"
+                        },
+                        {
+                            "name": "French 1", 
+                            "sem1_course_id": "for111", 
+                            "sem2_course_id": "for112",
+                            "pre_req_all": "",
+                            "pre_req_any": "",
+                            "grade_req": "",
+                            "sem_count": "2",
+                            "credit_count": "1.0",
+                            "hw_time": "",
+                            "honors_course" : "false",
+                            "ap_course": "false",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "false",
+                            "credit_equivalency": "false",
+                            "credit_category": "world_lang"
+                        },
+                        {
+                            "name": "Japanese 1", 
+                            "sem1_course_id": "for311", 
+                            "sem2_course_id": "for312",
+                            "pre_req_all": "",
+                            "pre_req_any": "",
+                            "grade_req": "",
+                            "sem_count": "2",
+                            "credit_count": "1.0",
+                            "hw_time": "",
+                            "honors_course" : "false",
+                            "ap_course": "false",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "false",
+                            "credit_equivalency": "false",
+                            "credit_category": "world_lang"
+                        },
+                        {
+                            "name": "Spanish 1", 
+                            "sem1_course_id": "for511", 
+                            "sem2_course_id": "for512",
+                            "pre_req_all": "",
+                            "pre_req_any": "",
+                            "grade_req": "",
+                            "sem_count": "2",
+                            "credit_count": "1.0",
+                            "hw_time": "",
+                            "honors_course" : "false",
+                            "ap_course": "false",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "false",
+                            "credit_equivalency": "false",
+                            "credit_category": "world_lang"
+                        },
+                        {
+                            "name": "Spanish 2", 
+                            "sem1_course_id": "for521", 
+                            "sem2_course_id": "for522",
+                            "pre_req_all": "",
+                            "pre_req_any": "for511",
+                            "grade_req": "",
+                            "sem_count": "2",
+                            "credit_count": "1.0",
+                            "hw_time": "",
+                            "honors_course" : "",
+                            "ap_course": "",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "false",
+                            "credit_equivalency": "false",
+                            "credit_category": "world_lang"
+                        }
                     ]
             },
 
@@ -634,7 +779,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "english"
                         },
                         {   
                             "name": "Honors English 10", 
@@ -649,7 +795,8 @@ let course_collection =
                             "honors_course" : "true",
                             "ap_course": "false",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "english"
                         },
                         {   
                             "name": "Creative Writing", 
@@ -664,7 +811,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "true",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "elective"
                         },
                         {   
                             "name": "Playwriting", 
@@ -679,7 +827,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "true",
-                            "CADR": "false"
+                            "CADR": "false",
+                            "credit_category": "elective"
                         },
                         {   
                             "name": "Speech & Debate", 
@@ -694,7 +843,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "true",
-                            "CADR": "false"
+                            "CADR": "false",
+                            "credit_category": "elective"
                         }
                     ],
                 "social_studies":
@@ -712,7 +862,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "soc2"
                         },
                         {   
                             "name": "AP World History", 
@@ -727,7 +878,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "true",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "soc2"
                         },
                         {   
                             "name": "Introduction to Philosophy", 
@@ -742,7 +894,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "true",
-                            "CADR": "false"
+                            "CADR": "false",
+                            "credit_category": "elective"
                         },
                         {   
                             "name": "International Relations", 
@@ -757,7 +910,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "true",
-                            "CADR": "false"
+                            "CADR": "false",
+                            "credit_category": "elective"
                         },
                         {   
                             "name": "History through Film", 
@@ -772,7 +926,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "true",
-                            "CADR": "false"
+                            "CADR": "false",
+                            "credit_category": "elective"
                         }
                     ],
                 "mathematics":
@@ -790,7 +945,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "mathematics"
                         },
                         {   
                             "name": "Geometry", 
@@ -805,7 +961,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "mathematics"
                         },
                         {   
                             "name": "Algebra 2", 
@@ -820,7 +977,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "mathematics"
                         },
                         {   
                             "name": "Honors Algebra 2", 
@@ -835,7 +993,8 @@ let course_collection =
                             "honors_course" : "true",
                             "ap_course": "false",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "mathematics"
                         },
                         {   
                             "name": "Precalculus", 
@@ -850,7 +1009,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "mathematics"
                         },
                         {   
                             "name": "Honors Precalculus", 
@@ -865,7 +1025,8 @@ let course_collection =
                             "honors_course" : "true",
                             "ap_course": "false",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "mathematics"
                         },
                         {   
                             "name": "Calculus", 
@@ -880,7 +1041,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "mathematics"
                         },
                         {   
                             "name": "AP Calculus AB", 
@@ -895,7 +1057,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "true",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "mathematics"
                         },
                         {   
                             "name": "AP Calculus BC", 
@@ -910,7 +1073,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "true",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "mathematics"
                         }
                     ],
                 "science":
@@ -930,7 +1094,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "science"
                         },
                         {
                             "name": "Physics", 
@@ -947,7 +1112,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "science"
                         },
                         {
                             "name": "Physics in the Universe", 
@@ -964,7 +1130,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "lab_science"
                         },
                         {
                             "name": "AP Biology", 
@@ -981,7 +1148,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "true",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "lab_science"
                         },
                         {
                             "name": "AP Chemistry", 
@@ -998,7 +1166,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "true",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "lab_science"
                         },
                         {
                             "name": "AP Environmental Science", 
@@ -1015,7 +1184,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "true",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "lab_science"
                         },
                         {
                             "name": "Oceanography", 
@@ -1032,7 +1202,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "true",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "science"
                         },
                         {
                             "name": "Marine Science 1", 
@@ -1049,7 +1220,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "true",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "science"
                         },
                         {
                             "name": "Astronomy", 
@@ -1066,7 +1238,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "true",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "science"
                         },
                         {
                             "name": "STEM Health Science", 
@@ -1083,7 +1256,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "true",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "lab_science"
                         }
                     ],
                 "cte_bm":
@@ -1104,7 +1278,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "true",
                             "credit_equivalency": "false",
-                            "multi_credit_category": ""
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "Sports & Entertainment Marketing", 
@@ -1122,7 +1296,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "true",
                             "credit_equivalency": "false",
-                            "multi_credit_category": ""
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "Retail Operations", 
@@ -1140,7 +1314,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "true",
                             "credit_equivalency": "false",
-                            "multi_credit_category": ""
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "Personal Finance", 
@@ -1158,7 +1332,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "true",
                             "credit_equivalency": "false",
-                            "multi_credit_category": ""
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "AP Microeconomics", 
@@ -1176,7 +1350,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, social_studies"
+                            "credit_category": "cte, social_studies"
                         },
                         {   
                             "name": "AP Macroeconomics", 
@@ -1194,7 +1368,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, social_studies"
+                            "credit_category": "cte, social_studies"
                         },
                         {   
                             "name": "Leadership 1", 
@@ -1212,7 +1386,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "false",
-                            "multi_credit_category": ""
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "Leadership 2", 
@@ -1230,7 +1404,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "false",
-                            "multi_credit_category": ""
+                            "credit_category": "cte"
                         }
                     ],
                 "cte_it":
@@ -1251,7 +1425,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, mathematics"
+                            "credit_category": "cte, mathematics"
                         },
                         {   
                             "name": "Microsoft Office Specialist", 
@@ -1269,7 +1443,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "true",
                             "credit_equivalency": "false",
-                            "multi_credit_category": ""
+                            "credit_category": "cte"
                         }
                     ],
                 "cte_health":
@@ -1294,7 +1468,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, lab_science"
+                            "credit_category": "cte, lab_science"
                         },
                         {   
                             "name": "Family Health", 
@@ -1312,7 +1486,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, health"
+                            "credit_category": "cte, health"
                         },
                         {   
                             "name": "American Sign Language 1", 
@@ -1330,7 +1504,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, world_lang"
+                            "credit_category": "cte, world_lang"
                         },
                         {   
                             "name": "American Sign Language 2", 
@@ -1348,7 +1522,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, world_lang"
+                            "credit_category": "cte, world_lang"
                         },
                         {   
                             "name": "Child Development 1", 
@@ -1366,7 +1540,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "false",
-                            "multi_credit_category": ""
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "Culinary Arts 1", 
@@ -1384,7 +1558,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, lab_science"
+                            "credit_category": "cte, lab_science"
                         },
                         {   
                             "name": "Psychology", 
@@ -1402,7 +1576,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, social_studies"
+                            "credit_category": "cte, social_studies"
                         }
                     ],
                 "cte_tech_science":
@@ -1423,7 +1597,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, lab_science"
+                            "credit_category": "cte, lab_science"
                         },
                         {
                             "name": "Community Emergency Response", 
@@ -1441,7 +1615,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "false",
-                            "multi_credit_category": ""
+                            "credit_category": "cte"
                         }
                     ],
                 "cte_tech_art":
@@ -1462,7 +1636,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, art"
+                            "credit_category": "cte, art"
                         },
                         {
                             "name": "Video Production 1", 
@@ -1480,7 +1654,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, art"
+                            "credit_category": "cte, art"
                         },
                         {
                             "name": "Video Production 2", 
@@ -1498,7 +1672,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, art"
+                            "credit_category": "cte, art"
                         },
                         {
                             "name": "Graphic Design", 
@@ -1516,7 +1690,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, art"
+                            "credit_category": "cte, art"
                         },
                         {
                             "name": "Technical Theater", 
@@ -1534,7 +1708,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, art"
+                            "credit_category": "cte, art"
                         },
                         {
                             "name": "Art and Design", 
@@ -1552,7 +1726,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, art"
+                            "credit_category": "cte, art"
                         },
                         {
                             "name": "Commercial Art", 
@@ -1570,7 +1744,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, art"
+                            "credit_category": "cte, art"
                         },
                         {
                             "name": "AP Art and Design", 
@@ -1588,7 +1762,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, art"
+                            "credit_category": "cte, art"
                         },
                         {
                             "name": "Industrial Design - 3D Printing", 
@@ -1606,7 +1780,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, art"
+                            "credit_category": "cte, art"
                         },
                         {
                             "name": "Photography 1", 
@@ -1624,7 +1798,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, art"
+                            "credit_category": "cte, art"
                         },
                         {
                             "name": "Photography 2", 
@@ -1642,7 +1816,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, art"
+                            "credit_category": "cte, art"
                         }
                     ],
                 "cte_stem":
@@ -1663,7 +1837,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, mathematics"
+                            "credit_category": "cte, mathematics"
                         },
                         {
                             "name": "Principles of Engineering", 
@@ -1681,7 +1855,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, lab_science"
+                            "credit_category": "cte, lab_science"
                         },
                         {
                             "name": "Aerospace Engineering", 
@@ -1699,7 +1873,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, lab_science"
+                            "credit_category": "cte, lab_science"
                         }
                     ],
                 "health_pe":
@@ -1866,6 +2040,246 @@ let course_collection =
                             "credit_equivalency": "false",
                             "credit_category": "pe"
                         }
+                    ],
+                "visual_perf_arts":
+                    [
+                        {
+                            "name": "Art 1", 
+                            "sem1_course_id": "art011", 
+                            "sem2_course_id": "",
+                            "pre_req_all": "",
+                            "pre_req_any": "",
+                            "grade_req": "",
+                            "sem_count": "1",
+                            "credit_count": "0.5",
+                            "hw_time": "",
+                            "honors_course" : "false",
+                            "ap_course": "true",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "false",
+                            "credit_equivalency": "false",
+                            "credit_category": "art"
+                        },
+                        {
+                            "name": "Honors Art 1", 
+                            "sem1_course_id": "art016", 
+                            "sem2_course_id": "",
+                            "pre_req_all": "",
+                            "pre_req_any": "",
+                            "grade_req": "",
+                            "sem_count": "1",
+                            "credit_count": "0.5",
+                            "hw_time": "",
+                            "honors_course" : "true",
+                            "ap_course": "false",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "false",
+                            "credit_equivalency": "false",
+                            "credit_category": "art"
+                        },
+                        {
+                            "name": "Art 2", 
+                            "sem1_course_id": "art241", 
+                            "sem2_course_id": "",
+                            "pre_req_all": "",
+                            "pre_req_any": "art011, art016",
+                            "grade_req": "",
+                            "sem_count": "1",
+                            "credit_count": "0.5",
+                            "hw_time": "",
+                            "honors_course" : "false",
+                            "ap_course": "true",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "false",
+                            "credit_equivalency": "false",
+                            "credit_category": "art"
+                        },
+                        {
+                            "name": "Honors Art 2", 
+                            "sem1_course_id": "art243", 
+                            "sem2_course_id": "",
+                            "pre_req_all": "",
+                            "pre_req_any": "art011, art016",
+                            "grade_req": "",
+                            "sem_count": "1",
+                            "credit_count": "0.5",
+                            "hw_time": "",
+                            "honors_course" : "true",
+                            "ap_course": "false",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "false",
+                            "credit_equivalency": "false",
+                            "credit_category": "art"
+                        }
+                    ],
+                "world_lang":
+                    [
+                        {
+                            "name": "American Sign Lang 1", 
+                            "sem1_course_id": "cdl011", 
+                            "sem2_course_id": "cdl012",
+                            "pre_req_all": "",
+                            "pre_req_any": "",
+                            "grade_req": "",
+                            "sem_count": "2",
+                            "credit_count": "1.0",
+                            "hw_time": "",
+                            "honors_course" : "false",
+                            "ap_course": "false",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "true",
+                            "credit_equivalency": "true",
+                            "credit_category": "cte, world_lang"
+                        },
+                        {
+                            "name": "American Sign Lang 2", 
+                            "sem1_course_id": "cdl021", 
+                            "sem2_course_id": "cdl022",
+                            "pre_req_all": "cdl011",
+                            "pre_req_any": "",
+                            "grade_req": "",
+                            "sem_count": "2",
+                            "credit_count": "1.0",
+                            "hw_time": "",
+                            "honors_course" : "false",
+                            "ap_course": "false",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "true",
+                            "credit_equivalency": "true",
+                            "credit_category": "cte, world_lang"
+                        },
+                        {
+                            "name": "French 1", 
+                            "sem1_course_id": "for111", 
+                            "sem2_course_id": "for112",
+                            "pre_req_all": "",
+                            "pre_req_any": "",
+                            "grade_req": "",
+                            "sem_count": "2",
+                            "credit_count": "1.0",
+                            "hw_time": "",
+                            "honors_course" : "false",
+                            "ap_course": "false",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "false",
+                            "credit_equivalency": "false",
+                            "credit_category": "world_lang"
+                        },
+                        {
+                            "name": "French 2", 
+                            "sem1_course_id": "for121", 
+                            "sem2_course_id": "for122",
+                            "pre_req_all": "for111",
+                            "pre_req_any": "",
+                            "grade_req": "",
+                            "sem_count": "2",
+                            "credit_count": "1.0",
+                            "hw_time": "",
+                            "honors_course" : "false",
+                            "ap_course": "false",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "false",
+                            "credit_equivalency": "false",
+                            "credit_category": "world_lang"
+                        },
+                        {
+                            "name": "Japanese 1", 
+                            "sem1_course_id": "for311", 
+                            "sem2_course_id": "for312",
+                            "pre_req_all": "",
+                            "pre_req_any": "",
+                            "grade_req": "",
+                            "sem_count": "2",
+                            "credit_count": "1.0",
+                            "hw_time": "",
+                            "honors_course" : "false",
+                            "ap_course": "false",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "false",
+                            "credit_equivalency": "false",
+                            "credit_category": "world_lang"
+                        },
+                        {
+                            "name": "Japanese 2", 
+                            "sem1_course_id": "for321", 
+                            "sem2_course_id": "for322",
+                            "pre_req_all": "for311",
+                            "pre_req_any": "",
+                            "grade_req": "",
+                            "sem_count": "2",
+                            "credit_count": "1.0",
+                            "hw_time": "",
+                            "honors_course" : "false",
+                            "ap_course": "false",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "false",
+                            "credit_equivalency": "false",
+                            "credit_category": "world_lang"
+                        },
+                        {
+                            "name": "Spanish 1", 
+                            "sem1_course_id": "for511", 
+                            "sem2_course_id": "for512",
+                            "pre_req_all": "",
+                            "pre_req_any": "",
+                            "grade_req": "",
+                            "sem_count": "2",
+                            "credit_count": "1.0",
+                            "hw_time": "",
+                            "honors_course" : "false",
+                            "ap_course": "false",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "false",
+                            "credit_equivalency": "false",
+                            "credit_category": "world_lang"
+                        },
+                        {
+                            "name": "Spanish 2", 
+                            "sem1_course_id": "for521", 
+                            "sem2_course_id": "for522",
+                            "pre_req_all": "",
+                            "pre_req_any": "for511",
+                            "grade_req": "",
+                            "sem_count": "2",
+                            "credit_count": "1.0",
+                            "hw_time": "",
+                            "honors_course" : "",
+                            "ap_course": "",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "false",
+                            "credit_equivalency": "false",
+                            "credit_category": "world_lang"
+                        },
+                        {
+                            "name": "Spanish 3", 
+                            "sem1_course_id": "for531", 
+                            "sem2_course_id": "for532",
+                            "pre_req_all": "",
+                            "pre_req_any": "for521",
+                            "grade_req": "",
+                            "sem_count": "2",
+                            "credit_count": "1.0",
+                            "hw_time": "",
+                            "honors_course" : "",
+                            "ap_course": "",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "false",
+                            "credit_equivalency": "false",
+                            "credit_category": "world_lang"
+                        }
                     ]
             },
             
@@ -1886,7 +2300,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "english"
                         },
                         {   
                             "name": "AP English Language & Comp.", 
@@ -1901,7 +2316,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "true",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "english"
                         },
                         {   
                             "name": "AP English Literature & Comp.", 
@@ -1916,7 +2332,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "true",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "english"
                         },
                         {   
                             "name": "Film Analysis", 
@@ -1931,7 +2348,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "true",
-                            "CADR": "false"
+                            "CADR": "false",
+                            "credit_category": "elective"
                         },
                         {   
                             "name": "Creative Writing", 
@@ -1946,7 +2364,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "true",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "elective"
                         },
                         {   
                             "name": "Playwriting", 
@@ -1961,7 +2380,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "true",
-                            "CADR": "false"
+                            "CADR": "false",
+                            "credit_category": "elective"
                         },
                         {   
                             "name": "Speech & Debate", 
@@ -1976,7 +2396,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "true",
-                            "CADR": "false"
+                            "CADR": "false",
+                            "credit_category": "elective"
                         }
                     ],
                 "social_studies":
@@ -1994,7 +2415,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "soc3"
                         },
                         {   
                             "name": "AP U.S. History", 
@@ -2009,7 +2431,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "true",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "soc3"
                         },
                         {   
                             "name": "Introduction to Philosophy", 
@@ -2024,7 +2447,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "true",
-                            "CADR": "false"
+                            "CADR": "false",
+                            "credit_category": "elective"
                         },
                         {   
                             "name": "International Relations", 
@@ -2039,7 +2463,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "true",
-                            "CADR": "false"
+                            "CADR": "false",
+                            "credit_category": "elective"
                         },
                         {   
                             "name": "History through Film", 
@@ -2054,7 +2479,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "true",
-                            "CADR": "false"
+                            "CADR": "false",
+                            "credit_category": "elective"
                         }
                     ],
                 "mathematics":
@@ -2072,7 +2498,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "mathematics"
                         },
                         {   
                             "name": "Geometry", 
@@ -2087,7 +2514,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "mathematics"
                         },
                         {   
                             "name": "Algebra 2", 
@@ -2102,7 +2530,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "mathematics"
                         },
                         {   
                             "name": "Honors Algebra 2", 
@@ -2117,7 +2546,8 @@ let course_collection =
                             "honors_course" : "true",
                             "ap_course": "false",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "mathematics"
                         },
                         {   
                             "name": "Precalculus", 
@@ -2132,7 +2562,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "mathematics"
                         },
                         {   
                             "name": "Honors Precalculus", 
@@ -2147,7 +2578,8 @@ let course_collection =
                             "honors_course" : "true",
                             "ap_course": "false",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "mathematics"
                         },
                         {   
                             "name": "Calculus", 
@@ -2162,7 +2594,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "mathematics"
                         },
                         {   
                             "name": "AP Calculus AB", 
@@ -2177,7 +2610,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "true",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "mathematics"
                         },
                         {   
                             "name": "AP Calculus BC", 
@@ -2192,7 +2626,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "true",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "mathematics"
                         },
                         {   
                             "name": "Statistics", 
@@ -2207,7 +2642,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "mathematics"
                         },
                         {   
                             "name": "AP Statistics", 
@@ -2222,7 +2658,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "true",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "mathematics"
                         }
                     ],
                 "science":
@@ -2242,7 +2679,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "science"
                         },
                         {
                             "name": "Chem. in the Earth System", 
@@ -2259,7 +2697,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "lab_science"
                         },
                         {
                             "name": "Physics", 
@@ -2276,24 +2715,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "false",
-                            "CADR": "true"
-                        },
-                        {
-                            "name": "Physics in the Universe", 
-                            "sem1_course_id": "sci431", 
-                            "sem2_course_id": "sci432",
-                            "pre_req_all": "",
-                            "pre_req_any": "",
-                            "recommended_pre_req": "",
-                            "grade_req": "10",
-                            "sem_count": "2",
-                            "credit_count": "1.0",
-                            "hw_time": "30",
-                            "lab_science": "true",
-                            "honors_course" : "false",
-                            "ap_course": "false",
-                            "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "science"
                         },
                         {
                             "name": "AP Biology", 
@@ -2310,7 +2733,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "true",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "lab_science"
                         },
                         {
                             "name": "AP Chemistry", 
@@ -2327,7 +2751,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "true",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "lab_science"
                         },
                         {
                             "name": "AP Environmental Science", 
@@ -2344,7 +2769,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "true",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "lab_science"
                         },
                         {
                             "name": "AP Physics C", 
@@ -2361,7 +2787,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "true",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "lab_science"
                         },
                         {
                             "name": "Oceanography", 
@@ -2378,7 +2805,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "true",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "science"
                         },
                         {
                             "name": "Marine Science 1", 
@@ -2395,7 +2823,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "true",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "science"
                         },
                         {
                             "name": "Astronomy", 
@@ -2412,7 +2841,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "true",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "science"
                         },
                         {
                             "name": "STEM Health Science", 
@@ -2429,7 +2859,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "true",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "lab_science"
                         }
                     ],
                 "cte_bm":
@@ -2450,7 +2881,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "true",
                             "credit_equivalency": "false",
-                            "multi_credit_category": ""
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "Sports & Entertainment Marketing", 
@@ -2468,7 +2899,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "true",
                             "credit_equivalency": "false",
-                            "multi_credit_category": ""
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "Retail Operations", 
@@ -2486,7 +2917,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "true",
                             "credit_equivalency": "false",
-                            "multi_credit_category": ""
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "Personal Finance", 
@@ -2504,7 +2935,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "true",
                             "credit_equivalency": "false",
-                            "multi_credit_category": ""
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "AP Statistics", 
@@ -2522,7 +2953,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, mathematics"
+                            "credit_category": "cte, mathematics"
                         },
                         {   
                             "name": "AP Microeconomics", 
@@ -2540,7 +2971,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, social_studies"
+                            "credit_category": "cte, social_studies"
                         },
                         {   
                             "name": "AP Macroeconomics", 
@@ -2558,7 +2989,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, social_studies"
+                            "credit_category": "cte, social_studies"
                         },
                         {   
                             "name": "Leadership 1", 
@@ -2576,7 +3007,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "false",
-                            "multi_credit_category": ""
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "Leadership 2", 
@@ -2594,7 +3025,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "false",
-                            "multi_credit_category": ""
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "Finance and Wealth Management", 
@@ -2612,7 +3043,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "false",
-                            "multi_credit_category": ""
+                            "credit_category": "cte"
                         }
                     ],
                 "cte_it":
@@ -2633,7 +3064,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, mathematics"
+                            "credit_category": "cte, mathematics"
                         },
                         {   
                             "name": "Microsoft Office Specialist", 
@@ -2651,7 +3082,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "true",
                             "credit_equivalency": "false",
-                            "multi_credit_category": ""
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "Video Game Design", 
@@ -2669,7 +3100,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "false",
-                            "multi_credit_category": ""
+                            "credit_category": "cte"
                         }
                     ],
                 "cte_health":
@@ -2690,7 +3121,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, lab_science"
+                            "credit_category": "cte, lab_science"
                         },
                         {   
                             "name": "Anatomy & Physiology", 
@@ -2708,7 +3139,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, lab_science"
+                            "credit_category": "cte, lab_science"
                         }
                     ],
                 "cte_human":
@@ -2729,7 +3160,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, lab_science"
+                            "credit_category": "cte, lab_science"
                         },
                         {   
                             "name": "Family Health", 
@@ -2747,7 +3178,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, health"
+                            "credit_category": "cte, health"
                         },
                         {   
                             "name": "American Sign Language 1", 
@@ -2765,7 +3196,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, world_lang"
+                            "credit_category": "cte, world_lang"
                         },
                         {   
                             "name": "American Sign Language 2", 
@@ -2783,7 +3214,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, world_lang"
+                            "credit_category": "cte, world_lang"
                         },
                         {   
                             "name": "American Sign Language 3", 
@@ -2801,7 +3232,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, world_lang"
+                            "credit_category": "cte, world_lang"
                         },
                         {   
                             "name": "Teacher Education Academy 1", 
@@ -2819,7 +3250,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "false",
-                            "multi_credit_category": ""
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "Teacher Education Academy 2", 
@@ -2837,7 +3268,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "false",
-                            "multi_credit_category": ""
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "Child Development 1", 
@@ -2855,7 +3286,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "false",
-                            "multi_credit_category": ""
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "Culinary Arts 1", 
@@ -2873,7 +3304,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, lab_science"
+                            "credit_category": "cte, lab_science"
                         },
                         {   
                             "name": "Psychology", 
@@ -2891,7 +3322,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, social_studies"
+                            "credit_category": "cte, social_studies"
                         },
                         {   
                             "name": "AP Psychology", 
@@ -2909,7 +3340,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, social_studies"
+                            "credit_category": "cte, social_studies"
                         }
                     ],
                 "cte_tech_science":
@@ -2930,7 +3361,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, lab_science"
+                            "credit_category": "cte, lab_science"
                         },
                         {
                             "name": "Community Emergency Response", 
@@ -2948,7 +3379,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "false",
-                            "multi_credit_category": ""
+                            "credit_category": "cte"
                         }
                     ],
                 "cte_tech_art":
@@ -2969,7 +3400,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, art"
+                            "credit_category": "cte, art"
                         },
                         {
                             "name": "Video Production 1", 
@@ -2987,7 +3418,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, art"
+                            "credit_category": "cte, art"
                         },
                         {
                             "name": "Video Production 2", 
@@ -3005,7 +3436,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, art"
+                            "credit_category": "cte, art"
                         },
                         {
                             "name": "Graphic Design", 
@@ -3023,7 +3454,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, art"
+                            "credit_category": "cte, art"
                         },
                         {
                             "name": "Technical Theater", 
@@ -3041,7 +3472,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, art"
+                            "credit_category": "cte, art"
                         },
                         {
                             "name": "Art and Design", 
@@ -3059,7 +3490,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, art"
+                            "credit_category": "cte, art"
                         },
                         {
                             "name": "Commercial Art", 
@@ -3077,7 +3508,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, art"
+                            "credit_category": "cte, art"
                         },
                         {
                             "name": "AP Art and Design", 
@@ -3095,7 +3526,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, art"
+                            "credit_category": "cte, art"
                         },
                         {
                             "name": "Industrial Design - 3D Printing", 
@@ -3113,7 +3544,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, art"
+                            "credit_category": "cte, art"
                         },
                         {
                             "name": "Photography 1", 
@@ -3131,7 +3562,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, art"
+                            "credit_category": "cte, art"
                         },
                         {
                             "name": "Photography 2", 
@@ -3149,7 +3580,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, art"
+                            "credit_category": "cte, art"
                         }
                     ],
                 "cte_stem":
@@ -3170,7 +3601,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, mathematics"
+                            "credit_category": "cte, mathematics"
                         },
                         {
                             "name": "Principles of Engineering", 
@@ -3188,7 +3619,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, lab_science"
+                            "credit_category": "cte, lab_science"
                         },
                         {
                             "name": "Engineering Design and Development", 
@@ -3206,7 +3637,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "false",
-                            "multi_credit_category": ""
+                            "credit_category": "cte"
                         },
                         {
                             "name": "Aerospace Engineering", 
@@ -3224,7 +3655,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, lab_science"
+                            "credit_category": "cte, lab_science"
                         }
                     ],
                 "health_pe":
@@ -3408,6 +3839,372 @@ let course_collection =
                             "dual_credit": "false",
                             "credit_equivalency": "false",
                             "credit_category": "pe"
+                        }
+                    ],
+                "visual_perf_arts":
+                    [
+                        {
+                            "name": "Art 1", 
+                            "sem1_course_id": "art011", 
+                            "sem2_course_id": "",
+                            "pre_req_all": "",
+                            "pre_req_any": "",
+                            "grade_req": "",
+                            "sem_count": "1",
+                            "credit_count": "0.5",
+                            "hw_time": "",
+                            "honors_course" : "false",
+                            "ap_course": "true",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "false",
+                            "credit_equivalency": "false",
+                            "credit_category": "art"
+                        },
+                        {
+                            "name": "Honors Art 1", 
+                            "sem1_course_id": "art016", 
+                            "sem2_course_id": "",
+                            "pre_req_all": "",
+                            "pre_req_any": "",
+                            "grade_req": "",
+                            "sem_count": "1",
+                            "credit_count": "0.5",
+                            "hw_time": "",
+                            "honors_course" : "true",
+                            "ap_course": "false",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "false",
+                            "credit_equivalency": "false",
+                            "credit_category": "art"
+                        },
+                        {
+                            "name": "Art 2", 
+                            "sem1_course_id": "art241", 
+                            "sem2_course_id": "",
+                            "pre_req_all": "",
+                            "pre_req_any": "art011, art016",
+                            "grade_req": "",
+                            "sem_count": "1",
+                            "credit_count": "0.5",
+                            "hw_time": "",
+                            "honors_course" : "false",
+                            "ap_course": "true",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "false",
+                            "credit_equivalency": "false",
+                            "credit_category": "art"
+                        },
+                        {
+                            "name": "Honors Art 2", 
+                            "sem1_course_id": "art243", 
+                            "sem2_course_id": "",
+                            "pre_req_all": "",
+                            "pre_req_any": "art011, art016",
+                            "grade_req": "",
+                            "sem_count": "1",
+                            "credit_count": "0.5",
+                            "hw_time": "",
+                            "honors_course" : "true",
+                            "ap_course": "false",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "false",
+                            "credit_equivalency": "false",
+                            "credit_category": "art"
+                        },
+                        {
+                            "name": "Art 3", 
+                            "sem1_course_id": "art251", 
+                            "sem2_course_id": "",
+                            "pre_req_all": "",
+                            "pre_req_any": "art011, art016",
+                            "grade_req": "",
+                            "sem_count": "1",
+                            "credit_count": "0.5",
+                            "hw_time": "",
+                            "honors_course" : "false",
+                            "ap_course": "true",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "false",
+                            "credit_equivalency": "false",
+                            "credit_category": "art"
+                        },
+                        {
+                            "name": "Ceramics 1", 
+                            "sem1_course_id": "art611", 
+                            "sem2_course_id": "",
+                            "pre_req_all": "",
+                            "pre_req_any": "art011, art016",
+                            "grade_req": "",
+                            "sem_count": "1",
+                            "credit_count": "0.5",
+                            "hw_time": "",
+                            "honors_course" : "true",
+                            "ap_course": "false",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "false",
+                            "credit_equivalency": "false",
+                            "credit_category": "art"
+                        }
+                    ],
+                "world_lang":
+                    [
+                        {
+                            "name": "American Sign Lang 1", 
+                            "sem1_course_id": "cdl011", 
+                            "sem2_course_id": "cdl012",
+                            "pre_req_all": "",
+                            "pre_req_any": "",
+                            "grade_req": "",
+                            "sem_count": "2",
+                            "credit_count": "1.0",
+                            "hw_time": "",
+                            "honors_course" : "false",
+                            "ap_course": "false",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "true",
+                            "credit_equivalency": "true",
+                            "credit_category": "cte, world_lang"
+                        },
+                        {
+                            "name": "American Sign Lang 2", 
+                            "sem1_course_id": "cdl021", 
+                            "sem2_course_id": "cdl022",
+                            "pre_req_all": "cdl011",
+                            "pre_req_any": "",
+                            "grade_req": "",
+                            "sem_count": "2",
+                            "credit_count": "1.0",
+                            "hw_time": "",
+                            "honors_course" : "false",
+                            "ap_course": "false",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "true",
+                            "credit_equivalency": "true",
+                            "credit_category": "cte, world_lang"
+                        },
+                        {
+                            "name": "American Sign Lang 3", 
+                            "sem1_course_id": "cdl031", 
+                            "sem2_course_id": "cdl032",
+                            "pre_req_all": "cdl021",
+                            "pre_req_any": "",
+                            "grade_req": "",
+                            "sem_count": "2",
+                            "credit_count": "1.0",
+                            "hw_time": "",
+                            "honors_course" : "false",
+                            "ap_course": "false",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "true",
+                            "credit_equivalency": "true",
+                            "credit_category": "cte, world_lang"
+                        },
+                        {
+                            "name": "French 1", 
+                            "sem1_course_id": "for111", 
+                            "sem2_course_id": "for112",
+                            "pre_req_all": "",
+                            "pre_req_any": "",
+                            "grade_req": "",
+                            "sem_count": "2",
+                            "credit_count": "1.0",
+                            "hw_time": "",
+                            "honors_course" : "false",
+                            "ap_course": "false",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "false",
+                            "credit_equivalency": "false",
+                            "credit_category": "world_lang"
+                        },
+                        {
+                            "name": "French 2", 
+                            "sem1_course_id": "for121", 
+                            "sem2_course_id": "for122",
+                            "pre_req_all": "for111",
+                            "pre_req_any": "",
+                            "grade_req": "",
+                            "sem_count": "2",
+                            "credit_count": "1.0",
+                            "hw_time": "",
+                            "honors_course" : "false",
+                            "ap_course": "false",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "false",
+                            "credit_equivalency": "false",
+                            "credit_category": "world_lang"
+                        },
+                        {
+                            "name": "French 3", 
+                            "sem1_course_id": "for131", 
+                            "sem2_course_id": "for132",
+                            "pre_req_all": "for121",
+                            "pre_req_any": "",
+                            "grade_req": "",
+                            "sem_count": "2",
+                            "credit_count": "1.0",
+                            "hw_time": "",
+                            "honors_course" : "false",
+                            "ap_course": "false",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "false",
+                            "credit_equivalency": "false",
+                            "credit_category": "world_lang"
+                        },
+                        {
+                            "name": "Japanese 1", 
+                            "sem1_course_id": "for311", 
+                            "sem2_course_id": "for312",
+                            "pre_req_all": "",
+                            "pre_req_any": "",
+                            "grade_req": "",
+                            "sem_count": "2",
+                            "credit_count": "1.0",
+                            "hw_time": "",
+                            "honors_course" : "false",
+                            "ap_course": "false",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "false",
+                            "credit_equivalency": "false",
+                            "credit_category": "world_lang"
+                        },
+                        {
+                            "name": "Japanese 2", 
+                            "sem1_course_id": "for321", 
+                            "sem2_course_id": "for322",
+                            "pre_req_all": "for311",
+                            "pre_req_any": "",
+                            "grade_req": "",
+                            "sem_count": "2",
+                            "credit_count": "1.0",
+                            "hw_time": "",
+                            "honors_course" : "false",
+                            "ap_course": "false",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "false",
+                            "credit_equivalency": "false",
+                            "credit_category": "world_lang"
+                        },
+                        {
+                            "name": "Japanese 3", 
+                            "sem1_course_id": "for331", 
+                            "sem2_course_id": "for332",
+                            "pre_req_all": "for321",
+                            "pre_req_any": "",
+                            "grade_req": "",
+                            "sem_count": "2",
+                            "credit_count": "1.0",
+                            "hw_time": "",
+                            "honors_course" : "false",
+                            "ap_course": "false",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "false",
+                            "credit_equivalency": "false",
+                            "credit_category": "world_lang"
+                        },
+                        {
+                            "name": "Spanish 1", 
+                            "sem1_course_id": "for511", 
+                            "sem2_course_id": "for512",
+                            "pre_req_all": "",
+                            "pre_req_any": "",
+                            "grade_req": "",
+                            "sem_count": "2",
+                            "credit_count": "1.0",
+                            "hw_time": "",
+                            "honors_course" : "false",
+                            "ap_course": "false",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "false",
+                            "credit_equivalency": "false",
+                            "credit_category": "world_lang"
+                        },
+                        {
+                            "name": "Spanish 2", 
+                            "sem1_course_id": "for521", 
+                            "sem2_course_id": "for522",
+                            "pre_req_all": "",
+                            "pre_req_any": "for511",
+                            "grade_req": "",
+                            "sem_count": "2",
+                            "credit_count": "1.0",
+                            "hw_time": "",
+                            "honors_course" : "",
+                            "ap_course": "",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "false",
+                            "credit_equivalency": "false",
+                            "credit_category": "world_lang"
+                        },
+                        {
+                            "name": "Spanish 3", 
+                            "sem1_course_id": "for531", 
+                            "sem2_course_id": "for532",
+                            "pre_req_all": "",
+                            "pre_req_any": "for521",
+                            "grade_req": "",
+                            "sem_count": "2",
+                            "credit_count": "1.0",
+                            "hw_time": "",
+                            "honors_course" : "",
+                            "ap_course": "",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "false",
+                            "credit_equivalency": "false",
+                            "credit_category": "world_lang"
+                        },
+                        {
+                            "name": "Spanish 4", 
+                            "sem1_course_id": "for541", 
+                            "sem2_course_id": "for542",
+                            "pre_req_all": "",
+                            "pre_req_any": "for531",
+                            "grade_req": "",
+                            "sem_count": "2",
+                            "credit_count": "1.0",
+                            "hw_time": "",
+                            "honors_course" : "",
+                            "ap_course": "",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "false",
+                            "credit_equivalency": "false",
+                            "credit_category": "world_lang"
+                        },
+                        {
+                            "name": "AP Spanish", 
+                            "sem1_course_id": "for571", 
+                            "sem2_course_id": "for572",
+                            "pre_req_all": "",
+                            "pre_req_any": "for531",
+                            "grade_req": "",
+                            "sem_count": "2",
+                            "credit_count": "1.0",
+                            "hw_time": "",
+                            "honors_course" : "",
+                            "ap_course": "true",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "false",
+                            "credit_equivalency": "false",
+                            "credit_category": "world_lang"
                         }
                     ]
             },
@@ -3429,7 +4226,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "english"
                         },
                         {   
                             "name": "Honors English 12", 
@@ -3444,7 +4242,8 @@ let course_collection =
                             "honors_course" : "true",
                             "ap_course": "false",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "english"
                         },
                         {   
                             "name": "AP English Language & Comp.", 
@@ -3459,7 +4258,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "true",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "english"
                         },
                         {   
                             "name": "AP English Literature & Comp.", 
@@ -3474,7 +4274,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "true",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "english"
                         },
                         {   
                             "name": "Film Analysis", 
@@ -3489,7 +4290,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "true",
-                            "CADR": "false"
+                            "CADR": "false",
+                            "credit_category": "elective"
                         },
                         {   
                             "name": "Creative Writing", 
@@ -3504,7 +4306,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "true",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "elective"
                         },
                         {   
                             "name": "Playwriting", 
@@ -3519,7 +4322,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "true",
-                            "CADR": "false"
+                            "CADR": "false",
+                            "credit_category": "elective"
                         },
                         {   
                             "name": "Speech & Debate", 
@@ -3534,7 +4338,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "true",
-                            "CADR": "false"
+                            "CADR": "false",
+                            "credit_category": "elective"
                         }
                     ],
                 "social_studies":
@@ -3552,7 +4357,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "soc4"
                         },
                         {   
                             "name": "AP U.S. Govt.", 
@@ -3567,7 +4373,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "true",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "soc4"
                         },
                         {   
                             "name": "Introduction to Philosophy", 
@@ -3582,7 +4389,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "true",
-                            "CADR": "false"
+                            "CADR": "false",
+                            "credit_category": "elective"
                         },
                         {   
                             "name": "International Relations", 
@@ -3597,7 +4405,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "true",
-                            "CADR": "false"
+                            "CADR": "false",
+                            "credit_category": "elective"
                         },
                         {   
                             "name": "History through Film", 
@@ -3612,7 +4421,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "true",
-                            "CADR": "false"
+                            "CADR": "false",
+                            "credit_category": "elective"
                         }
                     ],
                 "mathematics":
@@ -3630,7 +4440,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "mathematics"
                         },
                         {   
                             "name": "Geometry", 
@@ -3645,7 +4456,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "mathematics"
                         },
                         {   
                             "name": "Algebra 2", 
@@ -3660,7 +4472,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "mathematics"
                         },
                         {   
                             "name": "Honors Algebra 2", 
@@ -3675,7 +4488,8 @@ let course_collection =
                             "honors_course" : "true",
                             "ap_course": "false",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "mathematics"
                         },
                         {   
                             "name": "Precalculus", 
@@ -3690,7 +4504,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "mathematics"
                         },
                         {   
                             "name": "Honors Precalculus", 
@@ -3705,7 +4520,8 @@ let course_collection =
                             "honors_course" : "true",
                             "ap_course": "false",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "mathematics"
                         },
                         {   
                             "name": "Calculus", 
@@ -3720,7 +4536,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "mathematics"
                         },
                         {   
                             "name": "AP Calculus AB", 
@@ -3735,7 +4552,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "true",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "mathematics"
                         },
                         {   
                             "name": "AP Calculus BC", 
@@ -3750,7 +4568,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "true",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "mathematics"
                         },
                         {   
                             "name": "Statistics", 
@@ -3765,7 +4584,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "mathematics"
                         },
                         {   
                             "name": "AP Statistics", 
@@ -3780,7 +4600,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "true",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "mathematics"
                         }
                     ],
                 "science":
@@ -3800,24 +4621,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "false",
-                            "CADR": "true"
-                        },
-                        {
-                            "name": "Chem. in the Earth System", 
-                            "sem1_course_id": "sci331", 
-                            "sem2_course_id": "sci332",
-                            "pre_req_all": "",
-                            "pre_req_any": "",
-                            "recommended_pre_req": "",
-                            "grade_req": "11",
-                            "sem_count": "2",
-                            "credit_count": "1.0",
-                            "hw_time": "30",
-                            "lab_science": "true",
-                            "honors_course" : "false",
-                            "ap_course": "false",
-                            "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "science"
                         },
                         {
                             "name": "Physics", 
@@ -3834,24 +4639,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "false",
-                            "CADR": "true"
-                        },
-                        {
-                            "name": "Physics in the Universe", 
-                            "sem1_course_id": "sci431", 
-                            "sem2_course_id": "sci432",
-                            "pre_req_all": "",
-                            "pre_req_any": "",
-                            "recommended_pre_req": "",
-                            "grade_req": "10",
-                            "sem_count": "2",
-                            "credit_count": "1.0",
-                            "hw_time": "30",
-                            "lab_science": "true",
-                            "honors_course" : "false",
-                            "ap_course": "false",
-                            "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "science"
                         },
                         {
                             "name": "AP Biology", 
@@ -3868,7 +4657,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "true",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "lab_science"
                         },
                         {
                             "name": "AP Chemistry", 
@@ -3885,7 +4675,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "true",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "lab_science"
                         },
                         {
                             "name": "AP Environmental Science", 
@@ -3902,7 +4693,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "true",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "lab_science"
                         },
                         {
                             "name": "AP Physics C", 
@@ -3919,7 +4711,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "true",
                             "elective": "false",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "lab_science"
                         },
                         {
                             "name": "Oceanography", 
@@ -3936,7 +4729,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "true",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "science"
                         },
                         {
                             "name": "Marine Science 1", 
@@ -3953,7 +4747,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "true",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "science"
                         },
                         {
                             "name": "Astronomy", 
@@ -3970,7 +4765,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "true",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "science"
                         },
                         {
                             "name": "STEM Health Science", 
@@ -3987,7 +4783,8 @@ let course_collection =
                             "honors_course" : "false",
                             "ap_course": "false",
                             "elective": "true",
-                            "CADR": "true"
+                            "CADR": "true",
+                            "credit_category": "lab_science"
                         }
                     ],
                 "cte_bm":
@@ -4008,7 +4805,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "true",
                             "credit_equivalency": "false",
-                            "multi_credit_category": ""
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "Sports & Entertainment Marketing", 
@@ -4026,7 +4823,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "true",
                             "credit_equivalency": "false",
-                            "multi_credit_category": ""
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "Retail Operations", 
@@ -4044,7 +4841,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "true",
                             "credit_equivalency": "false",
-                            "multi_credit_category": ""
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "Personal Finance", 
@@ -4062,7 +4859,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "true",
                             "credit_equivalency": "false",
-                            "multi_credit_category": ""
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "AP Statistics", 
@@ -4080,7 +4877,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, mathematics"
+                            "credit_category": "cte, mathematics"
                         },
                         {   
                             "name": "AP Microeconomics", 
@@ -4098,7 +4895,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, social_studies"
+                            "credit_category": "cte, social_studies"
                         },
                         {   
                             "name": "AP Macroeconomics", 
@@ -4116,7 +4913,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, social_studies"
+                            "credit_category": "cte, social_studies"
                         },
                         {   
                             "name": "Leadership 1", 
@@ -4134,7 +4931,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "false",
-                            "multi_credit_category": ""
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "Leadership 2", 
@@ -4152,7 +4949,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "false",
-                            "multi_credit_category": ""
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "Finance and Wealth Management", 
@@ -4170,7 +4967,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "false",
-                            "multi_credit_category": ""
+                            "credit_category": "cte"
                         }
                     ],
                 "cte_it":
@@ -4191,7 +4988,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, mathematics"
+                            "credit_category": "cte, mathematics"
                         },
                         {   
                             "name": "Microsoft Office Specialist", 
@@ -4209,7 +5006,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "true",
                             "credit_equivalency": "false",
-                            "multi_credit_category": ""
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "Video Game Design", 
@@ -4227,7 +5024,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "false",
-                            "multi_credit_category": ""
+                            "credit_category": "cte"
                         }
                     ],
                 "cte_health":
@@ -4248,7 +5045,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, lab_science"
+                            "credit_category": "cte, lab_science"
                         },
                         {   
                             "name": "Anatomy & Physiology", 
@@ -4266,7 +5063,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, lab_science"
+                            "credit_category": "cte, lab_science"
                         }
                     ],
                 "cte_human":
@@ -4287,7 +5084,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, lab_science"
+                            "credit_category": "cte, lab_science"
                         },
                         {   
                             "name": "Family Health", 
@@ -4305,7 +5102,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, health"
+                            "credit_category": "cte, health"
                         },
                         {   
                             "name": "American Sign Language 1", 
@@ -4323,7 +5120,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, world_lang"
+                            "credit_category": "cte, world_lang"
                         },
                         {   
                             "name": "American Sign Language 2", 
@@ -4341,7 +5138,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, world_lang"
+                            "credit_category": "cte, world_lang"
                         },
                         {   
                             "name": "American Sign Language 3", 
@@ -4359,7 +5156,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, world_lang"
+                            "credit_category": "cte, world_lang"
                         },
                         {   
                             "name": "Teacher Education Academy 1", 
@@ -4377,7 +5174,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "false",
-                            "multi_credit_category": ""
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "Teacher Education Academy 2", 
@@ -4395,7 +5192,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "false",
-                            "multi_credit_category": ""
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "Child Development 1", 
@@ -4413,7 +5210,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "false",
-                            "multi_credit_category": ""
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "Culinary Arts 1", 
@@ -4431,7 +5228,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, lab_science"
+                            "credit_category": "cte, lab_science"
                         },
                         {   
                             "name": "Psychology", 
@@ -4449,7 +5246,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, social_studies"
+                            "credit_category": "cte, social_studies"
                         },
                         {   
                             "name": "AP Psychology", 
@@ -4467,7 +5264,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, social_studies"
+                            "credit_category": "cte, social_studies"
                         }
                     ],
                 "cte_tech_science":
@@ -4488,7 +5285,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, lab_science"
+                            "credit_category": "cte, lab_science"
                         },
                         {
                             "name": "Community Emergency Response", 
@@ -4506,7 +5303,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "false",
-                            "multi_credit_category": ""
+                            "credit_category": "cte"
                         }
                     ],
                 "cte_tech_art":
@@ -4527,7 +5324,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, art"
+                            "credit_category": "cte, art"
                         },
                         {
                             "name": "Video Production 1", 
@@ -4545,7 +5342,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, art"
+                            "credit_category": "cte, art"
                         },
                         {
                             "name": "Video Production 2", 
@@ -4563,7 +5360,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, art"
+                            "credit_category": "cte, art"
                         },
                         {
                             "name": "Graphic Design", 
@@ -4581,7 +5378,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, art"
+                            "credit_category": "cte, art"
                         },
                         {
                             "name": "Technical Theater", 
@@ -4599,7 +5396,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, art"
+                            "credit_category": "cte, art"
                         },
                         {
                             "name": "Art and Design", 
@@ -4617,7 +5414,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, art"
+                            "credit_category": "cte, art"
                         },
                         {
                             "name": "Commercial Art", 
@@ -4635,7 +5432,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, art"
+                            "credit_category": "cte, art"
                         },
                         {
                             "name": "AP Art and Design", 
@@ -4653,7 +5450,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, art"
+                            "credit_category": "cte, art"
                         },
                         {
                             "name": "Industrial Design - 3D Printing", 
@@ -4671,7 +5468,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, art"
+                            "credit_category": "cte, art"
                         },
                         {
                             "name": "Photography 1", 
@@ -4689,7 +5486,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, art"
+                            "credit_category": "cte, art"
                         },
                         {
                             "name": "Photography 2", 
@@ -4707,7 +5504,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, art"
+                            "credit_category": "cte, art"
                         }
                     ],
                 "cte_stem":
@@ -4728,7 +5525,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, mathematics"
+                            "credit_category": "cte, mathematics"
                         },
                         {
                             "name": "Principles of Engineering", 
@@ -4746,7 +5543,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, lab_science"
+                            "credit_category": "cte, lab_science"
                         },
                         {
                             "name": "Engineering Design and Development", 
@@ -4764,7 +5561,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "false",
-                            "multi_credit_category": ""
+                            "credit_category": "cte"
                         },
                         {
                             "name": "Aerospace Engineering", 
@@ -4782,7 +5579,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "multi_credit_category": "cte, lab_science"
+                            "credit_category": "cte, lab_science"
                         }
                     ],
                 "health_pe":
@@ -4966,6 +5763,462 @@ let course_collection =
                             "dual_credit": "false",
                             "credit_equivalency": "false",
                             "credit_category": "pe"
+                        }
+                    ],
+                "visual_perf_arts":
+                    [
+                        {
+                            "name": "Art 1", 
+                            "sem1_course_id": "art011", 
+                            "sem2_course_id": "",
+                            "pre_req_all": "",
+                            "pre_req_any": "",
+                            "grade_req": "",
+                            "sem_count": "1",
+                            "credit_count": "0.5",
+                            "hw_time": "",
+                            "honors_course" : "false",
+                            "ap_course": "true",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "false",
+                            "credit_equivalency": "false",
+                            "credit_category": "art"
+                        },
+                        {
+                            "name": "Honors Art 1", 
+                            "sem1_course_id": "art016", 
+                            "sem2_course_id": "",
+                            "pre_req_all": "",
+                            "pre_req_any": "",
+                            "grade_req": "",
+                            "sem_count": "1",
+                            "credit_count": "0.5",
+                            "hw_time": "",
+                            "honors_course" : "true",
+                            "ap_course": "false",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "false",
+                            "credit_equivalency": "false",
+                            "credit_category": "art"
+                        },
+                        {
+                            "name": "Art 2", 
+                            "sem1_course_id": "art241", 
+                            "sem2_course_id": "",
+                            "pre_req_all": "",
+                            "pre_req_any": "art011, art016",
+                            "grade_req": "",
+                            "sem_count": "1",
+                            "credit_count": "0.5",
+                            "hw_time": "",
+                            "honors_course" : "false",
+                            "ap_course": "true",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "false",
+                            "credit_equivalency": "false",
+                            "credit_category": "art"
+                        },
+                        {
+                            "name": "Honors Art 2", 
+                            "sem1_course_id": "art243", 
+                            "sem2_course_id": "",
+                            "pre_req_all": "",
+                            "pre_req_any": "art011, art016",
+                            "grade_req": "",
+                            "sem_count": "1",
+                            "credit_count": "0.5",
+                            "hw_time": "",
+                            "honors_course" : "true",
+                            "ap_course": "false",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "false",
+                            "credit_equivalency": "false",
+                            "credit_category": "art"
+                        },
+                        {
+                            "name": "Art 3", 
+                            "sem1_course_id": "art251", 
+                            "sem2_course_id": "",
+                            "pre_req_all": "",
+                            "pre_req_any": "art011, art016",
+                            "grade_req": "",
+                            "sem_count": "1",
+                            "credit_count": "0.5",
+                            "hw_time": "",
+                            "honors_course" : "false",
+                            "ap_course": "true",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "false",
+                            "credit_equivalency": "false",
+                            "credit_category": "art"
+                        },
+                        {
+                            "name": "Ceramics 1", 
+                            "sem1_course_id": "art611", 
+                            "sem2_course_id": "",
+                            "pre_req_all": "",
+                            "pre_req_any": "art011, art016",
+                            "grade_req": "",
+                            "sem_count": "1",
+                            "credit_count": "0.5",
+                            "hw_time": "",
+                            "honors_course" : "false",
+                            "ap_course": "false",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "false",
+                            "credit_equivalency": "false",
+                            "credit_category": "art"
+                        },
+                        {
+                            "name": "Ceramics 2", 
+                            "sem1_course_id": "art621", 
+                            "sem2_course_id": "",
+                            "pre_req_all": "art611",
+                            "pre_req_any": "",
+                            "grade_req": "",
+                            "sem_count": "1",
+                            "credit_count": "0.5",
+                            "hw_time": "",
+                            "honors_course" : "false",
+                            "ap_course": "false",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "false",
+                            "credit_equivalency": "false",
+                            "credit_category": "art"
+                        }
+                    ],
+                "world_lang":
+                    [
+                        {
+                            "name": "American Sign Lang 1", 
+                            "sem1_course_id": "cdl011", 
+                            "sem2_course_id": "cdl012",
+                            "pre_req_all": "",
+                            "pre_req_any": "",
+                            "grade_req": "",
+                            "sem_count": "2",
+                            "credit_count": "1.0",
+                            "hw_time": "",
+                            "honors_course" : "false",
+                            "ap_course": "false",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "true",
+                            "credit_equivalency": "true",
+                            "credit_category": "cte, world_lang"
+                        },
+                        {
+                            "name": "American Sign Lang 2", 
+                            "sem1_course_id": "cdl021", 
+                            "sem2_course_id": "cdl022",
+                            "pre_req_all": "cdl011",
+                            "pre_req_any": "",
+                            "grade_req": "",
+                            "sem_count": "2",
+                            "credit_count": "1.0",
+                            "hw_time": "",
+                            "honors_course" : "false",
+                            "ap_course": "false",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "true",
+                            "credit_equivalency": "true",
+                            "credit_category": "cte, world_lang"
+                        },
+                        {
+                            "name": "American Sign Lang 3", 
+                            "sem1_course_id": "cdl031", 
+                            "sem2_course_id": "cdl032",
+                            "pre_req_all": "cdl021",
+                            "pre_req_any": "",
+                            "grade_req": "",
+                            "sem_count": "2",
+                            "credit_count": "1.0",
+                            "hw_time": "",
+                            "honors_course" : "false",
+                            "ap_course": "false",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "true",
+                            "credit_equivalency": "true",
+                            "credit_category": "cte, world_lang"
+                        },
+                        {
+                            "name": "French 1", 
+                            "sem1_course_id": "for111", 
+                            "sem2_course_id": "for112",
+                            "pre_req_all": "",
+                            "pre_req_any": "",
+                            "grade_req": "",
+                            "sem_count": "2",
+                            "credit_count": "1.0",
+                            "hw_time": "",
+                            "honors_course" : "false",
+                            "ap_course": "false",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "false",
+                            "credit_equivalency": "false",
+                            "credit_category": "world_lang"
+                        },
+                        {
+                            "name": "French 2", 
+                            "sem1_course_id": "for121", 
+                            "sem2_course_id": "for122",
+                            "pre_req_all": "for111",
+                            "pre_req_any": "",
+                            "grade_req": "",
+                            "sem_count": "2",
+                            "credit_count": "1.0",
+                            "hw_time": "",
+                            "honors_course" : "false",
+                            "ap_course": "false",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "false",
+                            "credit_equivalency": "false",
+                            "credit_category": "world_lang"
+                        },
+                        {
+                            "name": "French 3", 
+                            "sem1_course_id": "for131", 
+                            "sem2_course_id": "for132",
+                            "pre_req_all": "for121",
+                            "pre_req_any": "",
+                            "grade_req": "",
+                            "sem_count": "2",
+                            "credit_count": "1.0",
+                            "hw_time": "",
+                            "honors_course" : "false",
+                            "ap_course": "false",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "false",
+                            "credit_equivalency": "false",
+                            "credit_category": "world_lang"
+                        },
+                        {
+                            "name": "French 4", 
+                            "sem1_course_id": "for141", 
+                            "sem2_course_id": "for142",
+                            "pre_req_all": "for131",
+                            "pre_req_any": "",
+                            "grade_req": "",
+                            "sem_count": "2",
+                            "credit_count": "1.0",
+                            "hw_time": "",
+                            "honors_course" : "false",
+                            "ap_course": "false",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "false",
+                            "credit_equivalency": "false",
+                            "credit_category": "world_lang"
+                        },
+                        {
+                            "name": "AP French", 
+                            "sem1_course_id": "for171", 
+                            "sem2_course_id": "for172",
+                            "pre_req_all": "for141",
+                            "pre_req_any": "",
+                            "grade_req": "",
+                            "sem_count": "2",
+                            "credit_count": "1.0",
+                            "hw_time": "",
+                            "honors_course" : "false",
+                            "ap_course": "true",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "false",
+                            "credit_equivalency": "false",
+                            "credit_category": "world_lang"
+                        },
+                        {
+                            "name": "Japanese 1", 
+                            "sem1_course_id": "for311", 
+                            "sem2_course_id": "for312",
+                            "pre_req_all": "",
+                            "pre_req_any": "",
+                            "grade_req": "",
+                            "sem_count": "2",
+                            "credit_count": "1.0",
+                            "hw_time": "",
+                            "honors_course" : "false",
+                            "ap_course": "false",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "false",
+                            "credit_equivalency": "false",
+                            "credit_category": "world_lang"
+                        },
+                        {
+                            "name": "Japanese 2", 
+                            "sem1_course_id": "for321", 
+                            "sem2_course_id": "for322",
+                            "pre_req_all": "for311",
+                            "pre_req_any": "",
+                            "grade_req": "",
+                            "sem_count": "2",
+                            "credit_count": "1.0",
+                            "hw_time": "",
+                            "honors_course" : "false",
+                            "ap_course": "false",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "false",
+                            "credit_equivalency": "false",
+                            "credit_category": "world_lang"
+                        },
+                        {
+                            "name": "Japanese 3", 
+                            "sem1_course_id": "for331", 
+                            "sem2_course_id": "for332",
+                            "pre_req_all": "for321",
+                            "pre_req_any": "",
+                            "grade_req": "",
+                            "sem_count": "2",
+                            "credit_count": "1.0",
+                            "hw_time": "",
+                            "honors_course" : "false",
+                            "ap_course": "false",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "false",
+                            "credit_equivalency": "false",
+                            "credit_category": "world_lang"
+                        },
+                        {
+                            "name": "Japanese 4", 
+                            "sem1_course_id": "for341", 
+                            "sem2_course_id": "for342",
+                            "pre_req_all": "for331",
+                            "pre_req_any": "",
+                            "grade_req": "",
+                            "sem_count": "2",
+                            "credit_count": "1.0",
+                            "hw_time": "",
+                            "honors_course" : "false",
+                            "ap_course": "false",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "false",
+                            "credit_equivalency": "false",
+                            "credit_category": "world_lang"
+                        },
+                        {
+                            "name": "AP Japanese", 
+                            "sem1_course_id": "for371", 
+                            "sem2_course_id": "for372",
+                            "pre_req_all": "for341",
+                            "pre_req_any": "",
+                            "grade_req": "",
+                            "sem_count": "2",
+                            "credit_count": "1.0",
+                            "hw_time": "",
+                            "honors_course" : "false",
+                            "ap_course": "true",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "false",
+                            "credit_equivalency": "false",
+                            "credit_category": "world_lang"
+                        },
+                        {
+                            "name": "Spanish 1", 
+                            "sem1_course_id": "for511", 
+                            "sem2_course_id": "for512",
+                            "pre_req_all": "",
+                            "pre_req_any": "",
+                            "grade_req": "",
+                            "sem_count": "2",
+                            "credit_count": "1.0",
+                            "hw_time": "",
+                            "honors_course" : "false",
+                            "ap_course": "false",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "false",
+                            "credit_equivalency": "false",
+                            "credit_category": "world_lang"
+                        },
+                        {
+                            "name": "Spanish 2", 
+                            "sem1_course_id": "for521", 
+                            "sem2_course_id": "for522",
+                            "pre_req_all": "",
+                            "pre_req_any": "for511",
+                            "grade_req": "",
+                            "sem_count": "2",
+                            "credit_count": "1.0",
+                            "hw_time": "",
+                            "honors_course" : "",
+                            "ap_course": "",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "false",
+                            "credit_equivalency": "false",
+                            "credit_category": "world_lang"
+                        },
+                        {
+                            "name": "Spanish 3", 
+                            "sem1_course_id": "for531", 
+                            "sem2_course_id": "for532",
+                            "pre_req_all": "",
+                            "pre_req_any": "for521",
+                            "grade_req": "",
+                            "sem_count": "2",
+                            "credit_count": "1.0",
+                            "hw_time": "",
+                            "honors_course" : "",
+                            "ap_course": "",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "false",
+                            "credit_equivalency": "false",
+                            "credit_category": "world_lang"
+                        },
+                        {
+                            "name": "Spanish 4", 
+                            "sem1_course_id": "for541", 
+                            "sem2_course_id": "for542",
+                            "pre_req_all": "",
+                            "pre_req_any": "for531",
+                            "grade_req": "",
+                            "sem_count": "2",
+                            "credit_count": "1.0",
+                            "hw_time": "",
+                            "honors_course" : "",
+                            "ap_course": "",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "false",
+                            "credit_equivalency": "false",
+                            "credit_category": "world_lang"
+                        },
+                        {
+                            "name": "AP Spanish", 
+                            "sem1_course_id": "for571", 
+                            "sem2_course_id": "for572",
+                            "pre_req_all": "",
+                            "pre_req_any": "for531",
+                            "grade_req": "",
+                            "sem_count": "2",
+                            "credit_count": "1.0",
+                            "hw_time": "",
+                            "honors_course" : "",
+                            "ap_course": "true",
+                            "elective": "",
+                            "CADR": "true",
+                            "dual_credit": "false",
+                            "credit_equivalency": "false",
+                            "credit_category": "world_lang"
                         }
                     ]
             }

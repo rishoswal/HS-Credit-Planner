@@ -138,7 +138,7 @@
                 subjectDDL.options.add(option);
             });
 
-            document.getElementById("debugInfo").innerHTML = "debug - " + s;
+            // document.getElementById("debugInfo").innerHTML = "debug - " + s;
         }
 
         function PopulateCoursesLists(ddl_id1, ddl_id2) {
@@ -258,6 +258,21 @@
             PopulateCoursesInDDL("cte_health112", catalog.class11.cte_health);
             PopulateCoursesInDDL("cte_health121", catalog.class12.cte_health);
             PopulateCoursesInDDL("cte_health122", catalog.class12.cte_health);
+
+            PopulateCoursesInDDL("vpa91", catalog.class9.visual_perf_arts);
+            PopulateCoursesInDDL("vpa92", catalog.class9.visual_perf_arts);
+            PopulateCoursesInDDL("vpa101", catalog.class10.visual_perf_arts);
+            PopulateCoursesInDDL("vpa102", catalog.class10.visual_perf_arts);
+            PopulateCoursesInDDL("vpa111", catalog.class11.visual_perf_arts);
+            PopulateCoursesInDDL("vpa112", catalog.class11.visual_perf_arts);
+            PopulateCoursesInDDL("vpa121", catalog.class12.visual_perf_arts);
+            PopulateCoursesInDDL("vpa122", catalog.class12.visual_perf_arts);
+
+            PopulateCoursesInDDL("wl9", catalog.class9.world_lang);
+            PopulateCoursesInDDL("wl10", catalog.class10.world_lang);
+            PopulateCoursesInDDL("wl11", catalog.class11.world_lang);
+            PopulateCoursesInDDL("wl12", catalog.class12.world_lang);
+
 
         }
 
@@ -478,6 +493,7 @@
                             </select>
                         </td>
                     </tr>
+
                     <tr>
                         <td>Health & Phys. Ed.</td>
                         <td>
@@ -525,7 +541,7 @@
                     <tr>
                         <td>Visual and Perf. Arts</td>
                         <td>
-                            <select id="VPA9Sem1" id="vpa91" size="5" style="width: 150px;">
+                            <select name="VPA9Sem1" id="vpa91" size="5" style="width: 150px;">
 
                             </select>
                         </td>
@@ -569,22 +585,22 @@
                     <tr>
                         <td>World Languages</td>
                         <td colspan="2">
-                            <select id="WL9" id="wl91" size="5" style="width: 300px;">
+                            <select name="WL9" id="wl9" size="5" style="width: 300px;">
 
                             </select>
                         </td>
                         <td colspan="2">
-                            <select name="WL10" id="wl101" size="5" style="width: 300px;">
+                            <select name="WL10" id="wl10" size="5" style="width: 300px;">
 
                             </select>
                         </td>
                         <td colspan="2">
-                            <select name="WL11" id="wl111" size="5" style="width: 300px;">
+                            <select name="WL11" id="wl11" size="5" style="width: 300px;">
 
                             </select>
                         </td>
                         <td colspan="2">
-                            <select name="WL12" id="wl121" size="5" style="width: 300px;">
+                            <select name="WL12" id="wl12" size="5" style="width: 300px;">
 
                             </select>
                         </td>
