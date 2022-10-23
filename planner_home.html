@@ -108,6 +108,14 @@
             return match;
         }
 
+        var courseDict = {};
+
+        function OnCourseSelection(ddl_id) {
+            var e = document.getElementById(ddl_id).value;
+            // var course_id= e.value;
+            // var text = e.options[e.selectedIndex].text;
+            alert(courseDict[e].credit_count + " for category " + courseDict[e].credit_category);
+        }
 
         function PopulateCoursesInDDL(subject_ddl_id, courses) {
 
@@ -128,12 +136,14 @@
             var s = "";
 
             courses.forEach(c => {
-                s += c.name + " " + c.course_id;
+                s += c.name + " " + c.sem1_course_id;
                 var option = document.createElement('option');
                 option.text = c.name;
-                option.value = c.course_id;
+                option.value = c.sem1_course_id;
                 subjectOptions.push(option);
                 subjectDDL.options.add(option);
+
+                courseDict[c.sem1_course_id] = c;
             });
 
             // document.getElementById("debugInfo").innerHTML = "debug - " + s;
@@ -414,7 +424,7 @@
         <tr>
             <td>English</td>
             <td>
-                <select name="English9Sem1" id="english91" size="5" style="width: 150px;">
+                <select name="English9Sem1" id="english91" size="5" style="width: 150px;" onchange='OnCourseSelection("english91");'>
                     <option value="select">click confirm button</option>
                 </select>
             </td>
