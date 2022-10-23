@@ -6221,7 +6221,77 @@ let course_collection =
                             "credit_category": "world_lang"
                         }
                     ]
-            }
+            },
+            
+            "req_credits": 
+            {
+                "english":
+                {
+                    "name": "English",
+                    "total_credits": "4.0"
+                },
+            
+                "social_studies":
+                {
+                    "name": "Social Studies",
+                    "year1": "0.5",
+                    "year2": "1.0",
+                    "year3": "1.0",
+                    "year4": "0.5",
+                    "total_credits": "3.0"
+                },
+
+                "mathematics":
+                {
+                    "name": "Mathematics",
+                    "total_credits": "3.0"
+                },
+
+                "science":
+                {
+                    "name": "Science",
+                    "lab_science": "2.0",
+                    "science": "1.0",
+                    "total_credits": "3.0"
+                },
+
+                "cte":
+                {
+                    "name": "CTE",
+                    "total_credits": "1.0"
+                },
+
+                "world_lang":
+                {
+                    "name": "World Language",
+                    "total_credits": "2.0"
+                },
+
+                "health":
+                {
+                    "name": "Health",
+                    "total_credits": "0.5"
+                },
+
+                "pe":
+                {
+                    "name": "Phys. Ed.",
+                    "total_credits": "1.5"
+                },
+
+                "art":
+                {
+                    "name": "Fine Arts",
+                    "total_credits": "2.0"
+                },
+                
+                "elective":
+                {
+                    "name": "elective",
+                    "total_credits": "4.0"
+                }
+            }   
+            
             
         },
         {

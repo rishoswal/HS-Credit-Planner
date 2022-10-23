@@ -108,8 +108,6 @@
             return match;
         }
 
-        
-
 
         function PopulateCoursesInDDL(subject_ddl_id, courses) {
 
@@ -141,6 +139,12 @@
             // document.getElementById("debugInfo").innerHTML = "debug - " + s;
         }
 
+        function PopulateCreditReq (text_id, credit) {
+            let textBox = document.getElementById(text_id).innerHTML;
+
+            document.getElementById(text_id).innerHTML = credit.total_credits;
+        }
+
         function PopulateCoursesLists(ddl_id1, ddl_id2) {
             var selectedDistrict = document.getElementById(ddl_id1);
             var selectedSchool = document.getElementById(ddl_id2);
@@ -153,6 +157,18 @@
             document.getElementById("school").innerHTML = selectedSchoolText;
 
             let catalog = GetCatalog(selectedSchoolId);
+
+            PopulateCreditReq ("eng2", catalog.req_credits.english);
+            PopulateCreditReq ("soc2", catalog.req_credits.social_studies);
+            PopulateCreditReq ("mat2", catalog.req_credits.mathematics);
+            PopulateCreditReq ("sci2", catalog.req_credits.science);
+            PopulateCreditReq ("cte2", catalog.req_credits.cte);
+            PopulateCreditReq ("wl2", catalog.req_credits.world_lang);
+            PopulateCreditReq ("hea2", catalog.req_credits.health);
+            PopulateCreditReq ("pe2", catalog.req_credits.pe);
+            PopulateCreditReq ("art2", catalog.req_credits.art);
+            PopulateCreditReq ("elective2", catalog.req_credits.elective);
+
 
             PopulateCoursesInDDL("english91", catalog.class9.english);
             PopulateCoursesInDDL("english92", catalog.class9.english);
@@ -313,621 +329,665 @@
     <br />
     <div id="school"><b>School</b></div>
     <br />
-    <div id="debugInfo"><b>Debug Info</b></div>
-    <br /><br />
-    <table>
-        <tr>
-            <td>
-                <table border="1" width="50%">
-                    <tr style="height: 50px;background-color:lightblue">
-                        <td width="20%">Period</td>
-                        <td width="20%" colspan="2">9th Grade</td>
-                        <td width="20%" colspan="2">10th Grade</td>
-                        <td width="20%" colspan="2">11th Grade</td>
-                        <td width="20%" colspan="2">12th Grade</td>
-                    </tr>
-                    <tr>
-                        <td width="20%"></td>
-                        <td width="20%">Semester 1</td>
-                        <td width="20%">Semester 2</td>
-                        <td width="20%">Semester 1</td>
-                        <td width="20%">Semester 2</td>
-                        <td width="20%">Semester 1</td>
-                        <td width="20%">Semester 2</td>
-                        <td width="20%">Semester 1</td>
-                        <td width="20%">Semester 2</td>
-                    </tr>
 
-                    <tr>
-                        <td>English</td>
-                        <td>
-                            <select name="English9Sem1" id="english91" size="5" style="width: 150px;">
-                                <option value="select">click confirm button</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select name="English9Sem2" id="english92" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="English10Sem1" id="english101" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="English10Sem2" id="english102" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="English11Sem1" id="english111" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="English11Sem2" id="english112" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="English12Sem1" id="english121" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="English12Sem2" id="english122" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>Social Studies</td>
-                        <td>
-                            <select name="History9Sem1" id="history91" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="History9Sem2" id="history92" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="History10Sem1" id="history101" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="History10Sem2" id="history102" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="History11Sem1" id="history111" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="History11Sem2" id="history112" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="History12Sem1" id="history121" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="History12Sem2" id="history122" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>Science</td>
-                        <td>
-                            <select name="Science9Sem1" id="science91" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="Science9Sem2" id="science92" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="Science10Sem1" id="science101" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="Science10Sem2" id="science102" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="Science11Sem1" id="science111" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="Science11Sem2" id="science112" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="Science12Sem1" id="science121" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="Science12Sem2" id="science122" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>Mathematics</td>
-                        <td colspan="2">
-                            <select name="Math9" id="math91" size="5" style="width: 300px;">
-
-                            </select>
-                        </td>
-                        <td colspan="2">
-                            <select name="Math10" id="math101" size="5" style="width: 300px;">
-
-                            </select>
-                        </td>
-                        <td colspan="2">
-                            <select name="Math11" id="math111" size="5" style="width: 300px;">
-
-                            </select>
-                        </td>
-                        <td colspan="2">
-                            <select name="Math12" id="math121" size="5" style="width: 300px;">
-
-                            </select>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>Health & Phys. Ed.</td>
-                        <td>
-                            <select name="HPE9Sem1" id="hpe91" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="HPE9Sem2" id="hpe92" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="HPE10Sem1" id="hpe101" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="HPE10Sem2" id="hpe102" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="HPE11Sem1" id="hpe111" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="HPE11Sem2" id="hpe112" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="HPE12Sem1" id="hpe121" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="HPE12Sem2" id="hpe122" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>Visual and Perf. Arts</td>
-                        <td>
-                            <select name="VPA9Sem1" id="vpa91" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="VPA9Sem2" id="vpa92" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="VPA10Sem1" id="vpa101" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="VPA10Sem2" id="vpa102" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="VPA11Sem1" id="vpa111" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="VPA11Sem2" id="vpa112" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="VPA12Sem1" id="vpa121" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="VPA12Sem2" id="vpa122" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>World Languages</td>
-                        <td colspan="2">
-                            <select name="WL9" id="wl9" size="5" style="width: 300px;">
-
-                            </select>
-                        </td>
-                        <td colspan="2">
-                            <select name="WL10" id="wl10" size="5" style="width: 300px;">
-
-                            </select>
-                        </td>
-                        <td colspan="2">
-                            <select name="WL11" id="wl11" size="5" style="width: 300px;">
-
-                            </select>
-                        </td>
-                        <td colspan="2">
-                            <select name="WL12" id="wl12" size="5" style="width: 300px;">
-
-                            </select>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>CTE Business & Marketing</td>
-                        <td>
-                            <select name="CTE_B&M9Sem1" id="cte_b&m91" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="CTE_B&M9Sem2" id="cte_b&m92" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="CTE_B&M10Sem1" id="cte_b&m101" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="CTE_B&M10Sem2" id="cte_b&m102" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="CTE_B&M11Sem1" id="cte_b&m111" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="CTE_B&M11Sem2" id="cte_b&m112" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="CTE_B&M12Sem1" id="cte_b&m121" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="CTE_B&M12Sem2" id="cte_b&m122" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>CTE Information Technologies</td>
-                        <td>
-                            <select name="CTE_IT9Sem1" id="cte_it91" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="CTE_IT9Sem2" id="cte_it92" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="CTE_IT10Sem1" id="cte_it101" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="CTE_IT10Sem2" id="cte_it102" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="CTE_IT11Sem1" id="cte_it111" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="CTE_IT11Sem2" id="cte_it112" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="CTE_IT12Sem1" id="cte_it121" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="CTE_IT12Sem2" id="cte_it122" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>CTE Health Services</td>
-                        <td>
-                            <select name="CTE_HEALTH9Sem1" id="cte_health91" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="CTE_HEALTH9Sem2" id="cte_health92" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="CTE_HEALTH10Sem1" id="cte_health101" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="CTE_HEALTH10Sem2" id="cte_health102" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="CTE_HEALTH11Sem1" id="cte_health111" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="CTE_HEALTH11Sem2" id="cte_health112" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="CTE_HEALTH12Sem1" id="cte_health121" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="CTE_HEALTH12Sem2" id="cte_health122" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>CTE Human Services</td>
-                        <td>
-                            <select name="CTE_HUMAN9Sem1" id="cte_human91" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="CTE_HUMAN9Sem2" id="cte_human92" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="CTE_HUMAN10Sem1" id="cte_human101" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="CTE_HUMAN10Sem2" id="cte_human102" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="CTE_HUMAN11Sem1" id="cte_human111" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="CTE_HUMAN11Sem2" id="cte_human112" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="CTE_HUMAN12Sem1" id="cte_human121" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="CTE_HUMAN12Sem2" id="cte_human122" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>CTE Skilled & Tech. Sciences</td>
-                        <td>
-                            <select name="CTE_TECH_SCIENCE9Sem1" id="cte_tech_science91" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="CTE_TECH_SCIENCE9Sem2" id="cte_tech_science92" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="CTE_TECH_SCIENCE10Sem1" id="cte_tech_science101" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="CTE_TECH_SCIENCE10Sem2" id="cte_tech_science102" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="CTE_TECH_SCIENCE11Sem1" id="cte_tech_science111" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="CTE_TECH_SCIENCE11Sem2" id="cte_tech_science112" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="CTE_TECH_SCIENCE12Sem1" id="cte_tech_science121" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="CTE_TECH_SCIENCE12Sem2" id="cte_tech_science122" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>CTE Skilled & Tech. Art</td>
-                        <td>
-                            <select name="CTE_TECH_ART9Sem1" id="cte_tech_art91" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="CTE_TECH_ART9Sem2" id="cte_tech_art92" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="CTE_TECH_ART10Sem1" id="cte_tech_art101" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="CTE_TECH_ART10Sem2" id="cte_tech_art102" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="CTE_TECH_ART11Sem1" id="cte_tech_art111" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="CTE_TECH_ART11Sem2" id="cte_tech_art112" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="CTE_TECH_ART12Sem1" id="cte_tech_art121" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="CTE_TECH_ART12Sem2" id="cte_tech_art122" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>CTE STEM</td>
-                        <td>
-                            <select name="CTE_STEM9Sem1" id="cte_stem91" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="CTE_STEM9Sem2" id="cte_stem92" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="CTE_STEM10Sem1" id="cte_stem101" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="CTE_STEM10Sem2" id="cte_stem102" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="CTE_STEM11Sem1" id="cte_stem111" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="CTE_STEM11Sem2" id="cte_stem112" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="CTE_STEM12Sem1" id="cte_stem121" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                        <td>
-                            <select name="CTE_STEM12Sem2" id="cte_stem122" size="5" style="width: 150px;">
-
-                            </select>
-                        </td>
-                    </tr>
-
-                </table>
-            </td>
-            <td>
-                <table border="1" width="50%">
-                    <tr style="height: 50px;background-color:lightblue">
-                        <td width="20%" style="width: 150px;">Subject</td>
-                        <td width="20%" style="width: 150px;">Required Credits</td>
-                        <td width="20%" style="width: 150px;">Credits for Currently Selected Subjects</td>
-                        <td width="20%" style="width: 150px;">11th Grade</td>
-                        <td width="20%" style="width: 150px;">12th Grade</td>
-                    </tr>
-                </table>
-            </td>
+    
+    <table border="1" width="50%">
+        <tr style="height: 50px;background-color:lightblue">
+            <td width="33%">Subject</td>
+            <td width="33%">Required Credits</td>
+            <td width="33%">Credits for Currently Selected Subjects</td>
+        </tr>
+        <tr style="height: 50px">
+            <td>English</td>
+            <td id="eng2"></td>
+            <td></td>
+        </tr>
+        <tr style="height: 50px">
+            <td>Social Studies</td>
+            <td id="soc2"></td>
+            <td></td>
+        </tr>
+        <tr style="height: 50px">
+            <td>Mathematics</td>
+            <td id="mat2"></td>
+            <td></td>
+        </tr>
+        <tr style="height: 50px">
+            <td>Science</td>
+            <td id="sci2"></td>
+            <td></td>
+        </tr>
+        <tr style="height: 50px">
+            <td>CTE</td>
+            <td id="cte2"></td>
+            <td></td>
+        </tr>
+        <tr style="height: 50px">
+            <td>World Languages</td>
+            <td id="wl2"></td>
+            <td></td>
+        </tr>
+        <tr style="height: 50px">
+            <td>Health</td>
+            <td id="hea2"></td>
+            <td></td>
+        </tr>
+        <tr style="height: 50px">
+            <td>Phys. Ed.</td>
+            <td id="pe2"></td>
+            <td></td>
+        </tr>
+        <tr style="height: 50px">
+            <td>Fine Arts</td>
+            <td id="art2"></td>
+            <td></td>
+        </tr>
+        <tr style="height: 50px">
+            <td>Elective</td>
+            <td id="elective2"></td>
+            <td></td>
         </tr>
     </table>
+
+    <br /><br />
+
+    <table border="1" width="50%">
+        <tr style="height: 50px;background-color:lightblue">
+            <td width="20%">Period</td>
+            <td width="20%" colspan="2">9th Grade</td>
+            <td width="20%" colspan="2">10th Grade</td>
+            <td width="20%" colspan="2">11th Grade</td>
+            <td width="20%" colspan="2">12th Grade</td>
+        </tr>
+        <tr>
+            <td width="20%"></td>
+            <td width="20%">Semester 1</td>
+            <td width="20%">Semester 2</td>
+            <td width="20%">Semester 1</td>
+            <td width="20%">Semester 2</td>
+            <td width="20%">Semester 1</td>
+            <td width="20%">Semester 2</td>
+            <td width="20%">Semester 1</td>
+            <td width="20%">Semester 2</td>
+        </tr>
+
+        <tr>
+            <td>English</td>
+            <td>
+                <select name="English9Sem1" id="english91" size="5" style="width: 150px;">
+                    <option value="select">click confirm button</option>
+                </select>
+            </td>
+            <td>
+                <select name="English9Sem2" id="english92" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="English10Sem1" id="english101" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="English10Sem2" id="english102" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="English11Sem1" id="english111" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="English11Sem2" id="english112" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="English12Sem1" id="english121" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="English12Sem2" id="english122" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Social Studies</td>
+            <td>
+                <select name="History9Sem1" id="history91" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="History9Sem2" id="history92" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="History10Sem1" id="history101" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="History10Sem2" id="history102" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="History11Sem1" id="history111" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="History11Sem2" id="history112" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="History12Sem1" id="history121" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="History12Sem2" id="history122" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Science</td>
+            <td>
+                <select name="Science9Sem1" id="science91" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="Science9Sem2" id="science92" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="Science10Sem1" id="science101" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="Science10Sem2" id="science102" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="Science11Sem1" id="science111" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="Science11Sem2" id="science112" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="Science12Sem1" id="science121" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="Science12Sem2" id="science122" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Mathematics</td>
+            <td colspan="2">
+                <select name="Math9" id="math91" size="5" style="width: 300px;">
+
+                </select>
+            </td>
+            <td colspan="2">
+                <select name="Math10" id="math101" size="5" style="width: 300px;">
+
+                </select>
+            </td>
+            <td colspan="2">
+                <select name="Math11" id="math111" size="5" style="width: 300px;">
+
+                </select>
+            </td>
+            <td colspan="2">
+                <select name="Math12" id="math121" size="5" style="width: 300px;">
+
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Health & Phys. Ed.</td>
+            <td>
+                <select name="HPE9Sem1" id="hpe91" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="HPE9Sem2" id="hpe92" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="HPE10Sem1" id="hpe101" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="HPE10Sem2" id="hpe102" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="HPE11Sem1" id="hpe111" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="HPE11Sem2" id="hpe112" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="HPE12Sem1" id="hpe121" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="HPE12Sem2" id="hpe122" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Visual and Perf. Arts</td>
+            <td>
+                <select name="VPA9Sem1" id="vpa91" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="VPA9Sem2" id="vpa92" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="VPA10Sem1" id="vpa101" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="VPA10Sem2" id="vpa102" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="VPA11Sem1" id="vpa111" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="VPA11Sem2" id="vpa112" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="VPA12Sem1" id="vpa121" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="VPA12Sem2" id="vpa122" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>World Languages</td>
+            <td colspan="2">
+                <select name="WL9" id="wl9" size="5" style="width: 300px;">
+
+                </select>
+            </td>
+            <td colspan="2">
+                <select name="WL10" id="wl10" size="5" style="width: 300px;">
+
+                </select>
+            </td>
+            <td colspan="2">
+                <select name="WL11" id="wl11" size="5" style="width: 300px;">
+
+                </select>
+            </td>
+            <td colspan="2">
+                <select name="WL12" id="wl12" size="5" style="width: 300px;">
+
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>CTE Business & Marketing</td>
+            <td>
+                <select name="CTE_B&M9Sem1" id="cte_b&m91" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="CTE_B&M9Sem2" id="cte_b&m92" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="CTE_B&M10Sem1" id="cte_b&m101" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="CTE_B&M10Sem2" id="cte_b&m102" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="CTE_B&M11Sem1" id="cte_b&m111" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="CTE_B&M11Sem2" id="cte_b&m112" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="CTE_B&M12Sem1" id="cte_b&m121" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="CTE_B&M12Sem2" id="cte_b&m122" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>CTE Information Technologies</td>
+            <td>
+                <select name="CTE_IT9Sem1" id="cte_it91" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="CTE_IT9Sem2" id="cte_it92" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="CTE_IT10Sem1" id="cte_it101" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="CTE_IT10Sem2" id="cte_it102" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="CTE_IT11Sem1" id="cte_it111" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="CTE_IT11Sem2" id="cte_it112" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="CTE_IT12Sem1" id="cte_it121" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="CTE_IT12Sem2" id="cte_it122" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>CTE Health Services</td>
+            <td>
+                <select name="CTE_HEALTH9Sem1" id="cte_health91" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="CTE_HEALTH9Sem2" id="cte_health92" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="CTE_HEALTH10Sem1" id="cte_health101" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="CTE_HEALTH10Sem2" id="cte_health102" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="CTE_HEALTH11Sem1" id="cte_health111" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="CTE_HEALTH11Sem2" id="cte_health112" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="CTE_HEALTH12Sem1" id="cte_health121" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="CTE_HEALTH12Sem2" id="cte_health122" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>CTE Human Services</td>
+            <td>
+                <select name="CTE_HUMAN9Sem1" id="cte_human91" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="CTE_HUMAN9Sem2" id="cte_human92" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="CTE_HUMAN10Sem1" id="cte_human101" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="CTE_HUMAN10Sem2" id="cte_human102" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="CTE_HUMAN11Sem1" id="cte_human111" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="CTE_HUMAN11Sem2" id="cte_human112" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="CTE_HUMAN12Sem1" id="cte_human121" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="CTE_HUMAN12Sem2" id="cte_human122" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>CTE Skilled & Tech. Sciences</td>
+            <td>
+                <select name="CTE_TECH_SCIENCE9Sem1" id="cte_tech_science91" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="CTE_TECH_SCIENCE9Sem2" id="cte_tech_science92" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="CTE_TECH_SCIENCE10Sem1" id="cte_tech_science101" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="CTE_TECH_SCIENCE10Sem2" id="cte_tech_science102" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="CTE_TECH_SCIENCE11Sem1" id="cte_tech_science111" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="CTE_TECH_SCIENCE11Sem2" id="cte_tech_science112" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="CTE_TECH_SCIENCE12Sem1" id="cte_tech_science121" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="CTE_TECH_SCIENCE12Sem2" id="cte_tech_science122" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>CTE Skilled & Tech. Art</td>
+            <td>
+                <select name="CTE_TECH_ART9Sem1" id="cte_tech_art91" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="CTE_TECH_ART9Sem2" id="cte_tech_art92" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="CTE_TECH_ART10Sem1" id="cte_tech_art101" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="CTE_TECH_ART10Sem2" id="cte_tech_art102" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="CTE_TECH_ART11Sem1" id="cte_tech_art111" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="CTE_TECH_ART11Sem2" id="cte_tech_art112" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="CTE_TECH_ART12Sem1" id="cte_tech_art121" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="CTE_TECH_ART12Sem2" id="cte_tech_art122" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>CTE STEM</td>
+            <td>
+                <select name="CTE_STEM9Sem1" id="cte_stem91" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="CTE_STEM9Sem2" id="cte_stem92" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="CTE_STEM10Sem1" id="cte_stem101" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="CTE_STEM10Sem2" id="cte_stem102" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="CTE_STEM11Sem1" id="cte_stem111" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="CTE_STEM11Sem2" id="cte_stem112" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="CTE_STEM12Sem1" id="cte_stem121" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+            <td>
+                <select name="CTE_STEM12Sem2" id="cte_stem122" size="5" style="width: 150px;">
+
+                </select>
+            </td>
+        </tr>
+
+    </table>
+
 </body>
 </html>
