@@ -6230,15 +6230,30 @@ let course_collection =
                     "name": "English",
                     "total_credits": "4.0"
                 },
-            
-                "social_studies":
+        
+
+                "soc1":
                 {
                     "name": "Social Studies",
-                    "year1": "0.5",
-                    "year2": "1.0",
-                    "year3": "1.0",
-                    "year4": "0.5",
-                    "total_credits": "3.0"
+                    "total_credits": "0.5"
+                },
+                
+                "soc2":
+                {
+                    "name": "Social Studies",
+                    "total_credits": "1.0"
+                },
+                
+                "soc3":
+                {
+                    "name": "Social Studies",
+                    "total_credits": "1.0"
+                },
+
+                "soc4":
+                {
+                    "name": "Social Studies",
+                    "total_credits": "0.5"
                 },
 
                 "mathematics":
@@ -6247,12 +6262,16 @@ let course_collection =
                     "total_credits": "3.0"
                 },
 
+                "lab_science":
+                {
+                    "name": "Lab Science",
+                    "total_credits": "2.0"
+                },
+
                 "science":
                 {
                     "name": "Science",
-                    "lab_science": "2.0",
-                    "science": "1.0",
-                    "total_credits": "3.0"
+                    "total_credits": "1.0"
                 },
 
                 "cte":
