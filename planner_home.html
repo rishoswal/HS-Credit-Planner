@@ -108,9 +108,69 @@
             return match;
         }
 
-        var courseDict = {};
+        var courseDict = {}; 
+        
 
-        var fulfilledCredits =  
+        function GetSelectedCoursesCount(ddl_arr, fulfilledCredits)
+        {
+            var totalCoursesSelected = 0;
+            
+            
+
+            for(var i=0; i < ddl_arr.length; i++)
+            {
+                var ddl = document.getElementById(ddl_arr[i]);
+                
+                for(var j=0; j< ddl.options.length; j++)
+                {
+                    if(ddl.options[j].selected && (courseDict[ddl.options[j].value] != null))
+                    {
+                        totalCoursesSelected++;
+                        
+                        fulfilledCredits[courseDict[ddl.options[j].value].credit_category] += 0.5;
+                        // alert(fulfilledCredits[courseDict[ddl.options[j].value].credit_category]);
+                    }
+                }
+            }
+
+            return totalCoursesSelected;
+        }
+
+        var Grade_9_Sem_1 = ["english91", "history91", "science91", "math91", "hpe91", "vpa91", "wl09", "cte_b&m91", "cte_it91", "cte_health91", "cte_human91", "cte_tech_science91", "cte_tech_art91", "cte_stem91"];
+        var Grade_9_Sem_2 = ["english92", "history92", "science92", "math91", "hpe92", "vpa92", "wl09", "cte_b&m92", "cte_it92", "cte_health92", "cte_human92", "cte_tech_science92", "cte_tech_art92", "cte_stem92"];
+        var Grade_10_Sem_1 = ["english101", "history101", "science101", "math101", "hpe101", "vpa101", "wl10", "cte_b&m101", "cte_it101", "cte_health101", "cte_human101", "cte_tech_science101", "cte_tech_art101", "cte_stem101"];
+        var Grade_10_Sem_2 = ["english102", "history102", "science102", "math101", "hpe102", "vpa102", "wl10", "cte_b&m102", "cte_it102", "cte_health102", "cte_human102", "cte_tech_science102", "cte_tech_art102", "cte_stem102"];
+        var Grade_11_Sem_1 = ["english111", "history111", "science111", "math111", "hpe111", "vpa111", "wl11", "cte_b&m111", "cte_it111", "cte_health111", "cte_human111", "cte_tech_science111", "cte_tech_art111", "cte_stem111"];
+        var Grade_11_Sem_2 = ["english112", "history112", "science112", "math111", "hpe112", "vpa112", "wl11", "cte_b&m112", "cte_it112", "cte_health112", "cte_human112", "cte_tech_science112", "cte_tech_art112", "cte_stem112"];
+        var Grade_12_Sem_1 = ["english121", "history121", "science121", "math121", "hpe121", "vpa121", "wl12", "cte_b&m121", "cte_it121", "cte_health121", "cte_human121", "cte_tech_science121", "cte_tech_art121", "cte_stem121"];
+        var Grade_12_Sem_2 = ["english122", "history122", "science122", "math121", "hpe122", "vpa122", "wl12", "cte_b&m122", "cte_it122", "cte_health122", "cte_human122", "cte_tech_science122", "cte_tech_art122", "cte_stem122"];
+
+        var TotalArr = [
+                        {name: "Grade 9 Semester 1", val:Grade_9_Sem_1}, 
+                        {name: "Grade 9 Semester 2", val:Grade_9_Sem_2}, 
+                        {name: "Grade 10 Semester 1", val:Grade_10_Sem_1}, 
+                        {name: "Grade 10 Semester 2", val:Grade_10_Sem_2},  
+                        {name: "Grade 11 Semester 1", val:Grade_11_Sem_1}, 
+                        {name: "Grade 11 Semester 2", val:Grade_11_Sem_2}, 
+                        {name: "Grade 12 Semester 1", val:Grade_12_Sem_1}, 
+                        {name: "Grade 12 Semester 2", val:Grade_12_Sem_2},  
+                        ];
+
+        function EnsureMaxSelectedCourseCount(fulfilledCredits) {
+
+            for(var i = 0; i<8; i++) {
+                
+
+                var selectedArr = TotalArr[i].val;
+                if (GetSelectedCoursesCount(selectedArr, fulfilledCredits) > 7) {
+                    alert("you have selected too many courses for: " + TotalArr[i].name);
+                }
+            }
+        }
+
+        function OnCourseSelection(ddl_id) {
+
+            var fulfilledCredits =  
             {
                 "english": 0.0,
 
@@ -139,69 +199,12 @@
                 "art": 0.0,
                 
                 "elective": 0.0
-            }   
-        
-        function calculateCreditsForSelected() {
-
-        };
-
-        function GetSelectedCoursesCount(ddl_arr)
-        {
-            var totalCoursesSelected = 0;
-
-            for(var i=0; i < ddl_arr.length; i++)
-            {
-                var ddl = document.getElementById(ddl_arr[i]);
-                
-                for(var j=0; j< ddl.options.length; j++)
-                {
-                    if(ddl.options[j].selected && (courseDict[ddl.options[j].value] != null))
-                    {
-                        totalCoursesSelected++;
-                    }
-                }
-            }
-
-            return totalCoursesSelected;
-        }
-
-        var Grade_9_Sem_1 = ["english91", "history91", "science91", "math91", "hpe91", "vpa91", "wl09", "cte_b&m91", "cte_it91", "cte_health91", "cte_human91", "cte_tech_science91", "cte_tech_art91", "cte_stem91"];
-        var Grade_9_Sem_2 = ["english92", "history92", "science92", "math91", "hpe92", "vpa92", "wl09", "cte_b&m92", "cte_it92", "cte_health92", "cte_human92", "cte_tech_science92", "cte_tech_art92", "cte_stem92"];
-        var Grade_10_Sem_1 = ["english101", "history101", "science101", "math101", "hpe101", "vpa101", "wl10", "cte_b&m101", "cte_it101", "cte_health101", "cte_human101", "cte_tech_science101", "cte_tech_art101", "cte_stem101"];
-        var Grade_10_Sem_2 = ["english102", "history102", "science102", "math101", "hpe102", "vpa102", "wl10", "cte_b&m102", "cte_it102", "cte_health102", "cte_human102", "cte_tech_science102", "cte_tech_art102", "cte_stem102"];
-        var Grade_11_Sem_1 = ["english111", "history111", "science111", "math111", "hpe111", "vpa111", "wl11", "cte_b&m111", "cte_it111", "cte_health111", "cte_human111", "cte_tech_science111", "cte_tech_art111", "cte_stem111"];
-        var Grade_11_Sem_2 = ["english112", "history112", "science112", "math111", "hpe112", "vpa112", "wl11", "cte_b&m112", "cte_it112", "cte_health112", "cte_human112", "cte_tech_science112", "cte_tech_art112", "cte_stem112"];
-        var Grade_12_Sem_1 = ["english121", "history121", "science121", "math121", "hpe121", "vpa121", "wl12", "cte_b&m121", "cte_it121", "cte_health121", "cte_human121", "cte_tech_science121", "cte_tech_art121", "cte_stem121"];
-        var Grade_12_Sem_2 = ["english122", "history122", "science122", "math121", "hpe122", "vpa122", "wl12", "cte_b&m122", "cte_it122", "cte_health122", "cte_human122", "cte_tech_science122", "cte_tech_art122", "cte_stem122"];
-
-        var TotalArr = [
-                        {name: "Grade 9 Semester 1", val:Grade_9_Sem_1}, 
-                        {name: "Grade 9 Semester 2", val:Grade_9_Sem_2}, 
-                        {name: "Grade 10 Semester 1", val:Grade_10_Sem_1}, 
-                        {name: "Grade 10 Semester 2", val:Grade_10_Sem_2},  
-                        {name: "Grade 11 Semester 1", val:Grade_11_Sem_1}, 
-                        {name: "Grade 11 Semester 2", val:Grade_11_Sem_2}, 
-                        {name: "Grade 12 Semester 1", val:Grade_12_Sem_1}, 
-                        {name: "Grade 12 Semester 2", val:Grade_12_Sem_2},  
-                        ];
-
-        function EnsureMaxSelectedCourseCount()
-        {
-
-            for(var i = 0; i<8; i++) {
-                var selectedArr = TotalArr[i].val;
-                if (GetSelectedCoursesCount(selectedArr) > 7) {
-                    alert("you have selected too many courses for: " + TotalArr[i].name);
-                }
-            }
-        }
-
-        function OnCourseSelection(ddl_id) {
+            } 
 
             var courseDDL = document.getElementById(ddl_id);
 
             // TODO: need to fix credit calculation
-            // var courseDDLValue = courseDDL.value;
+
             // fulfilledCredits[courseDict[courseDDLValue].credit_category] += parseFloat(courseDict[courseDDLValue].credit_count);
             // document.getElementById(courseDict[courseDDLValue].credit_category).innerHTML = fulfilledCredits[courseDict[courseDDLValue].credit_category];
 
@@ -224,15 +227,10 @@
                 }
             }
 
-            // var subjectDDLs = {};
-            // for (var a = 9; a<13; a++) {
-            //     for(var b = 1; b<3; b++) {
-            //         // alert(ddl_id.substring(0, ddl_id.length-2) + a + b)
+            EnsureMaxSelectedCourseCount(fulfilledCredits);
 
-            //     }
-            // }
-
-            EnsureMaxSelectedCourseCount();
+            var courseDDLValue = courseDDL.value;
+            document.getElementById(courseDict[courseDDLValue].credit_category).innerHTML = fulfilledCredits[courseDict[courseDDLValue].credit_category];
 
         };
 
