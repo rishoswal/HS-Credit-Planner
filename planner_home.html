@@ -4,6 +4,8 @@
 <head>
     <meta charset="utf-8" />
 
+    <link rel="stylesheet" href="style.css">
+
     <script src="jquery-3.6.0.min.js"></script>
     <script src="course_catalog.js"></script>
 
@@ -552,55 +554,55 @@
         </tr>
         <tr>
             <td width="20%"></td>
-            <td width="20%">Semester 1</td>
-            <td width="20%">Semester 2</td>
-            <td width="20%">Semester 1</td>
-            <td width="20%">Semester 2</td>
-            <td width="20%">Semester 1</td>
-            <td width="20%">Semester 2</td>
-            <td width="20%">Semester 1</td>
-            <td width="20%">Semester 2</td>
+            <td width="20%" class="nine-1">Semester 1</td>
+            <td width="20%" class="nine-2">Semester 2</td>
+            <td width="20%" class="ten-1">Semester 1</td>
+            <td width="20%" class="ten-2">Semester 2</td>
+            <td width="20%" class="eleven-1">Semester 1</td>
+            <td width="20%" class="eleven-2">Semester 2</td>
+            <td width="20%" class="twelve-1">Semester 1</td>
+            <td width="20%" class="twelve-2">Semester 2</td>
         </tr>
         
         <!-- English -->
         <tr>
             <td>English</td>
-            <td>
-                <select name="English9Sem1" id="english91" size="5" style="width: 200px;" onchange='OnCourseSelection("english91");' multiple>
+            <td class="nine-1">
+                <select name="English9Sem1" id="english91" size="5" onchange='OnCourseSelection("english91");' multiple>
                     <option value="select">click confirm button</option>
                 </select>
             </td>
-            <td>
+            <td class="nine-2">
                 <select name="English9Sem2" id="english92" size="5" style="width: 200px;" onchange='OnCourseSelection("english92");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="ten-1">
                 <select name="English10Sem1" id="english101" size="5" style="width: 200px;" onchange='OnCourseSelection("english101");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="ten-2">
                 <select name="English10Sem2" id="english102" size="5" style="width: 200px;" onchange='OnCourseSelection("english102");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="eleven-1">
                 <select name="English11Sem1" id="english111" size="5" style="width: 200px;" onchange='OnCourseSelection("english111");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="eleven-2">
                 <select name="English11Sem2" id="english112" size="5" style="width: 200px;" onchange='OnCourseSelection("english112");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="twelve-1">
                 <select name="English12Sem1" id="english121" size="5" style="width: 200px;" onchange='OnCourseSelection("english121");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="twelve-2">
                 <select name="English12Sem2" id="english122" size="5" style="width: 200px;" onchange='OnCourseSelection("english122");' multiple>
 
                 </select>
@@ -610,42 +612,42 @@
         <!-- Social Studies -->
         <tr>
             <td>Social Studies</td>
-            <td>
+            <td class="nine-1">
                 <select name="History9Sem1" id="history91" size="5" style="width: 200px;" onchange='OnCourseSelection("history91", "soc31");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="nine-2">
                 <select name="History9Sem2" id="history92" size="5" style="width: 200px;" onchange='OnCourseSelection("history92", "soc31");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="ten-1">
                 <select name="History10Sem1" id="history101" size="5" style="width: 200px;" onchange='OnCourseSelection("history101", "soc32");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="ten-2">
                 <select name="History10Sem2" id="history102" size="5" style="width: 200px;" onchange='OnCourseSelection("history102", "soc32");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="eleven-1">
                 <select name="History11Sem1" id="history111" size="5" style="width: 200px;" onchange='OnCourseSelection("history111", "soc33");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="eleven-2">
                 <select name="History11Sem2" id="history112" size="5" style="width: 200px;" onchange='OnCourseSelection("history112", "soc33");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="twelve-1">
                 <select name="History12Sem1" id="history121" size="5" style="width: 200px;" onchange='OnCourseSelection("history121", "soc34");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="twelve-2">
                 <select name="History12Sem2" id="history122" size="5" style="width: 200px;" onchange='OnCourseSelection("history122", "soc34");' multiple>
 
                 </select>
@@ -655,42 +657,42 @@
         <!-- Science -->
         <tr>
             <td>Science</td>
-            <td>
+            <td class="nine-1">
                 <select name="Science9Sem1" id="science91" size="5" style="width: 200px;" onchange='OnCourseSelection("science91");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="nine-2">
                 <select name="Science9Sem2" id="science92" size="5" style="width: 200px;" onchange='OnCourseSelection("science92");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="ten-1">
                 <select name="Science10Sem1" id="science101" size="5" style="width: 200px;" onchange='OnCourseSelection("science101");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="ten-2">
                 <select name="Science10Sem2" id="science102" size="5" style="width: 200px;" onchange='OnCourseSelection("science102");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="eleven-1">
                 <select name="Science11Sem1" id="science111" size="5" style="width: 200px;" onchange='OnCourseSelection("science111");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="eleven-2">
                 <select name="Science11Sem2" id="science112" size="5" style="width: 200px;" onchange='OnCourseSelection("science112");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="twelve-1">
                 <select name="Science12Sem1" id="science121" size="5" style="width: 200px;" onchange='OnCourseSelection("science121");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="twelve-2">
                 <select name="Science12Sem2" id="science122" size="5" style="width: 200px;" onchange='OnCourseSelection("science122");' multiple>
 
                 </select>
@@ -700,22 +702,22 @@
         <!-- Mathematics -->
         <tr>
             <td>Mathematics</td>
-            <td colspan="2">
+            <td colspan="2" class="nine-1">
                 <select name="Math9" id="math91" size="5" style="width: 400px;" onchange='OnCourseSelection("math91", "mat3");' multiple>
 
                 </select>
             </td>
-            <td colspan="2">
+            <td colspan="2" class="ten-1">
                 <select name="Math10" id="math101" size="5" style="width: 400px;" onchange='OnCourseSelection("math101", "mat3");' multiple>
 
                 </select>
             </td>
-            <td colspan="2">
+            <td colspan="2" class="eleven-1">
                 <select name="Math11" id="math111" size="5" style="width: 400px;" onchange='OnCourseSelection("math111", "mat3");' multiple>
 
                 </select>
             </td>
-            <td colspan="2">
+            <td colspan="2" class="twelve-1">
                 <select name="Math12" id="math121" size="5" style="width: 400px;" onchange='OnCourseSelection("math121", "mat3");' multiple>
 
                 </select>
@@ -725,42 +727,42 @@
         <!-- Health and PE -->
         <tr>
             <td>Health & Phys. Ed.</td>
-            <td>
+            <td class="nine-1">
                 <select name="HPE9Sem1" id="hpe91" size="5" style="width: 200px;" onchange='OnCourseSelection("hpe91");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="nine-2">
                 <select name="HPE9Sem2" id="hpe92" size="5" style="width: 200px;" onchange='OnCourseSelection("hpe92");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="ten-1">
                 <select name="HPE10Sem1" id="hpe101" size="5" style="width: 200px;" onchange='OnCourseSelection("hpe101");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="ten-2">
                 <select name="HPE10Sem2" id="hpe102" size="5" style="width: 200px;" onchange='OnCourseSelection("hpe102");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="eleven-1">
                 <select name="HPE11Sem1" id="hpe111" size="5" style="width: 200px;" onchange='OnCourseSelection("hpe111");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="eleven-2">
                 <select name="HPE11Sem2" id="hpe112" size="5" style="width: 200px;" onchange='OnCourseSelection("hpe112");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="twelve-1">
                 <select name="HPE12Sem1" id="hpe121" size="5" style="width: 200px;" onchange='OnCourseSelection("hpe121");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="twelve-2">
                 <select name="HPE12Sem2" id="hpe122" size="5" style="width: 200px;" onchange='OnCourseSelection("hpe122");' multiple>
 
                 </select>
@@ -770,42 +772,42 @@
         <!-- Arts -->
         <tr>
             <td>Visual and Perf. Arts</td>
-            <td>
+            <td class="nine-1">
                 <select name="VPA9Sem1" id="vpa91" size="5" style="width: 200px;" onchange='OnCourseSelection("vpa91");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="nine-2">
                 <select name="VPA9Sem2" id="vpa92" size="5" style="width: 200px;" onchange='OnCourseSelection("vpa92");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="ten-1">
                 <select name="VPA10Sem1" id="vpa101" size="5" style="width: 200px;" onchange='OnCourseSelection("vpa101");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="ten-2">
                 <select name="VPA10Sem2" id="vpa102" size="5" style="width: 200px;" onchange='OnCourseSelection("vpa102");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="eleven-1">
                 <select name="VPA11Sem1" id="vpa111" size="5" style="width: 200px;" onchange='OnCourseSelection("vpa111");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="eleven-2">
                 <select name="VPA11Sem2" id="vpa112" size="5" style="width: 200px;" onchange='OnCourseSelection("vpa112");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="twelve-1">
                 <select name="VPA12Sem1" id="vpa121" size="5" style="width: 200px;" onchange='OnCourseSelection("vpa121");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="twelve-2">
                 <select name="VPA12Sem2" id="vpa122" size="5" style="width: 200px;" onchange='OnCourseSelection("vpa122");' multiple>
 
                 </select>
@@ -815,22 +817,22 @@
         <!-- World Languages -->
         <tr>
             <td>World Languages</td>
-            <td colspan="2">
+            <td colspan="2" class="nine-1">
                 <select name="WL09" id="wl09" size="5" style="width: 400px;" onchange='OnCourseSelection("wl09");' multiple>
 
                 </select>
             </td>
-            <td colspan="2">
+            <td colspan="2" class="ten-1">
                 <select name="WL10" id="wl10" size="5" style="width: 400px;" onchange='OnCourseSelection("wl10");' multiple>
 
                 </select>
             </td>
-            <td colspan="2">
+            <td colspan="2" class="eleven-1">
                 <select name="WL11" id="wl11" size="5" style="width: 400px;" onchange='OnCourseSelection("wl11");' multiple>
 
                 </select>
             </td>
-            <td colspan="2">
+            <td colspan="2" class="twelve-1">
                 <select name="WL12" id="wl12" size="5" style="width: 400px;" onchange='OnCourseSelection("wl12");' multiple>
 
                 </select>
@@ -840,42 +842,42 @@
         <!-- CTE Business -->
         <tr>
             <td>CTE Business & Marketing</td>
-            <td>
+            <td class="nine-1">
                 <select name="CTE_B&M9Sem1" id="cte_b&m91" size="5" style="width: 200px;" onchange='OnCourseSelection("cte_b&m91");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="nine-2">
                 <select name="CTE_B&M9Sem2" id="cte_b&m92" size="5" style="width: 200px;" onchange='OnCourseSelection("cte_b&m92");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="ten-1">
                 <select name="CTE_B&M10Sem1" id="cte_b&m101" size="5" style="width: 200px;" onchange='OnCourseSelection("cte_b&m101");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="ten-2">
                 <select name="CTE_B&M10Sem2" id="cte_b&m102" size="5" style="width: 200px;" onchange='OnCourseSelection("cte_b&m102");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="eleven-1">
                 <select name="CTE_B&M11Sem1" id="cte_b&m111" size="5" style="width: 200px;" onchange='OnCourseSelection("cte_b&m111");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="eleven-2">
                 <select name="CTE_B&M11Sem2" id="cte_b&m112" size="5" style="width: 200px;" onchange='OnCourseSelection("cte_b&m112");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="twelve-1">
                 <select name="CTE_B&M12Sem1" id="cte_b&m121" size="5" style="width: 200px;" onchange='OnCourseSelection("cte_b&m121");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="twelve-2">
                 <select name="CTE_B&M12Sem2" id="cte_b&m122" size="5" style="width: 200px;" onchange='OnCourseSelection("cte_b&m122");' multiple>
 
                 </select>
@@ -885,42 +887,42 @@
         <!-- CTE IT -->
         <tr>
             <td>CTE Information Technologies</td>
-            <td>
+            <td class="nine-1">
                 <select name="CTE_IT9Sem1" id="cte_it91" size="5" style="width: 200px;" onchange='OnCourseSelection("cte_it91");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="nine-2">
                 <select name="CTE_IT9Sem2" id="cte_it92" size="5" style="width: 200px;" onchange='OnCourseSelection("cte_it92");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="ten-1">
                 <select name="CTE_IT10Sem1" id="cte_it101" size="5" style="width: 200px;" onchange='OnCourseSelection("cte_it101");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="ten-2">
                 <select name="CTE_IT10Sem2" id="cte_it102" size="5" style="width: 200px;" onchange='OnCourseSelection("cte_it102");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="eleven-1">
                 <select name="CTE_IT11Sem1" id="cte_it111" size="5" style="width: 200px;" onchange='OnCourseSelection("cte_it111");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="eleven-2">
                 <select name="CTE_IT11Sem2" id="cte_it112" size="5" style="width: 200px;" onchange='OnCourseSelection("cte_it112");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="twelve-1">
                 <select name="CTE_IT12Sem1" id="cte_it121" size="5" style="width: 200px;" onchange='OnCourseSelection("cte_it121");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="twelve-2">
                 <select name="CTE_IT12Sem2" id="cte_it122" size="5" style="width: 200px;" onchange='OnCourseSelection("cte_it122");' multiple>
 
                 </select>
@@ -930,42 +932,42 @@
         <!-- CTE Health -->
         <tr>
             <td>CTE Health Services</td>
-            <td>
+            <td class="nine-1">
                 <select name="CTE_HEALTH9Sem1" id="cte_health91" size="5" style="width: 200px;" onchange='OnCourseSelection("cte_health91");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="nine-2">
                 <select name="CTE_HEALTH9Sem2" id="cte_health92" size="5" style="width: 200px;" onchange='OnCourseSelection("cte_health92");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="ten-1">
                 <select name="CTE_HEALTH10Sem1" id="cte_health101" size="5" style="width: 200px;" onchange='OnCourseSelection("cte_health101");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="ten-2">
                 <select name="CTE_HEALTH10Sem2" id="cte_health102" size="5" style="width: 200px;" onchange='OnCourseSelection("cte_health102");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="eleven-1">
                 <select name="CTE_HEALTH11Sem1" id="cte_health111" size="5" style="width: 200px;" onchange='OnCourseSelection("cte_health111");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="eleven-2">
                 <select name="CTE_HEALTH11Sem2" id="cte_health112" size="5" style="width: 200px;" onchange='OnCourseSelection("cte_health112");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="twelve-1">
                 <select name="CTE_HEALTH12Sem1" id="cte_health121" size="5" style="width: 200px;" onchange='OnCourseSelection("cte_health121");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="twelve-2">
                 <select name="CTE_HEALTH12Sem2" id="cte_health122" size="5" style="width: 200px;" onchange='OnCourseSelection("cte_health122");' multiple>
 
                 </select>
@@ -975,42 +977,42 @@
         <!-- CTE Human -->
         <tr>
             <td>CTE Human Services</td>
-            <td>
+            <td class="nine-1">
                 <select name="CTE_HUMAN9Sem1" id="cte_human91" size="5" style="width: 200px;" onchange='OnCourseSelection("cte_human91");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="nine-2">
                 <select name="CTE_HUMAN9Sem2" id="cte_human92" size="5" style="width: 200px;" onchange='OnCourseSelection("cte_human92");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="ten-1">
                 <select name="CTE_HUMAN10Sem1" id="cte_human101" size="5" style="width: 200px;" onchange='OnCourseSelection("cte_human101");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="ten-2">
                 <select name="CTE_HUMAN10Sem2" id="cte_human102" size="5" style="width: 200px;" onchange='OnCourseSelection("cte_human102");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="eleven-1">
                 <select name="CTE_HUMAN11Sem1" id="cte_human111" size="5" style="width: 200px;" onchange='OnCourseSelection("cte_human111");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="eleven-2">
                 <select name="CTE_HUMAN11Sem2" id="cte_human112" size="5" style="width: 200px;" onchange='OnCourseSelection("cte_human112");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="twelve-1">
                 <select name="CTE_HUMAN12Sem1" id="cte_human121" size="5" style="width: 200px;" onchange='OnCourseSelection("cte_human121");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="twelve-2">
                 <select name="CTE_HUMAN12Sem2" id="cte_human122" size="5" style="width: 200px;" onchange='OnCourseSelection("cte_human122");' multiple>
 
                 </select>
@@ -1020,42 +1022,42 @@
         <!-- CTE Tech Sciences -->
         <tr>
             <td>CTE Skilled & Tech. Sciences</td>
-            <td>
+            <td class="nine-1">
                 <select name="CTE_TECH_SCIENCE9Sem1" id="cte_tech_science91" size="5" style="width: 200px;" onchange='OnCourseSelection("cte_tech_science91");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="nine-2">
                 <select name="CTE_TECH_SCIENCE9Sem2" id="cte_tech_science92" size="5" style="width: 200px;" onchange='OnCourseSelection("cte_tech_science92");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="ten-1">
                 <select name="CTE_TECH_SCIENCE10Sem1" id="cte_tech_science101" size="5" style="width: 200px;" onchange='OnCourseSelection("cte_tech_science101");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="ten-2">
                 <select name="CTE_TECH_SCIENCE10Sem2" id="cte_tech_science102" size="5" style="width: 200px;" onchange='OnCourseSelection("cte_tech_science102");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="eleven-1">
                 <select name="CTE_TECH_SCIENCE11Sem1" id="cte_tech_science111" size="5" style="width: 200px;" onchange='OnCourseSelection("cte_tech_science111");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="eleven-2">
                 <select name="CTE_TECH_SCIENCE11Sem2" id="cte_tech_science112" size="5" style="width: 200px;" onchange='OnCourseSelection("cte_tech_science112");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="twelve-1">
                 <select name="CTE_TECH_SCIENCE12Sem1" id="cte_tech_science121" size="5" style="width: 200px;" onchange='OnCourseSelection("cte_tech_science121");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="twelve-2">
                 <select name="CTE_TECH_SCIENCE12Sem2" id="cte_tech_science122" size="5" style="width: 200px;" onchange='OnCourseSelection("cte_tech_science122");' multiple>
 
                 </select>
@@ -1065,42 +1067,42 @@
         <!-- CTE Tech Art -->
         <tr>
             <td>CTE Skilled & Tech. Art</td>
-            <td>
+            <td class="nine-1">
                 <select name="CTE_TECH_ART9Sem1" id="cte_tech_art91" size="5" style="width: 200px;" onchange='OnCourseSelection("cte_tech_art91");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="nine-2">
                 <select name="CTE_TECH_ART9Sem2" id="cte_tech_art92" size="5" style="width: 200px;" onchange='OnCourseSelection("cte_tech_art92");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="ten-1">
                 <select name="CTE_TECH_ART10Sem1" id="cte_tech_art101" size="5" style="width: 200px;" onchange='OnCourseSelection("cte_tech_art101");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="ten-2">
                 <select name="CTE_TECH_ART10Sem2" id="cte_tech_art102" size="5" style="width: 200px;" onchange='OnCourseSelection("cte_tech_art102");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="eleven-1">
                 <select name="CTE_TECH_ART11Sem1" id="cte_tech_art111" size="5" style="width: 200px;" onchange='OnCourseSelection("cte_tech_art111");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="eleven-2">
                 <select name="CTE_TECH_ART11Sem2" id="cte_tech_art112" size="5" style="width: 200px;" onchange='OnCourseSelection("cte_tech_art112");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="twelve-1">
                 <select name="CTE_TECH_ART12Sem1" id="cte_tech_art121" size="5" style="width: 200px;" onchange='OnCourseSelection("cte_tech_art121");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="twelve-2">
                 <select name="CTE_TECH_ART12Sem2" id="cte_tech_art122" size="5" style="width: 200px;" onchange='OnCourseSelection("cte_tech_art122");' multiple>
 
                 </select>
@@ -1110,42 +1112,42 @@
         <!-- CTE STEM -->
         <tr>
             <td>CTE STEM</td>
-            <td>
+            <td class="nine-1">
                 <select name="CTE_STEM9Sem1" id="cte_stem91" size="5" style="width: 200px;" onchange='OnCourseSelection("cte_stem91");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="nine-2">
                 <select name="CTE_STEM9Sem2" id="cte_stem92" size="5" style="width: 200px;" onchange='OnCourseSelection("cte_stem92");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="ten-1">
                 <select name="CTE_STEM10Sem1" id="cte_stem101" size="5" style="width: 200px;" onchange='OnCourseSelection("cte_stem101");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="ten-2">
                 <select name="CTE_STEM10Sem2" id="cte_stem102" size="5" style="width: 200px;" onchange='OnCourseSelection("cte_stem102");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="eleven-1">
                 <select name="CTE_STEM11Sem1" id="cte_stem111" size="5" style="width: 200px;" onchange='OnCourseSelection("cte_stem111");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="eleven-2">
                 <select name="CTE_STEM11Sem2" id="cte_stem112" size="5" style="width: 200px;" onchange='OnCourseSelection("cte_stem112");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="twelve-1">
                 <select name="CTE_STEM12Sem1" id="cte_stem121" size="5" style="width: 200px;" onchange='OnCourseSelection("cte_stem121");' multiple>
 
                 </select>
             </td>
-            <td>
+            <td class="twelve-2">
                 <select name="CTE_STEM12Sem2" id="cte_stem122" size="5" style="width: 200px;" onchange='OnCourseSelection("cte_stem122");' multiple>
 
                 </select>
