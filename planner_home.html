@@ -166,9 +166,8 @@
 
             return pre_req_all;
         }
-        
-        function GetSelectedCoursesForSemester(ddl_arr) {
-            var fulfilledCredits =  
+    
+        var fulfilledCredits =  
             {
                 "english": 0.0,
 
@@ -198,6 +197,9 @@
                 
                 "elective": 0.0
             };
+        
+        function GetSelectedCoursesForSemester(ddl_arr) {
+
 
             // var totalCoursesSelected = 0;
             var selectedCourses = [];
@@ -237,6 +239,36 @@
             var warningMessages = [];
             var selectedCoursesForAllSemesters = {};
             var selectedCoursesIdsForAllSemesters = {};
+
+            fulfilledCredits = {
+                "english": 0.0,
+
+                "soc1": 0.0,
+                
+                "soc2": 0.0,
+                
+                "soc3": 0.0,
+
+                "soc4": 0.0,
+
+                "mathematics": 0.0,
+
+                "lab_science": 0.0,
+
+                "science": 0.0,
+
+                "cte": 0.0,
+
+                "world_lang": 0.0,
+
+                "health": 0.0,
+
+                "pe": 0.0,
+
+                "art": 0.0,
+                
+                "elective": 0.0
+            };
 
             for(var semesterNum = 0; semesterNum<8; semesterNum++) {
 
