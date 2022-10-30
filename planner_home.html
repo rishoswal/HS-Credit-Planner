@@ -211,6 +211,7 @@
 
         function EnsureCourseSettingsAndAlert() {
 
+            var warningMessages = [];
             var selectedCoursesForAllSemesters = {};
             var selectedCoursesIdsForAllSemesters = {};
 
@@ -223,7 +224,9 @@
                 // selectedCoursesForAllSemesters
 
                 if (selectedCoursesForSemester.length > 7) {
-                    alert("you have selected too many courses for: " + ArrayOfAllCourseDdlElementIds[semesterNum].name);
+                    var alertMsg = "You have selected too many courses for: " + ArrayOfAllCourseDdlElementIds[semesterNum].name;
+                    customAlert(alertMsg);
+                    warningMessages.push(alertMsg);
                 }
 
                 selectedCoursesForSemester.forEach(c => {
@@ -258,23 +261,37 @@
 
             }
             
-
-            if (pre_req_any_array.length != 0) {
-                if (selectedCoursesForAllSemesters[pre_req_any_array[0]] == null && selectedCoursesForAllSemesters[pre_req_any_array[1]] == null) {
-                    var course1 = courseDict[pre_req_any_array[0]];
-                    var course2 = courseDict[pre_req_any_array[1]];
-                    alert("You have not fulfilled a requirement! Either take: " + course1.name + " or " + course2.name);
+            for (var i = 0; i<pre_req_any_array.length; i+= 2) {
+                if (selectedCoursesForAllSemesters[pre_req_any_array[i]] == null && selectedCoursesForAllSemesters[pre_req_any_array[i+1]] == null) {
+                    var course1 = courseDict[pre_req_any_array[i]];
+                    var course2 = courseDict[pre_req_any_array[i+1]];
+                    var alertMsg = "Course requirement not fulfilled. Select one of these required courses: " + course1.name + " or " + course2.name;
+                    customAlert(alertMsg);
+                    warningMessages.push(alertMsg);
                 }
             }
 
             for (var i = 0; i<pre_req_all_array.length; i++) {
                 if (selectedCoursesForAllSemesters[pre_req_all_array[i]] == null) {
-                    alert("You have not fulfilled a requirement! Please take: " + courseDict[pre_req_all_array[i]].name);
+                    var alertMsg = "Course requirement not fulfilled. Required Course: " + courseDict[pre_req_all_array[i]].name;
+                    customAlert(alertMsg);
+                    warningMessages.push(alertMsg);
                 }
             }
 
-
+            var innerHTML = "<ul> ";
+            warningMessages.forEach(m =>{
+                innerHTML += "<li>" + m + "</li>";
+            })
             
+            innerHTML += " </ul>";
+
+            document.getElementById("warningMsg").innerHTML = innerHTML;
+            
+        }
+
+        function customAlert(alertMsg) {
+            // alert(alertMsg);
         }
 
         function SelectTwoSemesterCourses(ddl_id)
@@ -627,6 +644,11 @@
         </tr>
     </table>
 
+    <br /><br />
+    <div class="myDiv" id="warningDiv">
+        <h2>Warnings:</h2>
+        <h4 id="warningMsg"></h4>
+    </div>
     <br /><br />
 
     <table border="1" width="50%">

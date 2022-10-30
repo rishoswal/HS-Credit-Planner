@@ -107,6 +107,14 @@ select {
   } */
 }
 
+.myDiv {
+  border: 2px outset #5C5C6A;
+  background-color: #B9B8D3;
+  color: black;
+  width: 75%;
+  padding: 30px;
+}
+
 /* // Interim solution until :focus-within has better support */
 select:focus + .focus {
   position: absolute;
