@@ -113,6 +113,7 @@ select {
   color: black;
   width: 75%;
   padding: 30px;
+  display: none;
 }
 
 /* // Interim solution until :focus-within has better support */

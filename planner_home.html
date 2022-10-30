@@ -208,6 +208,10 @@
             return selectedCourses;
         }
 
+        function ShowWarningDiv() {
+            warningDiv = document.getElementById("warningDiv");
+            warningDiv.style.display = 'block';
+        }
 
         function EnsureCourseSettingsAndAlert() {
 
@@ -224,7 +228,12 @@
                 // selectedCoursesForAllSemesters
 
                 if (selectedCoursesForSemester.length > 7) {
-                    var alertMsg = "You have selected too many courses for: " + ArrayOfAllCourseDdlElementIds[semesterNum].name;
+                    var alertMsg = "Too many courses selected for: " + ArrayOfAllCourseDdlElementIds[semesterNum].name;
+                    customAlert(alertMsg);
+                    warningMessages.push(alertMsg);
+                }
+                else if (selectedCoursesForSemester.length < 7) {
+                    var alertMsg = "Too few courses selected for: " + ArrayOfAllCourseDdlElementIds[semesterNum].name;
                     customAlert(alertMsg);
                     warningMessages.push(alertMsg);
                 }
@@ -644,10 +653,12 @@
         </tr>
     </table>
 
+    <br />
+    <button onclick='ShowWarningDiv();' style="width: 5%">Review Selection</button>
     <br /><br />
     <div class="myDiv" id="warningDiv">
         <h2>Warnings:</h2>
-        <h4 id="warningMsg"></h4>
+        <h4 id="warningMsg">None</h4>
     </div>
     <br /><br />
 
