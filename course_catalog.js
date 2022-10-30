@@ -6228,86 +6228,86 @@ let course_collection =
                 "english":
                 {
                     "name": "English",
-                    "total_credits": "4.0"
+                    "total_credits": 4.0
                 },
         
 
                 "soc1":
                 {
                     "name": "Social Studies",
-                    "total_credits": "0.5"
+                    "total_credits": 0.5
                 },
                 
                 "soc2":
                 {
                     "name": "Social Studies",
-                    "total_credits": "1.0"
+                    "total_credits": 1.0
                 },
                 
                 "soc3":
                 {
                     "name": "Social Studies",
-                    "total_credits": "1.0"
+                    "total_credits": 1.0
                 },
 
                 "soc4":
                 {
                     "name": "Social Studies",
-                    "total_credits": "0.5"
+                    "total_credits": 0.5
                 },
 
                 "mathematics":
                 {
                     "name": "Mathematics",
-                    "total_credits": "3.0"
+                    "total_credits": 3.0
                 },
 
                 "lab_science":
                 {
                     "name": "Lab Science",
-                    "total_credits": "2.0"
+                    "total_credits": 2.0
                 },
 
                 "science":
                 {
                     "name": "Science",
-                    "total_credits": "1.0"
+                    "total_credits": 1.0
                 },
 
                 "cte":
                 {
                     "name": "CTE",
-                    "total_credits": "1.0"
+                    "total_credits": 1.0
                 },
 
                 "world_lang":
                 {
                     "name": "World Language",
-                    "total_credits": "2.0"
+                    "total_credits": 2.0
                 },
 
                 "health":
                 {
                     "name": "Health",
-                    "total_credits": "0.5"
+                    "total_credits": 0.5
                 },
 
                 "pe":
                 {
                     "name": "Phys. Ed.",
-                    "total_credits": "1.5"
+                    "total_credits": 1.5
                 },
 
                 "art":
                 {
                     "name": "Fine Arts",
-                    "total_credits": "2.0"
+                    "total_credits": 2.0
                 },
                 
                 "elective":
                 {
                     "name": "elective",
-                    "total_credits": "4.0"
+                    "total_credits": 4.0
                 }
             }   
             
