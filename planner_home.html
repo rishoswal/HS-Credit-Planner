@@ -12,6 +12,15 @@
     <title>High School Credits Planner</title>
     <script>
 
+        function OpenSummaryPage() {
+            if (! window.focus)
+                return true; 
+            window.open('summary.html', "summary", 'height=200,width=400,scrollbars=yes'); 
+            // myform.target=windowname; 
+            return true; 
+        }
+
+
         // this function loads in all the school districts
         function LoadSchoolDistrictsList() {
             // finds element in planner_home.html with districtDDL tag
@@ -655,6 +664,7 @@
 
     <br />
     <button onclick='ShowWarningDiv();' style="width: 5%">Review Selection</button>
+    <button onclick='OpenSummaryPage();' style="width: 5%">Print Summary</button>
     <br /><br />
     <div class="myDiv" id="warningDiv">
         <h2>Warnings:</h2>

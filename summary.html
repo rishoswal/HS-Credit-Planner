@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="course_catalog.js"></script>
+
+    <script>
+        function GetAllDdls() {
+            var e = window.opener.document.getElementById("english91");
+            document.getElementById("sampleDiv").innerHTML = "hello" + e.options.length;
+        }
+    </script>
+
+</head>
+    <title>
+        Summary
+    </title>
+<body onload="GetAllDdls();">
+    <div id="sampleDiv">
+
+    </div>
+</body>
+
+</html>
