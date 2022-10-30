@@ -116,6 +116,13 @@ select {
   display: none;
 }
 
+.forPrint {
+  display: none;
+  width: 100%;
+  padding: 20px;
+  align-items: stretch;
+}
+
 /* // Interim solution until :focus-within has better support */
 select:focus + .focus {
   position: absolute;

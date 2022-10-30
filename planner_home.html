@@ -12,14 +12,18 @@
     <title>High School Credits Planner</title>
     <script>
 
-        function OpenSummaryPage() {
-            if (! window.focus)
-                return true; 
-            window.open('summary.html', "summary", 'height=200,width=400,scrollbars=yes'); 
-            // myform.target=windowname; 
-            return true; 
-        }
+        function LoadSummaryPage() {
 
+            // let child = window.open('summary.html', "summary", 'scrollbars=yes'); 
+            // child.opener.document.getElementById("sampleDiv").innerHTML = "HELLO!";
+
+            var notForPrintDiv = document.getElementById("notForPrint");
+            notForPrintDiv.style.display = 'none';
+
+            var forPrintDiv = document.getElementById("forPrint");
+            forPrintDiv.style.display = 'block';
+
+        }
 
         // this function loads in all the school districts
         function LoadSchoolDistrictsList() {
@@ -148,14 +152,13 @@
 
             return pre_req_any;
         }
+       
         function GetPreReqAll(course) {
             
             var pre_req_all = course.pre_req_all.split(", ");
 
             return pre_req_all;
         }
-
-        
         
         function GetSelectedCoursesForSemester(ddl_arr) {
             var fulfilledCredits =  
@@ -309,7 +312,7 @@
         }
 
         function customAlert(alertMsg) {
-            // alert(alertMsg);
+            //alert(alertMsg);
         }
 
         function SelectTwoSemesterCourses(ddl_id)
@@ -546,9 +549,36 @@
 
         };
 
+        var printingTextIds = ["english911", "history911", "science911", "math911", "hpe911", "vpa911", "wl091", "cte_b&m911", "cte_it911", "cte_health911", "cte_human911", "cte_tech_science911", "cte_tech_art911", "cte_stem911", "english921", "history921", "science921", "hpe921", "vpa921", "cte_b&m921", "cte_it921", "cte_health921", "cte_human921", "cte_tech_science921", "cte_tech_art921", "cte_stem921", "english1011", "history1011", "science1011", "math1011", "hpe1011", "vpa1011", "wl101", "cte_b&m1011", "cte_it1011", "cte_health1011", "cte_human1011", "cte_tech_science1011", "cte_tech_art1011", "cte_stem1011", "english1021", "history1021", "science1021", "math1011", "hpe1021", "vpa1021", "cte_b&m1021", "cte_it1021", "cte_health1021", "cte_human1021", "cte_tech_science1021", "cte_tech_art1021", "cte_stem1021", "english1111", "history1111", "science1111", "math1111", "hpe1111", "vpa1111", "wl111", "cte_b&m1111", "cte_it1111", "cte_health1111", "cte_human1111", "cte_tech_science1111", "cte_tech_art1111", "cte_stem1111", "english1121", "history1121", "science1121", "math1111", "hpe1121", "vpa1121", "cte_b&m1121", "cte_it1121", "cte_health1121", "cte_human1121", "cte_tech_science1121", "cte_tech_art1121", "cte_stem1121", "english1211", "history1211", "science1211", "math1211", "hpe1211", "vpa1211", "wl121", "cte_b&m1211", "cte_it1211", "cte_health1211", "cte_human1211", "cte_tech_science1211", "cte_tech_art1211", "cte_stem1211", "english1221", "history1221", "science1221", "math1211", "hpe1221", "vpa1221", "cte_b&m1221", "cte_it1221", "cte_health1221", "cte_human1221", "cte_tech_science1221", "cte_tech_art1221", "cte_stem1221"];
+
+        function LoadPrintDiv() {
+            for (var i = 0; i<printingTextIds.length; i++) {
+                var ddl_id = printingTextIds[i].substring(0, printingTextIds[i].length-1);
+                var ddl = document.getElementById(ddl_id);
+                var course_names_arr = [];
+                for (var j=0; j<ddl.options.length; j++) {
+                    if (ddl.selectedOptions[j] != undefined) {
+                        course_name = ddl.selectedOptions[j].textContent;
+                        course_names_arr.push(course_name);
+                    }
+
+                }
+                var innerHTML = "";
+                course_names_arr.forEach(m =>{
+                    innerHTML += m + ", ";
+                })
+            
+
+                document.getElementById(printingTextIds[i]).innerHTML = innerHTML;
+
+            }
+
+        }
+
     </script>
 </head>
 <body onload="LoadSchoolDistrictsList()">
+    <div id="notForPrint">
     <h1>High School Credit Planner</h1>
     <br /><br />
     <table width="30%">
@@ -664,7 +694,7 @@
 
     <br />
     <button onclick='ShowWarningDiv();' style="width: 5%">Review Selection</button>
-    <button onclick='OpenSummaryPage();' style="width: 5%">Print Summary</button>
+    <button onclick='LoadSummaryPage(); LoadPrintDiv();' style="width: 5%">Print Summary</button>
     <br /><br />
     <div class="myDiv" id="warningDiv">
         <h2>Warnings:</h2>
@@ -1283,6 +1313,411 @@
         </tr>
 
     </table>
-
+    </div>
+    <div id="forPrint" class="forPrint">
+        <table border="1" style="width:1000px;">
+            <tr style="height: 50px;background-color:lightblue">
+                <td width="20%">Period</td>
+                <td width="20%" colspan="2">9th Grade</td>
+                <td width="20%" colspan="2">10th Grade</td>
+                <td width="20%" colspan="2">11th Grade</td>
+                <td width="20%" colspan="2">12th Grade</td>
+            </tr>
+            <tr style="height: 40px">
+                <td width="20%"></td>
+                <td width="10%" class="nine-1">Semester 1</td>
+                <td width="10%" class="nine-2">Semester 2</td>
+                <td width="10%" class="ten-1">Semester 1</td>
+                <td width="10%" class="ten-2">Semester 2</td>
+                <td width="10%" class="eleven-1">Semester 1</td>
+                <td width="10%" class="eleven-2">Semester 2</td>
+                <td width="10%" class="twelve-1">Semester 1</td>
+                <td width="10%" class="twelve-2">Semester 2</td>
+            </tr>
+            
+            <!-- English -->
+            <tr style="height: 40px">
+                <td>English</td>
+                <td class="nine-1" id="english911">
+                    
+                </td>
+                <td class="nine-2" id="english921">
+                    
+                </td>
+                <td class="ten-1" id="english1011">
+                    
+                </td>
+                <td class="ten-2" id="english1021">
+                    
+                </td>
+                <td class="eleven-1" id="english1111">
+                    
+                </td>
+                <td class="eleven-2" id="english1121">
+                    
+                </td>
+                <td class="twelve-1" id="english1211">
+                    
+                </td>
+                <td class="twelve-2" id="english1221">
+                    
+                </td>
+            </tr>
+    
+            <!-- Social Studies -->
+            <tr style="height: 40px">
+                <td>Social Studies</td>
+                <td class="nine-1" id="history911">
+                    
+                </td>
+                <td class="nine-2" id="history921">
+                    
+                </td>
+                <td class="ten-1" id="history1011">
+                    
+                </td>
+                <td class="ten-2" id="history1021">
+                    
+                </td>
+                <td class="eleven-1" id="history1111">
+                    
+                </td>
+                <td class="eleven-2" id="history1121">
+                    
+                </td>
+                <td class="twelve-1" id="history1211">
+                    
+                </td>
+                <td class="twelve-2" id="history1221">
+                    
+                </td>
+            </tr>
+    
+            <!-- Science -->
+            <tr style="height: 40px">
+                <td>Science</td>
+                <td class="nine-1" id="science911">
+                    
+                </td>
+                <td class="nine-2" id="science921">
+                    
+                </td>
+                <td class="ten-1" id="science1011">
+                    
+                </td>
+                <td class="ten-2" id="science1021">
+                    
+                </td>
+                <td class="eleven-1" id="science1111">
+                    
+                </td>
+                <td class="eleven-2" id="science1121">
+                    
+                </td>
+                <td class="twelve-1" id="science1211">
+                    
+                </td>
+                <td class="twelve-2" id="science1221">
+                    
+                </td>
+            </tr>
+    
+            <!-- Mathematics -->
+            <tr style="height: 40px">
+                <td>Mathematics</td>
+                <td colspan="2" class="nine-1" id="math911">
+                    
+                </td>
+                <td colspan="2" class="ten-1" id="math1011">
+                    
+                </td>
+                <td colspan="2" class="eleven-1" id="math1111">
+                    
+                </td>
+                <td colspan="2" class="twelve-1" id="math1211">
+                    
+                </td>
+            </tr>
+    
+            <!-- Health and PE -->
+            <tr style="height: 40px">
+                <td>Health & Phys. Ed.</td>
+                <td class="nine-1" id="hpe911">
+                    
+                </td>
+                <td class="nine-2" id="hpe921">
+                    
+                </td>
+                <td class="ten-1" id="hpe1011">
+                    
+                </td>
+                <td class="ten-2" id="hpe1021">
+                    
+                </td>
+                <td class="eleven-1" id="hpe1111">
+                    
+                </td>
+                <td class="eleven-2" id="hpe1121">
+                    
+                </td>
+                <td class="twelve-1" id="hpe1211">
+                    
+                </td>
+                <td class="twelve-2" id="hpe1221">
+                    
+                </td>
+            </tr>
+    
+            <!-- Arts -->
+            <tr style="height: 40px">
+                <td>Visual and Perf. Arts</td>
+                <td class="nine-1" id="vpa911">
+                    
+                </td>
+                <td class="nine-2" id="vpa921">
+                    
+                </td>
+                <td class="ten-1" id="vpa1011">
+                    
+                </td>
+                <td class="ten-2" id="vpa1021">
+                    
+                </td>
+                <td class="eleven-1" id="vpa1111">
+                    
+                </td>
+                <td class="eleven-2" id="vpa1121">
+                    
+                </td>
+                <td class="twelve-1" id="vpa1211">
+                    
+                </td>
+                <td class="twelve-2" id="vpa1221">
+                    
+                </td>
+            </tr>
+    
+            <!-- World Languages -->
+            <tr style="height: 40px">
+                <td>World Languages</td>
+                <td colspan="2" class="nine-1" id="wl091">
+                    
+                </td>
+                <td colspan="2" class="ten-1" id="wl101">
+                    
+                </td>
+                <td colspan="2" class="eleven-1" id="wl111">
+                    
+                </td>
+                <td colspan="2" class="twelve-1" id="wl121">
+                    
+                </td>
+            </tr>
+    
+            <!-- CTE Business -->
+            <tr style="height: 40px">
+                <td>CTE Business & Marketing</td>
+                <td class="nine-1" id="cte_b&m911">
+                    
+                </td>
+                <td class="nine-2" id="cte_b&m921">
+                    
+                </td>
+                <td class="ten-1" id="cte_b&m1011">
+                    
+                </td>
+                <td class="ten-2" id="cte_b&m1021">
+                    
+                </td>
+                <td class="eleven-1" id="cte_b&m1111">
+                    
+                </td>
+                <td class="eleven-2" id="cte_b&m1121">
+                    
+                </td>
+                <td class="twelve-1" id="cte_b&m1211">
+                    
+                </td>
+                <td class="twelve-2" id="cte_b&m1221">
+                    
+                </td>
+            </tr>
+    
+            <!-- CTE IT -->
+            <tr style="height: 40px">
+                <td>CTE Information Technologies</td>
+                <td class="nine-1" id="cte_it911">
+                    
+                </td>
+                <td class="nine-2" id="cte_it921">
+                    
+                </td>
+                <td class="ten-1" id="cte_it1011">
+                    
+                </td>
+                <td class="ten-2" id="cte_it1021">
+                    
+                </td>
+                <td class="eleven-1" id="cte_it1111">
+                    
+                </td>
+                <td class="eleven-2" id="cte_it1121">
+                    
+                </td>
+                <td class="twelve-1" id="cte_it1211">
+                    
+                </td>
+                <td class="twelve-2" id="cte_it1221">
+                    
+                </td>
+            </tr>
+    
+            <!-- CTE Health -->
+            <tr style="height: 40px">
+                <td>CTE Health Services</td>
+                <td class="nine-1" id="cte_health911">
+                    
+                </td>
+                <td class="nine-2" id="cte_health921">
+                    
+                </td>
+                <td class="ten-1" id="cte_health1011">
+                    
+                </td>
+                <td class="ten-2" id="cte_health1021">
+                    
+                </td>
+                <td class="eleven-1" id="cte_health1111">
+                    
+                </td>
+                <td class="eleven-2" id="cte_health1121">
+                    
+                </td>
+                <td class="twelve-1" id="cte_health1211">
+                    
+                </td>
+                <td class="twelve-2" id="cte_health1221">
+                    
+                </td>
+            </tr>
+    
+            <!-- CTE Human -->
+            <tr style="height: 40px">
+                <td>CTE Human Services</td>
+                <td class="nine-1" id="cte_human911">
+                    
+                </td>
+                <td class="nine-2" id="cte_human921">
+                    
+                </td>
+                <td class="ten-1" id="cte_human1011">
+                    
+                </td>
+                <td class="ten-2" id="cte_human1021">
+                    
+                </td>
+                <td class="eleven-1" id="cte_human1111">
+                    
+                </td>
+                <td class="eleven-2" id="cte_human1121">
+                    
+                </td>
+                <td class="twelve-1" id="cte_human1211">
+                    
+                </td>
+                <td class="twelve-2" id="cte_human1221">
+                    
+                </td>
+            </tr>
+    
+            <!-- CTE Tech Sciences -->
+            <tr style="height: 40px">
+                <td>CTE Skilled & Tech. Sciences</td>
+                <td class="nine-1" id="cte_tech_science911">
+                    
+                </td>
+                <td class="nine-2" id="cte_tech_science921">
+                    
+                </td>
+                <td class="ten-1" id="cte_tech_science1011">
+                    
+                </td>
+                <td class="ten-2" id="cte_tech_science1021">
+                    
+                </td>
+                <td class="eleven-1" id="cte_tech_science1111">
+                    
+                </td>
+                <td class="eleven-2" id="cte_tech_science1121">
+                    
+                </td>
+                <td class="twelve-1" id="cte_tech_science1211">
+                    
+                </td>
+                <td class="twelve-2" id="cte_tech_science1221">
+                    
+                </td>
+            </tr>
+    
+            <!-- CTE Tech Art -->
+            <tr style="height: 40px">
+                <td>CTE Skilled & Tech. Art</td>
+                <td class="nine-1" id="cte_tech_art911">
+                    
+                </td>
+                <td class="nine-2" id="cte_tech_art921">
+                    
+                </td>
+                <td class="ten-1" id="cte_tech_art1011">
+                    
+                </td>
+                <td class="ten-2" id="cte_tech_art1021">
+                    
+                </td>
+                <td class="eleven-1" id="cte_tech_art1111">
+                    
+                </td>
+                <td class="eleven-2" id="cte_tech_art1121">
+                    
+                </td>
+                <td class="twelve-1" id="cte_tech_art1211">
+                    
+                </td>
+                <td class="twelve-2" id="cte_tech_art1221">
+                    
+                </td>
+            </tr>
+    
+            <!-- CTE STEM -->
+            <tr style="height: 40px">
+                <td>CTE STEM</td>
+                <td class="nine-1" id="cte_stem911">
+                    
+                </td>
+                <td class="nine-2" id="cte_stem921">
+                    
+                </td>
+                <td class="ten-1" id="cte_stem1011">
+                    
+                </td>
+                <td class="ten-2" id="cte_stem1021">
+                    
+                </td>
+                <td class="eleven-1" id="cte_stem1111">
+                    
+                </td>
+                <td class="eleven-2" id="cte_stem1121">
+                    
+                </td>
+                <td class="twelve-1" id="cte_stem1211">
+                    
+                </td>
+                <td class="twelve-2" id="cte_stem1221">
+                    
+                </td>
+            </tr>
+    
+        </table>
+    </div>
 </body>
 </html>

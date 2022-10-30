@@ -11,8 +11,15 @@
 
     <script>
         function GetAllDdls() {
+            document.getElementById("sampleDiv").innerHTML = "hello";
             var e = window.opener.document.getElementById("english91");
-            document.getElementById("sampleDiv").innerHTML = "hello" + e.options.length;
+            // if (e == null) {
+            //     document.getElementById("sampleDiv").innerHTML = "null";
+            // }
+            // else {
+            //     document.getElementById("sampleDiv").innerHTML = "hello";
+            // }
+
         }
     </script>
 
@@ -21,9 +28,7 @@
         Summary
     </title>
 <body onload="GetAllDdls();">
-    <div id="sampleDiv">
-
-    </div>
+    <div id="sampleDiv"></div>
 </body>
 
 </html>
