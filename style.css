@@ -114,6 +114,7 @@ select {
   width: 75%;
   padding: 30px;
   display: none;
+  margin: 0 auto;
 }
 
 .forPrint {
@@ -121,6 +122,22 @@ select {
   width: 100%;
   padding: 20px;
   align-items: stretch;
+}
+
+h1 {
+  vertical-align: top;
+  text-align: center;
+}
+
+.disclaimer {
+  width: 50%;
+  margin: auto;
+  align-items: center;
+}
+
+.center {
+  margin: 0 auto;
+  display: block;
 }
 
 /* // Interim solution until :focus-within has better support */

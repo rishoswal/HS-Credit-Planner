@@ -12,29 +12,7 @@
     <title>High School Credits Planner</title>
     <script>
 
-        function LoadSummaryPage() {
 
-            // let child = window.open('summary.html', "summary", 'scrollbars=yes'); 
-            // child.opener.document.getElementById("sampleDiv").innerHTML = "HELLO!";
-
-            var notForPrintDiv1 = document.getElementById("notForPrint1");
-            notForPrintDiv1.style.display = 'none';
-            var notForPrintDiv2 = document.getElementById("notForPrint2");
-            notForPrintDiv2.style.display = 'none';
-
-            var forPrintDiv = document.getElementById("forPrint");
-            forPrintDiv.style.display = 'block';
-
-        }
-        function HideSummaryPage() {
-            var forPrintDiv = document.getElementById("forPrint");
-            forPrintDiv.style.display = 'none';
-
-            var notForPrintDiv1 = document.getElementById("notForPrint1");
-            notForPrintDiv1.style.display = 'block';
-            var notForPrintDiv2 = document.getElementById("notForPrint2");
-            notForPrintDiv2.style.display = 'block';
-        }
 
         // this function loads in all the school districts
         function LoadSchoolDistrictsList() {
@@ -618,13 +596,61 @@
 
         }
 
+        function LoadSummaryPage() {
+
+            // let child = window.open('summary.html', "summary", 'scrollbars=yes'); 
+            // child.opener.document.getElementById("sampleDiv").innerHTML = "HELLO!";
+
+            // var notForPrintDiv1 = document.getElementById("notForPrint1");
+            // notForPrintDiv1.style.display = 'none';
+            var notForPrintDiv2 = document.getElementById("notForPrint");
+            notForPrintDiv2.style.display = 'none';
+
+            var forPrintDiv = document.getElementById("forPrint");
+            forPrintDiv.style.display = 'block';
+
+        }
+
+        function HideSummaryPage() {
+            var forPrintDiv = document.getElementById("forPrint");
+            forPrintDiv.style.display = 'none';
+
+            // var notForPrintDiv1 = document.getElementById("notForPrint1");
+            // notForPrintDiv1.style.display = 'block';
+            var notForPrintDiv2 = document.getElementById("notForPrint");
+            notForPrintDiv2.style.display = 'block';
+        }
+
+        function LoadSelectionDiv() {
+            var disclaimerDiv = document.getElementById("disclaimer");
+            disclaimerDiv.style.display = 'none';
+
+            var schoolSelectionDiv = document.getElementById("schoolSelection");
+            schoolSelectionDiv.style.display = "block";
+        }
+
+        function LoadMainDiv() {
+            var schoolSelectionDiv = document.getElementById("schoolSelection");
+            schoolSelectionDiv.style.display = "none";
+
+            var mainDiv = document.getElementById("main");
+            mainDiv.style.display = "block";
+        }
+
     </script>
 </head>
 <body onload="LoadSchoolDistrictsList()">
-    <div id="notForPrint1">
-        <h1>High School Credit Planner</h1>
-        <br /><br />
-        <table width="30%">
+    
+    <h1>High School Credit Planner</h1>
+
+    <div id="disclaimer" class="disclaimer">
+        <h3 style="text-align:center">All the information displayed here is not certified with any school district or school. The content provided here should not be a taken as a definitive guide to selecting courses. The content here is for informational purposes only. When finalizing a schedule, please always refer to a school's official website for more information about courses.</h3>
+        <br />
+        <button id="disclaimerToSelection" onclick='LoadSelectionDiv();' class="center" style="font-size: 24px; width: 25%; height: 50px; background-color:darkseagreen;">Proceed</button>
+    </div>
+    
+    <div id="schoolSelection" style="display:none">
+        <table width="100%">
             <tr>
                 <td>
                     School District
@@ -644,1125 +670,1148 @@
                     </select>
                 </td>
             </tr>
-            <tr>
-                <td>
-                    <button type="confirmationButton" onclick='PopulateCoursesLists("districtDDL", "schoolDDL")'>Confirm</button>
-                </td>
-            </tr>
-
         </table>
-        <br /><br />
-        <div id="district"><b>District</b></div>
         <br />
-        <div id="school"><b>School</b></div>
-        <br />
+        <button type="confirmationButton" onclick='PopulateCoursesLists("districtDDL", "schoolDDL"); LoadMainDiv();' class="center" style="font-size: 24px; width: 25%; height: 50px; background-color:darkseagreen;">Confirm</button>
     </div>
 
-    <table border="1" width="50%">
-        <tr style="height: 50px;background-color:lightblue; text-align: center;">
-            <td width="33%">Subject</td>
-            <td width="33%">Required Credits</td>
-            <td width="33%">Credits for Currently Selected Subjects</td>
-        </tr>
-        <tr style="height: 50px; text-align: center;">
-            <td>English</td>
-            <td id="eng2"></td>
-            <td id="english"></td>
-        </tr>
-        <tr style="height: 50px; text-align: center;">
-            <td>Social Studies 9th</td>
-            <td id="soc21"></td>
-            <td id="soc1"></td>
-        </tr>
-        <tr style="height: 50px; text-align: center;">
-            <td>Social Studies 10th</td>
-            <td id="soc22"></td>
-            <td id="soc2"></td>
-        </tr>
-        <tr style="height: 50px; text-align: center;">
-            <td>Social Studies 11th</td>
-            <td id="soc23"></td>
-            <td id="soc3"></td>
-        </tr>
-        <tr style="height: 50px; text-align: center;">
-            <td>Social Studies 12th</td>
-            <td id="soc24"></td>
-            <td id="soc4"></td>
-        </tr>
-        <tr style="height: 50px; text-align: center;">
-            <td>Mathematics</td>
-            <td id="mat2"></td>
-            <td id="mathematics"></td>
-        </tr>
-        <tr style="height: 50px; text-align: center;">
-            <td>Lab Science</td>
-            <td id="sci21"></td>
-            <td id="lab_science"></td>
-        </tr>
-        <tr style="height: 50px; text-align: center;">
-            <td>Science</td>
-            <td id="sci22"></td>
-            <td id="science"></td>
-        </tr>
-        <tr style="height: 50px; text-align: center;">
-            <td>CTE</td>
-            <td id="cte2"></td>
-            <td id="cte"></td>
-        </tr>
-        <tr style="height: 50px; text-align: center;">
-            <td>World Languages</td>
-            <td id="wl2"></td>
-            <td id="world_lang"></td>
-        </tr>
-        <tr style="height: 50px; text-align: center;">
-            <td>Health</td>
-            <td id="hea2"></td>
-            <td id="health"></td>
-        </tr>
-        <tr style="height: 50px; text-align: center;">
-            <td>Phys. Ed.</td>
-            <td id="pe2"></td>
-            <td id="pe"></td>
-        </tr>
-        <tr style="height: 50px; text-align: center;">
-            <td>Fine Arts</td>
-            <td id="art2"></td>
-            <td id="art"></td>
-        </tr>
-        <tr style="height: 50px; text-align: center;">
-            <td>Elective</td>
-            <td id="elective2"></td>
-            <td id="elective"></td>
-        </tr>
-    </table>
+    <div id="main" style="display:none">
 
-    <br />
-    <div id="notForPrint2">
-        <button onclick='ShowWarningDiv();' style="width: 5%">Review Selection</button>
-        <button onclick='LoadSummaryPage(); LoadPrintDiv();' style="width: 5%">Print Summary</button>
-        <br /><br />
+        <table width="50%" style="margin:0 auto;">
+            <tr>
+                <td>
+                    <div id="district" style="text-align:center;">District</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="school" style="text-align:center;">School</div>
+                </td>
+            </tr>                    
+
+        </table>
+        <br />
+
+        <table border="1" width="50%" style="margin:0 auto;">
+            <tr style="height: 50px;background-color:lightblue; text-align: center;">
+                <td width="33%">Subject</td>
+                <td width="33%">Required Credits</td>
+                <td width="33%">Credits for Currently Selected Subjects</td>
+            </tr>
+            <tr style="height: 50px; text-align: center;">
+                <td>English</td>
+                <td id="eng2"></td>
+                <td id="english"></td>
+            </tr>
+            <tr style="height: 50px; text-align: center;">
+                <td>Social Studies 9th</td>
+                <td id="soc21"></td>
+                <td id="soc1"></td>
+            </tr>
+            <tr style="height: 50px; text-align: center;">
+                <td>Social Studies 10th</td>
+                <td id="soc22"></td>
+                <td id="soc2"></td>
+            </tr>
+            <tr style="height: 50px; text-align: center;">
+                <td>Social Studies 11th</td>
+                <td id="soc23"></td>
+                <td id="soc3"></td>
+            </tr>
+            <tr style="height: 50px; text-align: center;">
+                <td>Social Studies 12th</td>
+                <td id="soc24"></td>
+                <td id="soc4"></td>
+            </tr>
+            <tr style="height: 50px; text-align: center;">
+                <td>Mathematics</td>
+                <td id="mat2"></td>
+                <td id="mathematics"></td>
+            </tr>
+            <tr style="height: 50px; text-align: center;">
+                <td>Lab Science</td>
+                <td id="sci21"></td>
+                <td id="lab_science"></td>
+            </tr>
+            <tr style="height: 50px; text-align: center;">
+                <td>Science</td>
+                <td id="sci22"></td>
+                <td id="science"></td>
+            </tr>
+            <tr style="height: 50px; text-align: center;">
+                <td>CTE</td>
+                <td id="cte2"></td>
+                <td id="cte"></td>
+            </tr>
+            <tr style="height: 50px; text-align: center;">
+                <td>World Languages</td>
+                <td id="wl2"></td>
+                <td id="world_lang"></td>
+            </tr>
+            <tr style="height: 50px; text-align: center;">
+                <td>Health</td>
+                <td id="hea2"></td>
+                <td id="health"></td>
+            </tr>
+            <tr style="height: 50px; text-align: center;">
+                <td>Phys. Ed.</td>
+                <td id="pe2"></td>
+                <td id="pe"></td>
+            </tr>
+            <tr style="height: 50px; text-align: center;">
+                <td>Fine Arts</td>
+                <td id="art2"></td>
+                <td id="art"></td>
+            </tr>
+            <tr style="height: 50px; text-align: center;">
+                <td>Elective</td>
+                <td id="elective2"></td>
+                <td id="elective"></td>
+            </tr>
+        </table>
+
+        <br />
+
         <div class="myDiv" id="warningDiv">
             <h2>Warnings:</h2>
             <h4 id="warningMsg">None</h4>
         </div>
-        <br /><br />
-        <table border="1" width="50%">
-            <tr style="height: 50px;background-color:lightblue; text-align: center;">
-                <td width="20%">Period</td>
-                <td width="20%" colspan="2">9th Grade</td>
-                <td width="20%" colspan="2">10th Grade</td>
-                <td width="20%" colspan="2">11th Grade</td>
-                <td width="20%" colspan="2">12th Grade</td>
-            </tr>
-            <tr style="text-align: center;">
-                <td width="20%"></td>
-                <td width="20%" class="nine-1">Semester 1</td>
-                <td width="20%" class="nine-2">Semester 2</td>
-                <td width="20%" class="ten-1">Semester 1</td>
-                <td width="20%" class="ten-2">Semester 2</td>
-                <td width="20%" class="eleven-1">Semester 1</td>
-                <td width="20%" class="eleven-2">Semester 2</td>
-                <td width="20%" class="twelve-1">Semester 1</td>
-                <td width="20%" class="twelve-2">Semester 2</td>
-            </tr>
-            
-            <!-- English -->
-            <tr style="text-align: center;">
-                <td>English</td>
-                <td class="nine-1">
-                    <select name="English9Sem1" id="english91" size="5" onchange='OnCourseSelectionChangeEvent("english91");' multiple>
-                        <option value="select">click confirm button</option>
-                    </select>
-                </td>
-                <td class="nine-2">
-                    <select name="English9Sem2" id="english92" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("english92");' multiple>
-
-                    </select>
-                </td>
-                <td class="ten-1">
-                    <select name="English10Sem1" id="english101" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("english101");' multiple>
-
-                    </select>
-                </td>
-                <td class="ten-2">
-                    <select name="English10Sem2" id="english102" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("english102");' multiple>
-
-                    </select>
-                </td>
-                <td class="eleven-1">
-                    <select name="English11Sem1" id="english111" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("english111");' multiple>
-
-                    </select>
-                </td>
-                <td class="eleven-2">
-                    <select name="English11Sem2" id="english112" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("english112");' multiple>
-
-                    </select>
-                </td>
-                <td class="twelve-1">
-                    <select name="English12Sem1" id="english121" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("english121");' multiple>
-
-                    </select>
-                </td>
-                <td class="twelve-2">
-                    <select name="English12Sem2" id="english122" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("english122");' multiple>
-
-                    </select>
-                </td>
-            </tr>
-
-            <!-- Social Studies -->
-            <tr style="text-align: center;">
-                <td>Social Studies</td>
-                <td class="nine-1">
-                    <select name="History9Sem1" id="history91" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("history91", "soc31");' multiple>
-
-                    </select>
-                </td>
-                <td class="nine-2">
-                    <select name="History9Sem2" id="history92" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("history92", "soc31");' multiple>
-
-                    </select>
-                </td>
-                <td class="ten-1">
-                    <select name="History10Sem1" id="history101" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("history101", "soc32");' multiple>
-
-                    </select>
-                </td>
-                <td class="ten-2">
-                    <select name="History10Sem2" id="history102" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("history102", "soc32");' multiple>
-
-                    </select>
-                </td>
-                <td class="eleven-1">
-                    <select name="History11Sem1" id="history111" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("history111", "soc33");' multiple>
-
-                    </select>
-                </td>
-                <td class="eleven-2">
-                    <select name="History11Sem2" id="history112" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("history112", "soc33");' multiple>
-
-                    </select>
-                </td>
-                <td class="twelve-1">
-                    <select name="History12Sem1" id="history121" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("history121", "soc34");' multiple>
-
-                    </select>
-                </td>
-                <td class="twelve-2">
-                    <select name="History12Sem2" id="history122" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("history122", "soc34");' multiple>
-
-                    </select>
-                </td>
-            </tr>
-
-            <!-- Science -->
-            <tr style="text-align: center;">
-                <td>Science</td>
-                <td class="nine-1">
-                    <select name="Science9Sem1" id="science91" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("science91");' multiple>
-
-                    </select>
-                </td>
-                <td class="nine-2">
-                    <select name="Science9Sem2" id="science92" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("science92");' multiple>
-
-                    </select>
-                </td>
-                <td class="ten-1">
-                    <select name="Science10Sem1" id="science101" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("science101");' multiple>
-
-                    </select>
-                </td>
-                <td class="ten-2">
-                    <select name="Science10Sem2" id="science102" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("science102");' multiple>
-
-                    </select>
-                </td>
-                <td class="eleven-1">
-                    <select name="Science11Sem1" id="science111" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("science111");' multiple>
-
-                    </select>
-                </td>
-                <td class="eleven-2">
-                    <select name="Science11Sem2" id="science112" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("science112");' multiple>
-
-                    </select>
-                </td>
-                <td class="twelve-1">
-                    <select name="Science12Sem1" id="science121" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("science121");' multiple>
-
-                    </select>
-                </td>
-                <td class="twelve-2">
-                    <select name="Science12Sem2" id="science122" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("science122");' multiple>
-
-                    </select>
-                </td>
-            </tr>
-
-            <!-- Mathematics -->
-            <tr style="text-align: center;">
-                <td>Mathematics</td>
-                <td colspan="2" class="nine-1">
-                    <select name="Math9" id="math91" size="5" style="width: 400px;" onchange='OnCourseSelectionChangeEvent("math91");' multiple>
-
-                    </select>
-                </td>
-                <td colspan="2" class="ten-1">
-                    <select name="Math10" id="math101" size="5" style="width: 400px;" onchange='OnCourseSelectionChangeEvent("math101");' multiple>
-
-                    </select>
-                </td>
-                <td colspan="2" class="eleven-1">
-                    <select name="Math11" id="math111" size="5" style="width: 400px;" onchange='OnCourseSelectionChangeEvent("math111");' multiple>
-
-                    </select>
-                </td>
-                <td colspan="2" class="twelve-1">
-                    <select name="Math12" id="math121" size="5" style="width: 400px;" onchange='OnCourseSelectionChangeEvent("math121");' multiple>
-
-                    </select>
-                </td>
-            </tr>
-
-            <!-- Health and PE -->
-            <tr style="text-align: center;">
-                <td>Health & Phys. Ed.</td>
-                <td class="nine-1">
-                    <select name="HPE9Sem1" id="hpe91" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("hpe91");' multiple>
-
-                    </select>
-                </td>
-                <td class="nine-2">
-                    <select name="HPE9Sem2" id="hpe92" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("hpe92");' multiple>
-
-                    </select>
-                </td>
-                <td class="ten-1">
-                    <select name="HPE10Sem1" id="hpe101" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("hpe101");' multiple>
-
-                    </select>
-                </td>
-                <td class="ten-2">
-                    <select name="HPE10Sem2" id="hpe102" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("hpe102");' multiple>
-
-                    </select>
-                </td>
-                <td class="eleven-1">
-                    <select name="HPE11Sem1" id="hpe111" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("hpe111");' multiple>
-
-                    </select>
-                </td>
-                <td class="eleven-2">
-                    <select name="HPE11Sem2" id="hpe112" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("hpe112");' multiple>
-
-                    </select>
-                </td>
-                <td class="twelve-1">
-                    <select name="HPE12Sem1" id="hpe121" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("hpe121");' multiple>
-
-                    </select>
-                </td>
-                <td class="twelve-2">
-                    <select name="HPE12Sem2" id="hpe122" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("hpe122");' multiple>
-
-                    </select>
-                </td>
-            </tr>
-
-            <!-- Arts -->
-            <tr style="text-align: center;">
-                <td>Visual and Perf. Arts</td>
-                <td class="nine-1">
-                    <select name="VPA9Sem1" id="vpa91" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("vpa91");' multiple>
-
-                    </select>
-                </td>
-                <td class="nine-2">
-                    <select name="VPA9Sem2" id="vpa92" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("vpa92");' multiple>
-
-                    </select>
-                </td>
-                <td class="ten-1">
-                    <select name="VPA10Sem1" id="vpa101" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("vpa101");' multiple>
-
-                    </select>
-                </td>
-                <td class="ten-2">
-                    <select name="VPA10Sem2" id="vpa102" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("vpa102");' multiple>
-
-                    </select>
-                </td>
-                <td class="eleven-1">
-                    <select name="VPA11Sem1" id="vpa111" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("vpa111");' multiple>
-
-                    </select>
-                </td>
-                <td class="eleven-2">
-                    <select name="VPA11Sem2" id="vpa112" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("vpa112");' multiple>
-
-                    </select>
-                </td>
-                <td class="twelve-1">
-                    <select name="VPA12Sem1" id="vpa121" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("vpa121");' multiple>
-
-                    </select>
-                </td>
-                <td class="twelve-2">
-                    <select name="VPA12Sem2" id="vpa122" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("vpa122");' multiple>
-
-                    </select>
-                </td>
-            </tr>
-
-            <!-- World Languages -->
-            <tr style="text-align: center;">
-                <td>World Languages</td>
-                <td colspan="2" class="nine-1">
-                    <select name="WL09" id="wl09" size="5" style="width: 400px;" onchange='OnCourseSelectionChangeEvent("wl09");' multiple>
-
-                    </select>
-                </td>
-                <td colspan="2" class="ten-1">
-                    <select name="WL10" id="wl10" size="5" style="width: 400px;" onchange='OnCourseSelectionChangeEvent("wl10");' multiple>
-
-                    </select>
-                </td>
-                <td colspan="2" class="eleven-1">
-                    <select name="WL11" id="wl11" size="5" style="width: 400px;" onchange='OnCourseSelectionChangeEvent("wl11");' multiple>
-
-                    </select>
-                </td>
-                <td colspan="2" class="twelve-1">
-                    <select name="WL12" id="wl12" size="5" style="width: 400px;" onchange='OnCourseSelectionChangeEvent("wl12");' multiple>
-
-                    </select>
-                </td>
-            </tr>
-
-            <!-- CTE Business -->
-            <tr style="text-align: center;">
-                <td>CTE Business & Marketing</td>
-                <td class="nine-1">
-                    <select name="CTE_B&M9Sem1" id="cte_b&m91" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_b&m91");' multiple>
-
-                    </select>
-                </td>
-                <td class="nine-2">
-                    <select name="CTE_B&M9Sem2" id="cte_b&m92" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_b&m92");' multiple>
-
-                    </select>
-                </td>
-                <td class="ten-1">
-                    <select name="CTE_B&M10Sem1" id="cte_b&m101" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_b&m101");' multiple>
-
-                    </select>
-                </td>
-                <td class="ten-2">
-                    <select name="CTE_B&M10Sem2" id="cte_b&m102" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_b&m102");' multiple>
-
-                    </select>
-                </td>
-                <td class="eleven-1">
-                    <select name="CTE_B&M11Sem1" id="cte_b&m111" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_b&m111");' multiple>
-
-                    </select>
-                </td>
-                <td class="eleven-2">
-                    <select name="CTE_B&M11Sem2" id="cte_b&m112" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_b&m112");' multiple>
-
-                    </select>
-                </td>
-                <td class="twelve-1">
-                    <select name="CTE_B&M12Sem1" id="cte_b&m121" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_b&m121");' multiple>
-
-                    </select>
-                </td>
-                <td class="twelve-2">
-                    <select name="CTE_B&M12Sem2" id="cte_b&m122" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_b&m122");' multiple>
-
-                    </select>
-                </td>
-            </tr>
-
-            <!-- CTE IT -->
-            <tr style="text-align: center;">
-                <td>CTE Information Technologies</td>
-                <td class="nine-1">
-                    <select name="CTE_IT9Sem1" id="cte_it91" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_it91");' multiple>
-
-                    </select>
-                </td>
-                <td class="nine-2">
-                    <select name="CTE_IT9Sem2" id="cte_it92" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_it92");' multiple>
-
-                    </select>
-                </td>
-                <td class="ten-1">
-                    <select name="CTE_IT10Sem1" id="cte_it101" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_it101");' multiple>
-
-                    </select>
-                </td>
-                <td class="ten-2">
-                    <select name="CTE_IT10Sem2" id="cte_it102" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_it102");' multiple>
-
-                    </select>
-                </td>
-                <td class="eleven-1">
-                    <select name="CTE_IT11Sem1" id="cte_it111" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_it111");' multiple>
-
-                    </select>
-                </td>
-                <td class="eleven-2">
-                    <select name="CTE_IT11Sem2" id="cte_it112" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_it112");' multiple>
-
-                    </select>
-                </td>
-                <td class="twelve-1">
-                    <select name="CTE_IT12Sem1" id="cte_it121" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_it121");' multiple>
-
-                    </select>
-                </td>
-                <td class="twelve-2">
-                    <select name="CTE_IT12Sem2" id="cte_it122" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_it122");' multiple>
-
-                    </select>
-                </td>
-            </tr>
-
-            <!-- CTE Health -->
-            <tr style="text-align: center;">
-                <td>CTE Health Services</td>
-                <td class="nine-1">
-                    <select name="CTE_HEALTH9Sem1" id="cte_health91" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_health91");' multiple>
-
-                    </select>
-                </td>
-                <td class="nine-2">
-                    <select name="CTE_HEALTH9Sem2" id="cte_health92" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_health92");' multiple>
-
-                    </select>
-                </td>
-                <td class="ten-1">
-                    <select name="CTE_HEALTH10Sem1" id="cte_health101" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_health101");' multiple>
-
-                    </select>
-                </td>
-                <td class="ten-2">
-                    <select name="CTE_HEALTH10Sem2" id="cte_health102" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_health102");' multiple>
-
-                    </select>
-                </td>
-                <td class="eleven-1">
-                    <select name="CTE_HEALTH11Sem1" id="cte_health111" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_health111");' multiple>
-
-                    </select>
-                </td>
-                <td class="eleven-2">
-                    <select name="CTE_HEALTH11Sem2" id="cte_health112" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_health112");' multiple>
-
-                    </select>
-                </td>
-                <td class="twelve-1">
-                    <select name="CTE_HEALTH12Sem1" id="cte_health121" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_health121");' multiple>
-
-                    </select>
-                </td>
-                <td class="twelve-2">
-                    <select name="CTE_HEALTH12Sem2" id="cte_health122" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_health122");' multiple>
-
-                    </select>
-                </td>
-            </tr>
-
-            <!-- CTE Human -->
-            <tr style="text-align: center;">
-                <td>CTE Human Services</td>
-                <td class="nine-1">
-                    <select name="CTE_HUMAN9Sem1" id="cte_human91" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_human91");' multiple>
-
-                    </select>
-                </td>
-                <td class="nine-2">
-                    <select name="CTE_HUMAN9Sem2" id="cte_human92" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_human92");' multiple>
-
-                    </select>
-                </td>
-                <td class="ten-1">
-                    <select name="CTE_HUMAN10Sem1" id="cte_human101" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_human101");' multiple>
-
-                    </select>
-                </td>
-                <td class="ten-2">
-                    <select name="CTE_HUMAN10Sem2" id="cte_human102" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_human102");' multiple>
-
-                    </select>
-                </td>
-                <td class="eleven-1">
-                    <select name="CTE_HUMAN11Sem1" id="cte_human111" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_human111");' multiple>
-
-                    </select>
-                </td>
-                <td class="eleven-2">
-                    <select name="CTE_HUMAN11Sem2" id="cte_human112" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_human112");' multiple>
-
-                    </select>
-                </td>
-                <td class="twelve-1">
-                    <select name="CTE_HUMAN12Sem1" id="cte_human121" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_human121");' multiple>
-
-                    </select>
-                </td>
-                <td class="twelve-2">
-                    <select name="CTE_HUMAN12Sem2" id="cte_human122" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_human122");' multiple>
-
-                    </select>
-                </td>
-            </tr>
-
-            <!-- CTE Tech Sciences -->
-            <tr style="text-align: center;">
-                <td>CTE Skilled & Tech. Sciences</td>
-                <td class="nine-1">
-                    <select name="CTE_TECH_SCIENCE9Sem1" id="cte_tech_science91" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_tech_science91");' multiple>
-
-                    </select>
-                </td>
-                <td class="nine-2">
-                    <select name="CTE_TECH_SCIENCE9Sem2" id="cte_tech_science92" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_tech_science92");' multiple>
-
-                    </select>
-                </td>
-                <td class="ten-1">
-                    <select name="CTE_TECH_SCIENCE10Sem1" id="cte_tech_science101" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_tech_science101");' multiple>
-
-                    </select>
-                </td>
-                <td class="ten-2">
-                    <select name="CTE_TECH_SCIENCE10Sem2" id="cte_tech_science102" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_tech_science102");' multiple>
-
-                    </select>
-                </td>
-                <td class="eleven-1">
-                    <select name="CTE_TECH_SCIENCE11Sem1" id="cte_tech_science111" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_tech_science111");' multiple>
-
-                    </select>
-                </td>
-                <td class="eleven-2">
-                    <select name="CTE_TECH_SCIENCE11Sem2" id="cte_tech_science112" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_tech_science112");' multiple>
-
-                    </select>
-                </td>
-                <td class="twelve-1">
-                    <select name="CTE_TECH_SCIENCE12Sem1" id="cte_tech_science121" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_tech_science121");' multiple>
-
-                    </select>
-                </td>
-                <td class="twelve-2">
-                    <select name="CTE_TECH_SCIENCE12Sem2" id="cte_tech_science122" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_tech_science122");' multiple>
-
-                    </select>
-                </td>
-            </tr>
-
-            <!-- CTE Tech Art -->
-            <tr style="text-align: center;">
-                <td>CTE Skilled & Tech. Art</td>
-                <td class="nine-1">
-                    <select name="CTE_TECH_ART9Sem1" id="cte_tech_art91" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_tech_art91");' multiple>
-
-                    </select>
-                </td>
-                <td class="nine-2">
-                    <select name="CTE_TECH_ART9Sem2" id="cte_tech_art92" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_tech_art92");' multiple>
-
-                    </select>
-                </td>
-                <td class="ten-1">
-                    <select name="CTE_TECH_ART10Sem1" id="cte_tech_art101" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_tech_art101");' multiple>
-
-                    </select>
-                </td>
-                <td class="ten-2">
-                    <select name="CTE_TECH_ART10Sem2" id="cte_tech_art102" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_tech_art102");' multiple>
-
-                    </select>
-                </td>
-                <td class="eleven-1">
-                    <select name="CTE_TECH_ART11Sem1" id="cte_tech_art111" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_tech_art111");' multiple>
-
-                    </select>
-                </td>
-                <td class="eleven-2">
-                    <select name="CTE_TECH_ART11Sem2" id="cte_tech_art112" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_tech_art112");' multiple>
-
-                    </select>
-                </td>
-                <td class="twelve-1">
-                    <select name="CTE_TECH_ART12Sem1" id="cte_tech_art121" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_tech_art121");' multiple>
-
-                    </select>
-                </td>
-                <td class="twelve-2">
-                    <select name="CTE_TECH_ART12Sem2" id="cte_tech_art122" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_tech_art122");' multiple>
-
-                    </select>
-                </td>
-            </tr>
-
-            <!-- CTE STEM -->
-            <tr style="text-align: center;">
-                <td>CTE STEM</td>
-                <td class="nine-1">
-                    <select name="CTE_STEM9Sem1" id="cte_stem91" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_stem91");' multiple>
-
-                    </select>
-                </td>
-                <td class="nine-2">
-                    <select name="CTE_STEM9Sem2" id="cte_stem92" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_stem92");' multiple>
-
-                    </select>
-                </td>
-                <td class="ten-1">
-                    <select name="CTE_STEM10Sem1" id="cte_stem101" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_stem101");' multiple>
-
-                    </select>
-                </td>
-                <td class="ten-2">
-                    <select name="CTE_STEM10Sem2" id="cte_stem102" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_stem102");' multiple>
-
-                    </select>
-                </td>
-                <td class="eleven-1">
-                    <select name="CTE_STEM11Sem1" id="cte_stem111" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_stem111");' multiple>
-
-                    </select>
-                </td>
-                <td class="eleven-2">
-                    <select name="CTE_STEM11Sem2" id="cte_stem112" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_stem112");' multiple>
-
-                    </select>
-                </td>
-                <td class="twelve-1">
-                    <select name="CTE_STEM12Sem1" id="cte_stem121" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_stem121");' multiple>
-
-                    </select>
-                </td>
-                <td class="twelve-2">
-                    <select name="CTE_STEM12Sem2" id="cte_stem122" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_stem122");' multiple>
-
-                    </select>
-                </td>
-            </tr>
-
-        </table>
-    </div>
-    <div id="forPrint" class="forPrint">
-        <table border="1" style="width:1500px;">
-            <tr style="height: 50px;background-color:lightblue; text-align: center;">
-                <td width="10%">Period</td>
-                <td width="22.5%" colspan="2">9th Grade</td>
-                <td width="22.5%" colspan="2">10th Grade</td>
-                <td width="22.5%" colspan="2">11th Grade</td>
-                <td width="22.5%" colspan="2">12th Grade</td>
-            </tr>
-            <tr style="height: 20px; text-align: center;">
-                <td width="20%"></td>
-                <td width="10%" class="nine-1">Semester 1</td>
-                <td width="10%" class="nine-2">Semester 2</td>
-                <td width="10%" class="ten-1">Semester 1</td>
-                <td width="10%" class="ten-2">Semester 2</td>
-                <td width="10%" class="eleven-1">Semester 1</td>
-                <td width="10%" class="eleven-2">Semester 2</td>
-                <td width="10%" class="twelve-1">Semester 1</td>
-                <td width="10%" class="twelve-2">Semester 2</td>
-            </tr>
-            
-            <!-- English -->
-            <tr style="height: 75px; text-align:center;">
-                <td>English</td>
-                <td class="nine-1" id="english911">
-                    
-                </td>
-                <td class="nine-2" id="english921">
-                    
-                </td>
-                <td class="ten-1" id="english1011">
-                    
-                </td>
-                <td class="ten-2" id="english1021">
-                    
-                </td>
-                <td class="eleven-1" id="english1111">
-                    
-                </td>
-                <td class="eleven-2" id="english1121">
-                    
-                </td>
-                <td class="twelve-1" id="english1211">
-                    
-                </td>
-                <td class="twelve-2" id="english1221">
-                    
-                </td>
-            </tr>
-    
-            <!-- Social Studies -->
-            <tr style="height: 75px; text-align:center;">
-                <td>Social Studies</td>
-                <td class="nine-1" id="history911">
-                    
-                </td>
-                <td class="nine-2" id="history921">
-                    
-                </td>
-                <td class="ten-1" id="history1011">
-                    
-                </td>
-                <td class="ten-2" id="history1021">
-                    
-                </td>
-                <td class="eleven-1" id="history1111">
-                    
-                </td>
-                <td class="eleven-2" id="history1121">
-                    
-                </td>
-                <td class="twelve-1" id="history1211">
-                    
-                </td>
-                <td class="twelve-2" id="history1221">
-                    
-                </td>
-            </tr>
-    
-            <!-- Science -->
-            <tr style="height: 75px; text-align:center;">
-                <td>Science</td>
-                <td class="nine-1" id="science911">
-                    
-                </td>
-                <td class="nine-2" id="science921">
-                    
-                </td>
-                <td class="ten-1" id="science1011">
-                    
-                </td>
-                <td class="ten-2" id="science1021">
-                    
-                </td>
-                <td class="eleven-1" id="science1111">
-                    
-                </td>
-                <td class="eleven-2" id="science1121">
-                    
-                </td>
-                <td class="twelve-1" id="science1211">
-                    
-                </td>
-                <td class="twelve-2" id="science1221">
-                    
-                </td>
-            </tr>
-    
-            <!-- Mathematics -->
-            <tr style="height: 75px; text-align:center;">
-                <td>Mathematics</td>
-                <td colspan="2" class="nine-1" id="math911">
-                    
-                </td>
-                <td colspan="2" class="ten-1" id="math1011">
-                    
-                </td>
-                <td colspan="2" class="eleven-1" id="math1111">
-                    
-                </td>
-                <td colspan="2" class="twelve-1" id="math1211">
-                    
-                </td>
-            </tr>
-    
-            <!-- Health and PE -->
-            <tr style="height: 75px; text-align:center;">
-                <td>Health & Phys. Ed.</td>
-                <td class="nine-1" id="hpe911">
-                    
-                </td>
-                <td class="nine-2" id="hpe921">
-                    
-                </td>
-                <td class="ten-1" id="hpe1011">
-                    
-                </td>
-                <td class="ten-2" id="hpe1021">
-                    
-                </td>
-                <td class="eleven-1" id="hpe1111">
-                    
-                </td>
-                <td class="eleven-2" id="hpe1121">
-                    
-                </td>
-                <td class="twelve-1" id="hpe1211">
-                    
-                </td>
-                <td class="twelve-2" id="hpe1221">
-                    
-                </td>
-            </tr>
-    
-            <!-- Arts -->
-            <tr style="height: 75px; text-align:center;">
-                <td>Visual and Perf. Arts</td>
-                <td class="nine-1" id="vpa911">
-                    
-                </td>
-                <td class="nine-2" id="vpa921">
-                    
-                </td>
-                <td class="ten-1" id="vpa1011">
-                    
-                </td>
-                <td class="ten-2" id="vpa1021">
-                    
-                </td>
-                <td class="eleven-1" id="vpa1111">
-                    
-                </td>
-                <td class="eleven-2" id="vpa1121">
-                    
-                </td>
-                <td class="twelve-1" id="vpa1211">
-                    
-                </td>
-                <td class="twelve-2" id="vpa1221">
-                    
-                </td>
-            </tr>
-    
-            <!-- World Languages -->
-            <tr style="height: 75px; text-align:center;">
-                <td>World Languages</td>
-                <td colspan="2" class="nine-1" id="wl091">
-                    
-                </td>
-                <td colspan="2" class="ten-1" id="wl101">
-                    
-                </td>
-                <td colspan="2" class="eleven-1" id="wl111">
-                    
-                </td>
-                <td colspan="2" class="twelve-1" id="wl121">
-                    
-                </td>
-            </tr>
-    
-            <!-- CTE Business -->
-            <tr style="height: 75px; text-align:center;">
-                <td>CTE Business & Marketing</td>
-                <td class="nine-1" id="cte_b&m911">
-                    
-                </td>
-                <td class="nine-2" id="cte_b&m921">
-                    
-                </td>
-                <td class="ten-1" id="cte_b&m1011">
-                    
-                </td>
-                <td class="ten-2" id="cte_b&m1021">
-                    
-                </td>
-                <td class="eleven-1" id="cte_b&m1111">
-                    
-                </td>
-                <td class="eleven-2" id="cte_b&m1121">
-                    
-                </td>
-                <td class="twelve-1" id="cte_b&m1211">
-                    
-                </td>
-                <td class="twelve-2" id="cte_b&m1221">
-                    
-                </td>
-            </tr>
-    
-            <!-- CTE IT -->
-            <tr style="height: 75px; text-align:center;">
-                <td>CTE Information Technologies</td>
-                <td class="nine-1" id="cte_it911">
-                    
-                </td>
-                <td class="nine-2" id="cte_it921">
-                    
-                </td>
-                <td class="ten-1" id="cte_it1011">
-                    
-                </td>
-                <td class="ten-2" id="cte_it1021">
-                    
-                </td>
-                <td class="eleven-1" id="cte_it1111">
-                    
-                </td>
-                <td class="eleven-2" id="cte_it1121">
-                    
-                </td>
-                <td class="twelve-1" id="cte_it1211">
-                    
-                </td>
-                <td class="twelve-2" id="cte_it1221">
-                    
-                </td>
-            </tr>
-    
-            <!-- CTE Health -->
-            <tr style="height: 75px; text-align:center;">
-                <td>CTE Health Services</td>
-                <td class="nine-1" id="cte_health911">
-                    
-                </td>
-                <td class="nine-2" id="cte_health921">
-                    
-                </td>
-                <td class="ten-1" id="cte_health1011">
-                    
-                </td>
-                <td class="ten-2" id="cte_health1021">
-                    
-                </td>
-                <td class="eleven-1" id="cte_health1111">
-                    
-                </td>
-                <td class="eleven-2" id="cte_health1121">
-                    
-                </td>
-                <td class="twelve-1" id="cte_health1211">
-                    
-                </td>
-                <td class="twelve-2" id="cte_health1221">
-                    
-                </td>
-            </tr>
-    
-            <!-- CTE Human -->
-            <tr style="height: 75px; text-align:center;">
-                <td>CTE Human Services</td>
-                <td class="nine-1" id="cte_human911">
-                    
-                </td>
-                <td class="nine-2" id="cte_human921">
-                    
-                </td>
-                <td class="ten-1" id="cte_human1011">
-                    
-                </td>
-                <td class="ten-2" id="cte_human1021">
-                    
-                </td>
-                <td class="eleven-1" id="cte_human1111">
-                    
-                </td>
-                <td class="eleven-2" id="cte_human1121">
-                    
-                </td>
-                <td class="twelve-1" id="cte_human1211">
-                    
-                </td>
-                <td class="twelve-2" id="cte_human1221">
-                    
-                </td>
-            </tr>
-    
-            <!-- CTE Tech Sciences -->
-            <tr style="height: 75px; text-align:center;">
-                <td>CTE Skilled & Tech. Sciences</td>
-                <td class="nine-1" id="cte_tech_science911">
-                    
-                </td>
-                <td class="nine-2" id="cte_tech_science921">
-                    
-                </td>
-                <td class="ten-1" id="cte_tech_science1011">
-                    
-                </td>
-                <td class="ten-2" id="cte_tech_science1021">
-                    
-                </td>
-                <td class="eleven-1" id="cte_tech_science1111">
-                    
-                </td>
-                <td class="eleven-2" id="cte_tech_science1121">
-                    
-                </td>
-                <td class="twelve-1" id="cte_tech_science1211">
-                    
-                </td>
-                <td class="twelve-2" id="cte_tech_science1221">
-                    
-                </td>
-            </tr>
-    
-            <!-- CTE Tech Art -->
-            <tr style="height: 75px; text-align:center;">
-                <td>CTE Skilled & Tech. Art</td>
-                <td class="nine-1" id="cte_tech_art911">
-                    
-                </td>
-                <td class="nine-2" id="cte_tech_art921">
-                    
-                </td>
-                <td class="ten-1" id="cte_tech_art1011">
-                    
-                </td>
-                <td class="ten-2" id="cte_tech_art1021">
-                    
-                </td>
-                <td class="eleven-1" id="cte_tech_art1111">
-                    
-                </td>
-                <td class="eleven-2" id="cte_tech_art1121">
-                    
-                </td>
-                <td class="twelve-1" id="cte_tech_art1211">
-                    
-                </td>
-                <td class="twelve-2" id="cte_tech_art1221">
-                    
-                </td>
-            </tr>
-    
-            <!-- CTE STEM -->
-            <tr style="height: 75px; text-align:center;">
-                <td>CTE STEM</td>
-                <td class="nine-1" id="cte_stem911">
-                    
-                </td>
-                <td class="nine-2" id="cte_stem921">
-                    
-                </td>
-                <td class="ten-1" id="cte_stem1011">
-                    
-                </td>
-                <td class="ten-2" id="cte_stem1021">
-                    
-                </td>
-                <td class="eleven-1" id="cte_stem1111">
-                    
-                </td>
-                <td class="eleven-2" id="cte_stem1121">
-                    
-                </td>
-                <td class="twelve-1" id="cte_stem1211">
-                    
-                </td>
-                <td class="twelve-2" id="cte_stem1221">
-                    
-                </td>
-            </tr>
-    
-        </table>
-        <button onclick='HideSummaryPage();' style="width: 7.5%">Back to Main Page</button>
+        <br />
+        <div id="notForPrint">
+            <table style="margin: 0 auto; width: 30%;">
+                <tr>
+                    <td style="width: 50%;">
+                        <button onclick='ShowWarningDiv();' style="width: 100%; font-size: 24px; height: 50px; background-color:darkseagreen;">Review Selection</button>
+
+                    </td>
+                    <td style="width: 50%;">
+                        <button onclick='LoadSummaryPage(); LoadPrintDiv();' style="width: 100%; font-size: 24px; height: 50px; background-color:darkseagreen;">Print Summary</button>
+                    </td>
+                </tr>
+
+            </table>
+
+            <br /><br />
+            <table border="1" width="50%" style="margin: 0 auto;">
+                <tr style="height: 50px;background-color:lightblue; text-align: center;">
+                    <td width="20%">Period</td>
+                    <td width="20%" colspan="2">9th Grade</td>
+                    <td width="20%" colspan="2">10th Grade</td>
+                    <td width="20%" colspan="2">11th Grade</td>
+                    <td width="20%" colspan="2">12th Grade</td>
+                </tr>
+                <tr style="text-align: center;">
+                    <td width="20%"></td>
+                    <td width="20%" class="nine-1">Semester 1</td>
+                    <td width="20%" class="nine-2">Semester 2</td>
+                    <td width="20%" class="ten-1">Semester 1</td>
+                    <td width="20%" class="ten-2">Semester 2</td>
+                    <td width="20%" class="eleven-1">Semester 1</td>
+                    <td width="20%" class="eleven-2">Semester 2</td>
+                    <td width="20%" class="twelve-1">Semester 1</td>
+                    <td width="20%" class="twelve-2">Semester 2</td>
+                </tr>
+                
+                <!-- English -->
+                <tr style="text-align: center;">
+                    <td>English</td>
+                    <td class="nine-1">
+                        <select name="English9Sem1" id="english91" size="5" onchange='OnCourseSelectionChangeEvent("english91");' multiple>
+                            <option value="select">click confirm button</option>
+                        </select>
+                    </td>
+                    <td class="nine-2">
+                        <select name="English9Sem2" id="english92" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("english92");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="ten-1">
+                        <select name="English10Sem1" id="english101" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("english101");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="ten-2">
+                        <select name="English10Sem2" id="english102" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("english102");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="eleven-1">
+                        <select name="English11Sem1" id="english111" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("english111");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="eleven-2">
+                        <select name="English11Sem2" id="english112" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("english112");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="twelve-1">
+                        <select name="English12Sem1" id="english121" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("english121");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="twelve-2">
+                        <select name="English12Sem2" id="english122" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("english122");' multiple>
+
+                        </select>
+                    </td>
+                </tr>
+
+                <!-- Social Studies -->
+                <tr style="text-align: center;">
+                    <td>Social Studies</td>
+                    <td class="nine-1">
+                        <select name="History9Sem1" id="history91" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("history91", "soc31");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="nine-2">
+                        <select name="History9Sem2" id="history92" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("history92", "soc31");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="ten-1">
+                        <select name="History10Sem1" id="history101" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("history101", "soc32");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="ten-2">
+                        <select name="History10Sem2" id="history102" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("history102", "soc32");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="eleven-1">
+                        <select name="History11Sem1" id="history111" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("history111", "soc33");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="eleven-2">
+                        <select name="History11Sem2" id="history112" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("history112", "soc33");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="twelve-1">
+                        <select name="History12Sem1" id="history121" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("history121", "soc34");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="twelve-2">
+                        <select name="History12Sem2" id="history122" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("history122", "soc34");' multiple>
+
+                        </select>
+                    </td>
+                </tr>
+
+                <!-- Science -->
+                <tr style="text-align: center;">
+                    <td>Science</td>
+                    <td class="nine-1">
+                        <select name="Science9Sem1" id="science91" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("science91");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="nine-2">
+                        <select name="Science9Sem2" id="science92" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("science92");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="ten-1">
+                        <select name="Science10Sem1" id="science101" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("science101");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="ten-2">
+                        <select name="Science10Sem2" id="science102" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("science102");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="eleven-1">
+                        <select name="Science11Sem1" id="science111" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("science111");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="eleven-2">
+                        <select name="Science11Sem2" id="science112" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("science112");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="twelve-1">
+                        <select name="Science12Sem1" id="science121" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("science121");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="twelve-2">
+                        <select name="Science12Sem2" id="science122" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("science122");' multiple>
+
+                        </select>
+                    </td>
+                </tr>
+
+                <!-- Mathematics -->
+                <tr style="text-align: center;">
+                    <td>Mathematics</td>
+                    <td colspan="2" class="nine-1">
+                        <select name="Math9" id="math91" size="5" style="width: 400px;" onchange='OnCourseSelectionChangeEvent("math91");' multiple>
+
+                        </select>
+                    </td>
+                    <td colspan="2" class="ten-1">
+                        <select name="Math10" id="math101" size="5" style="width: 400px;" onchange='OnCourseSelectionChangeEvent("math101");' multiple>
+
+                        </select>
+                    </td>
+                    <td colspan="2" class="eleven-1">
+                        <select name="Math11" id="math111" size="5" style="width: 400px;" onchange='OnCourseSelectionChangeEvent("math111");' multiple>
+
+                        </select>
+                    </td>
+                    <td colspan="2" class="twelve-1">
+                        <select name="Math12" id="math121" size="5" style="width: 400px;" onchange='OnCourseSelectionChangeEvent("math121");' multiple>
+
+                        </select>
+                    </td>
+                </tr>
+
+                <!-- Health and PE -->
+                <tr style="text-align: center;">
+                    <td>Health & Phys. Ed.</td>
+                    <td class="nine-1">
+                        <select name="HPE9Sem1" id="hpe91" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("hpe91");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="nine-2">
+                        <select name="HPE9Sem2" id="hpe92" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("hpe92");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="ten-1">
+                        <select name="HPE10Sem1" id="hpe101" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("hpe101");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="ten-2">
+                        <select name="HPE10Sem2" id="hpe102" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("hpe102");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="eleven-1">
+                        <select name="HPE11Sem1" id="hpe111" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("hpe111");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="eleven-2">
+                        <select name="HPE11Sem2" id="hpe112" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("hpe112");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="twelve-1">
+                        <select name="HPE12Sem1" id="hpe121" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("hpe121");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="twelve-2">
+                        <select name="HPE12Sem2" id="hpe122" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("hpe122");' multiple>
+
+                        </select>
+                    </td>
+                </tr>
+
+                <!-- Arts -->
+                <tr style="text-align: center;">
+                    <td>Visual and Perf. Arts</td>
+                    <td class="nine-1">
+                        <select name="VPA9Sem1" id="vpa91" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("vpa91");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="nine-2">
+                        <select name="VPA9Sem2" id="vpa92" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("vpa92");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="ten-1">
+                        <select name="VPA10Sem1" id="vpa101" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("vpa101");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="ten-2">
+                        <select name="VPA10Sem2" id="vpa102" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("vpa102");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="eleven-1">
+                        <select name="VPA11Sem1" id="vpa111" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("vpa111");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="eleven-2">
+                        <select name="VPA11Sem2" id="vpa112" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("vpa112");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="twelve-1">
+                        <select name="VPA12Sem1" id="vpa121" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("vpa121");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="twelve-2">
+                        <select name="VPA12Sem2" id="vpa122" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("vpa122");' multiple>
+
+                        </select>
+                    </td>
+                </tr>
+
+                <!-- World Languages -->
+                <tr style="text-align: center;">
+                    <td>World Languages</td>
+                    <td colspan="2" class="nine-1">
+                        <select name="WL09" id="wl09" size="5" style="width: 400px;" onchange='OnCourseSelectionChangeEvent("wl09");' multiple>
+
+                        </select>
+                    </td>
+                    <td colspan="2" class="ten-1">
+                        <select name="WL10" id="wl10" size="5" style="width: 400px;" onchange='OnCourseSelectionChangeEvent("wl10");' multiple>
+
+                        </select>
+                    </td>
+                    <td colspan="2" class="eleven-1">
+                        <select name="WL11" id="wl11" size="5" style="width: 400px;" onchange='OnCourseSelectionChangeEvent("wl11");' multiple>
+
+                        </select>
+                    </td>
+                    <td colspan="2" class="twelve-1">
+                        <select name="WL12" id="wl12" size="5" style="width: 400px;" onchange='OnCourseSelectionChangeEvent("wl12");' multiple>
+
+                        </select>
+                    </td>
+                </tr>
+
+                <!-- CTE Business -->
+                <tr style="text-align: center;">
+                    <td>CTE Business & Marketing</td>
+                    <td class="nine-1">
+                        <select name="CTE_B&M9Sem1" id="cte_b&m91" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_b&m91");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="nine-2">
+                        <select name="CTE_B&M9Sem2" id="cte_b&m92" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_b&m92");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="ten-1">
+                        <select name="CTE_B&M10Sem1" id="cte_b&m101" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_b&m101");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="ten-2">
+                        <select name="CTE_B&M10Sem2" id="cte_b&m102" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_b&m102");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="eleven-1">
+                        <select name="CTE_B&M11Sem1" id="cte_b&m111" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_b&m111");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="eleven-2">
+                        <select name="CTE_B&M11Sem2" id="cte_b&m112" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_b&m112");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="twelve-1">
+                        <select name="CTE_B&M12Sem1" id="cte_b&m121" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_b&m121");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="twelve-2">
+                        <select name="CTE_B&M12Sem2" id="cte_b&m122" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_b&m122");' multiple>
+
+                        </select>
+                    </td>
+                </tr>
+
+                <!-- CTE IT -->
+                <tr style="text-align: center;">
+                    <td>CTE Information Technologies</td>
+                    <td class="nine-1">
+                        <select name="CTE_IT9Sem1" id="cte_it91" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_it91");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="nine-2">
+                        <select name="CTE_IT9Sem2" id="cte_it92" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_it92");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="ten-1">
+                        <select name="CTE_IT10Sem1" id="cte_it101" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_it101");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="ten-2">
+                        <select name="CTE_IT10Sem2" id="cte_it102" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_it102");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="eleven-1">
+                        <select name="CTE_IT11Sem1" id="cte_it111" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_it111");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="eleven-2">
+                        <select name="CTE_IT11Sem2" id="cte_it112" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_it112");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="twelve-1">
+                        <select name="CTE_IT12Sem1" id="cte_it121" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_it121");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="twelve-2">
+                        <select name="CTE_IT12Sem2" id="cte_it122" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_it122");' multiple>
+
+                        </select>
+                    </td>
+                </tr>
+
+                <!-- CTE Health -->
+                <tr style="text-align: center;">
+                    <td>CTE Health Services</td>
+                    <td class="nine-1">
+                        <select name="CTE_HEALTH9Sem1" id="cte_health91" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_health91");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="nine-2">
+                        <select name="CTE_HEALTH9Sem2" id="cte_health92" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_health92");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="ten-1">
+                        <select name="CTE_HEALTH10Sem1" id="cte_health101" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_health101");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="ten-2">
+                        <select name="CTE_HEALTH10Sem2" id="cte_health102" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_health102");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="eleven-1">
+                        <select name="CTE_HEALTH11Sem1" id="cte_health111" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_health111");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="eleven-2">
+                        <select name="CTE_HEALTH11Sem2" id="cte_health112" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_health112");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="twelve-1">
+                        <select name="CTE_HEALTH12Sem1" id="cte_health121" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_health121");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="twelve-2">
+                        <select name="CTE_HEALTH12Sem2" id="cte_health122" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_health122");' multiple>
+
+                        </select>
+                    </td>
+                </tr>
+
+                <!-- CTE Human -->
+                <tr style="text-align: center;">
+                    <td>CTE Human Services</td>
+                    <td class="nine-1">
+                        <select name="CTE_HUMAN9Sem1" id="cte_human91" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_human91");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="nine-2">
+                        <select name="CTE_HUMAN9Sem2" id="cte_human92" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_human92");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="ten-1">
+                        <select name="CTE_HUMAN10Sem1" id="cte_human101" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_human101");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="ten-2">
+                        <select name="CTE_HUMAN10Sem2" id="cte_human102" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_human102");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="eleven-1">
+                        <select name="CTE_HUMAN11Sem1" id="cte_human111" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_human111");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="eleven-2">
+                        <select name="CTE_HUMAN11Sem2" id="cte_human112" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_human112");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="twelve-1">
+                        <select name="CTE_HUMAN12Sem1" id="cte_human121" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_human121");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="twelve-2">
+                        <select name="CTE_HUMAN12Sem2" id="cte_human122" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_human122");' multiple>
+
+                        </select>
+                    </td>
+                </tr>
+
+                <!-- CTE Tech Sciences -->
+                <tr style="text-align: center;">
+                    <td>CTE Skilled & Tech. Sciences</td>
+                    <td class="nine-1">
+                        <select name="CTE_TECH_SCIENCE9Sem1" id="cte_tech_science91" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_tech_science91");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="nine-2">
+                        <select name="CTE_TECH_SCIENCE9Sem2" id="cte_tech_science92" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_tech_science92");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="ten-1">
+                        <select name="CTE_TECH_SCIENCE10Sem1" id="cte_tech_science101" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_tech_science101");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="ten-2">
+                        <select name="CTE_TECH_SCIENCE10Sem2" id="cte_tech_science102" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_tech_science102");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="eleven-1">
+                        <select name="CTE_TECH_SCIENCE11Sem1" id="cte_tech_science111" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_tech_science111");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="eleven-2">
+                        <select name="CTE_TECH_SCIENCE11Sem2" id="cte_tech_science112" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_tech_science112");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="twelve-1">
+                        <select name="CTE_TECH_SCIENCE12Sem1" id="cte_tech_science121" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_tech_science121");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="twelve-2">
+                        <select name="CTE_TECH_SCIENCE12Sem2" id="cte_tech_science122" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_tech_science122");' multiple>
+
+                        </select>
+                    </td>
+                </tr>
+
+                <!-- CTE Tech Art -->
+                <tr style="text-align: center;">
+                    <td>CTE Skilled & Tech. Art</td>
+                    <td class="nine-1">
+                        <select name="CTE_TECH_ART9Sem1" id="cte_tech_art91" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_tech_art91");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="nine-2">
+                        <select name="CTE_TECH_ART9Sem2" id="cte_tech_art92" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_tech_art92");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="ten-1">
+                        <select name="CTE_TECH_ART10Sem1" id="cte_tech_art101" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_tech_art101");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="ten-2">
+                        <select name="CTE_TECH_ART10Sem2" id="cte_tech_art102" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_tech_art102");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="eleven-1">
+                        <select name="CTE_TECH_ART11Sem1" id="cte_tech_art111" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_tech_art111");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="eleven-2">
+                        <select name="CTE_TECH_ART11Sem2" id="cte_tech_art112" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_tech_art112");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="twelve-1">
+                        <select name="CTE_TECH_ART12Sem1" id="cte_tech_art121" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_tech_art121");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="twelve-2">
+                        <select name="CTE_TECH_ART12Sem2" id="cte_tech_art122" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_tech_art122");' multiple>
+
+                        </select>
+                    </td>
+                </tr>
+
+                <!-- CTE STEM -->
+                <tr style="text-align: center;">
+                    <td>CTE STEM</td>
+                    <td class="nine-1">
+                        <select name="CTE_STEM9Sem1" id="cte_stem91" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_stem91");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="nine-2">
+                        <select name="CTE_STEM9Sem2" id="cte_stem92" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_stem92");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="ten-1">
+                        <select name="CTE_STEM10Sem1" id="cte_stem101" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_stem101");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="ten-2">
+                        <select name="CTE_STEM10Sem2" id="cte_stem102" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_stem102");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="eleven-1">
+                        <select name="CTE_STEM11Sem1" id="cte_stem111" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_stem111");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="eleven-2">
+                        <select name="CTE_STEM11Sem2" id="cte_stem112" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_stem112");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="twelve-1">
+                        <select name="CTE_STEM12Sem1" id="cte_stem121" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_stem121");' multiple>
+
+                        </select>
+                    </td>
+                    <td class="twelve-2">
+                        <select name="CTE_STEM12Sem2" id="cte_stem122" size="5" style="width: 200px;" onchange='OnCourseSelectionChangeEvent("cte_stem122");' multiple>
+
+                        </select>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+        <div id="forPrint" class="forPrint">
+            <table border="1" style="width:1500px;">
+                <tr style="height: 50px;background-color:lightblue; text-align: center;">
+                    <td width="10%">Period</td>
+                    <td width="22.5%" colspan="2">9th Grade</td>
+                    <td width="22.5%" colspan="2">10th Grade</td>
+                    <td width="22.5%" colspan="2">11th Grade</td>
+                    <td width="22.5%" colspan="2">12th Grade</td>
+                </tr>
+                <tr style="height: 20px; text-align: center;">
+                    <td width="20%"></td>
+                    <td width="10%" class="nine-1">Semester 1</td>
+                    <td width="10%" class="nine-2">Semester 2</td>
+                    <td width="10%" class="ten-1">Semester 1</td>
+                    <td width="10%" class="ten-2">Semester 2</td>
+                    <td width="10%" class="eleven-1">Semester 1</td>
+                    <td width="10%" class="eleven-2">Semester 2</td>
+                    <td width="10%" class="twelve-1">Semester 1</td>
+                    <td width="10%" class="twelve-2">Semester 2</td>
+                </tr>
+                
+                <!-- English -->
+                <tr style="height: 75px; text-align:center;">
+                    <td>English</td>
+                    <td class="nine-1" id="english911">
+                        
+                    </td>
+                    <td class="nine-2" id="english921">
+                        
+                    </td>
+                    <td class="ten-1" id="english1011">
+                        
+                    </td>
+                    <td class="ten-2" id="english1021">
+                        
+                    </td>
+                    <td class="eleven-1" id="english1111">
+                        
+                    </td>
+                    <td class="eleven-2" id="english1121">
+                        
+                    </td>
+                    <td class="twelve-1" id="english1211">
+                        
+                    </td>
+                    <td class="twelve-2" id="english1221">
+                        
+                    </td>
+                </tr>
+        
+                <!-- Social Studies -->
+                <tr style="height: 75px; text-align:center;">
+                    <td>Social Studies</td>
+                    <td class="nine-1" id="history911">
+                        
+                    </td>
+                    <td class="nine-2" id="history921">
+                        
+                    </td>
+                    <td class="ten-1" id="history1011">
+                        
+                    </td>
+                    <td class="ten-2" id="history1021">
+                        
+                    </td>
+                    <td class="eleven-1" id="history1111">
+                        
+                    </td>
+                    <td class="eleven-2" id="history1121">
+                        
+                    </td>
+                    <td class="twelve-1" id="history1211">
+                        
+                    </td>
+                    <td class="twelve-2" id="history1221">
+                        
+                    </td>
+                </tr>
+        
+                <!-- Science -->
+                <tr style="height: 75px; text-align:center;">
+                    <td>Science</td>
+                    <td class="nine-1" id="science911">
+                        
+                    </td>
+                    <td class="nine-2" id="science921">
+                        
+                    </td>
+                    <td class="ten-1" id="science1011">
+                        
+                    </td>
+                    <td class="ten-2" id="science1021">
+                        
+                    </td>
+                    <td class="eleven-1" id="science1111">
+                        
+                    </td>
+                    <td class="eleven-2" id="science1121">
+                        
+                    </td>
+                    <td class="twelve-1" id="science1211">
+                        
+                    </td>
+                    <td class="twelve-2" id="science1221">
+                        
+                    </td>
+                </tr>
+        
+                <!-- Mathematics -->
+                <tr style="height: 75px; text-align:center;">
+                    <td>Mathematics</td>
+                    <td colspan="2" class="nine-1" id="math911">
+                        
+                    </td>
+                    <td colspan="2" class="ten-1" id="math1011">
+                        
+                    </td>
+                    <td colspan="2" class="eleven-1" id="math1111">
+                        
+                    </td>
+                    <td colspan="2" class="twelve-1" id="math1211">
+                        
+                    </td>
+                </tr>
+        
+                <!-- Health and PE -->
+                <tr style="height: 75px; text-align:center;">
+                    <td>Health & Phys. Ed.</td>
+                    <td class="nine-1" id="hpe911">
+                        
+                    </td>
+                    <td class="nine-2" id="hpe921">
+                        
+                    </td>
+                    <td class="ten-1" id="hpe1011">
+                        
+                    </td>
+                    <td class="ten-2" id="hpe1021">
+                        
+                    </td>
+                    <td class="eleven-1" id="hpe1111">
+                        
+                    </td>
+                    <td class="eleven-2" id="hpe1121">
+                        
+                    </td>
+                    <td class="twelve-1" id="hpe1211">
+                        
+                    </td>
+                    <td class="twelve-2" id="hpe1221">
+                        
+                    </td>
+                </tr>
+        
+                <!-- Arts -->
+                <tr style="height: 75px; text-align:center;">
+                    <td>Visual and Perf. Arts</td>
+                    <td class="nine-1" id="vpa911">
+                        
+                    </td>
+                    <td class="nine-2" id="vpa921">
+                        
+                    </td>
+                    <td class="ten-1" id="vpa1011">
+                        
+                    </td>
+                    <td class="ten-2" id="vpa1021">
+                        
+                    </td>
+                    <td class="eleven-1" id="vpa1111">
+                        
+                    </td>
+                    <td class="eleven-2" id="vpa1121">
+                        
+                    </td>
+                    <td class="twelve-1" id="vpa1211">
+                        
+                    </td>
+                    <td class="twelve-2" id="vpa1221">
+                        
+                    </td>
+                </tr>
+        
+                <!-- World Languages -->
+                <tr style="height: 75px; text-align:center;">
+                    <td>World Languages</td>
+                    <td colspan="2" class="nine-1" id="wl091">
+                        
+                    </td>
+                    <td colspan="2" class="ten-1" id="wl101">
+                        
+                    </td>
+                    <td colspan="2" class="eleven-1" id="wl111">
+                        
+                    </td>
+                    <td colspan="2" class="twelve-1" id="wl121">
+                        
+                    </td>
+                </tr>
+        
+                <!-- CTE Business -->
+                <tr style="height: 75px; text-align:center;">
+                    <td>CTE Business & Marketing</td>
+                    <td class="nine-1" id="cte_b&m911">
+                        
+                    </td>
+                    <td class="nine-2" id="cte_b&m921">
+                        
+                    </td>
+                    <td class="ten-1" id="cte_b&m1011">
+                        
+                    </td>
+                    <td class="ten-2" id="cte_b&m1021">
+                        
+                    </td>
+                    <td class="eleven-1" id="cte_b&m1111">
+                        
+                    </td>
+                    <td class="eleven-2" id="cte_b&m1121">
+                        
+                    </td>
+                    <td class="twelve-1" id="cte_b&m1211">
+                        
+                    </td>
+                    <td class="twelve-2" id="cte_b&m1221">
+                        
+                    </td>
+                </tr>
+        
+                <!-- CTE IT -->
+                <tr style="height: 75px; text-align:center;">
+                    <td>CTE Information Technologies</td>
+                    <td class="nine-1" id="cte_it911">
+                        
+                    </td>
+                    <td class="nine-2" id="cte_it921">
+                        
+                    </td>
+                    <td class="ten-1" id="cte_it1011">
+                        
+                    </td>
+                    <td class="ten-2" id="cte_it1021">
+                        
+                    </td>
+                    <td class="eleven-1" id="cte_it1111">
+                        
+                    </td>
+                    <td class="eleven-2" id="cte_it1121">
+                        
+                    </td>
+                    <td class="twelve-1" id="cte_it1211">
+                        
+                    </td>
+                    <td class="twelve-2" id="cte_it1221">
+                        
+                    </td>
+                </tr>
+        
+                <!-- CTE Health -->
+                <tr style="height: 75px; text-align:center;">
+                    <td>CTE Health Services</td>
+                    <td class="nine-1" id="cte_health911">
+                        
+                    </td>
+                    <td class="nine-2" id="cte_health921">
+                        
+                    </td>
+                    <td class="ten-1" id="cte_health1011">
+                        
+                    </td>
+                    <td class="ten-2" id="cte_health1021">
+                        
+                    </td>
+                    <td class="eleven-1" id="cte_health1111">
+                        
+                    </td>
+                    <td class="eleven-2" id="cte_health1121">
+                        
+                    </td>
+                    <td class="twelve-1" id="cte_health1211">
+                        
+                    </td>
+                    <td class="twelve-2" id="cte_health1221">
+                        
+                    </td>
+                </tr>
+        
+                <!-- CTE Human -->
+                <tr style="height: 75px; text-align:center;">
+                    <td>CTE Human Services</td>
+                    <td class="nine-1" id="cte_human911">
+                        
+                    </td>
+                    <td class="nine-2" id="cte_human921">
+                        
+                    </td>
+                    <td class="ten-1" id="cte_human1011">
+                        
+                    </td>
+                    <td class="ten-2" id="cte_human1021">
+                        
+                    </td>
+                    <td class="eleven-1" id="cte_human1111">
+                        
+                    </td>
+                    <td class="eleven-2" id="cte_human1121">
+                        
+                    </td>
+                    <td class="twelve-1" id="cte_human1211">
+                        
+                    </td>
+                    <td class="twelve-2" id="cte_human1221">
+                        
+                    </td>
+                </tr>
+        
+                <!-- CTE Tech Sciences -->
+                <tr style="height: 75px; text-align:center;">
+                    <td>CTE Skilled & Tech. Sciences</td>
+                    <td class="nine-1" id="cte_tech_science911">
+                        
+                    </td>
+                    <td class="nine-2" id="cte_tech_science921">
+                        
+                    </td>
+                    <td class="ten-1" id="cte_tech_science1011">
+                        
+                    </td>
+                    <td class="ten-2" id="cte_tech_science1021">
+                        
+                    </td>
+                    <td class="eleven-1" id="cte_tech_science1111">
+                        
+                    </td>
+                    <td class="eleven-2" id="cte_tech_science1121">
+                        
+                    </td>
+                    <td class="twelve-1" id="cte_tech_science1211">
+                        
+                    </td>
+                    <td class="twelve-2" id="cte_tech_science1221">
+                        
+                    </td>
+                </tr>
+        
+                <!-- CTE Tech Art -->
+                <tr style="height: 75px; text-align:center;">
+                    <td>CTE Skilled & Tech. Art</td>
+                    <td class="nine-1" id="cte_tech_art911">
+                        
+                    </td>
+                    <td class="nine-2" id="cte_tech_art921">
+                        
+                    </td>
+                    <td class="ten-1" id="cte_tech_art1011">
+                        
+                    </td>
+                    <td class="ten-2" id="cte_tech_art1021">
+                        
+                    </td>
+                    <td class="eleven-1" id="cte_tech_art1111">
+                        
+                    </td>
+                    <td class="eleven-2" id="cte_tech_art1121">
+                        
+                    </td>
+                    <td class="twelve-1" id="cte_tech_art1211">
+                        
+                    </td>
+                    <td class="twelve-2" id="cte_tech_art1221">
+                        
+                    </td>
+                </tr>
+        
+                <!-- CTE STEM -->
+                <tr style="height: 75px; text-align:center;">
+                    <td>CTE STEM</td>
+                    <td class="nine-1" id="cte_stem911">
+                        
+                    </td>
+                    <td class="nine-2" id="cte_stem921">
+                        
+                    </td>
+                    <td class="ten-1" id="cte_stem1011">
+                        
+                    </td>
+                    <td class="ten-2" id="cte_stem1021">
+                        
+                    </td>
+                    <td class="eleven-1" id="cte_stem1111">
+                        
+                    </td>
+                    <td class="eleven-2" id="cte_stem1121">
+                        
+                    </td>
+                    <td class="twelve-1" id="cte_stem1211">
+                        
+                    </td>
+                    <td class="twelve-2" id="cte_stem1221">
+                        
+                    </td>
+                </tr>
+        
+            </table>
+            <br /> <br />
+            <button onclick='HideSummaryPage();' style="width: 30%; font-size: 24px; height: 50px; background-color:darkseagreen;" class="center">Back to Main Page</button>
+            <br />
+        </div>
     </div>
 </body>
 </html>
