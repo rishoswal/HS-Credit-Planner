@@ -24,6 +24,13 @@
             forPrintDiv.style.display = 'block';
 
         }
+        function HideSummaryPage() {
+            var forPrintDiv = document.getElementById("forPrint");
+            forPrintDiv.style.display = 'none';
+
+            var notForPrintDiv = document.getElementById("notForPrint");
+            notForPrintDiv.style.display = 'block';
+        }
 
         // this function loads in all the school districts
         function LoadSchoolDistrictsList() {
@@ -1315,15 +1322,15 @@
     </table>
     </div>
     <div id="forPrint" class="forPrint">
-        <table border="1" style="width:1000px;">
+        <table border="1" style="width:1500px;">
             <tr style="height: 50px;background-color:lightblue">
-                <td width="20%">Period</td>
-                <td width="20%" colspan="2">9th Grade</td>
-                <td width="20%" colspan="2">10th Grade</td>
-                <td width="20%" colspan="2">11th Grade</td>
-                <td width="20%" colspan="2">12th Grade</td>
+                <td width="10%">Period</td>
+                <td width="22.5%" colspan="2">9th Grade</td>
+                <td width="22.5%" colspan="2">10th Grade</td>
+                <td width="22.5%" colspan="2">11th Grade</td>
+                <td width="22.5%" colspan="2">12th Grade</td>
             </tr>
-            <tr style="height: 40px">
+            <tr style="height: 75px">
                 <td width="20%"></td>
                 <td width="10%" class="nine-1">Semester 1</td>
                 <td width="10%" class="nine-2">Semester 2</td>
@@ -1336,7 +1343,7 @@
             </tr>
             
             <!-- English -->
-            <tr style="height: 40px">
+            <tr style="height: 75px">
                 <td>English</td>
                 <td class="nine-1" id="english911">
                     
@@ -1365,7 +1372,7 @@
             </tr>
     
             <!-- Social Studies -->
-            <tr style="height: 40px">
+            <tr style="height: 75px">
                 <td>Social Studies</td>
                 <td class="nine-1" id="history911">
                     
@@ -1394,7 +1401,7 @@
             </tr>
     
             <!-- Science -->
-            <tr style="height: 40px">
+            <tr style="height: 75px">
                 <td>Science</td>
                 <td class="nine-1" id="science911">
                     
@@ -1423,7 +1430,7 @@
             </tr>
     
             <!-- Mathematics -->
-            <tr style="height: 40px">
+            <tr style="height: 75px">
                 <td>Mathematics</td>
                 <td colspan="2" class="nine-1" id="math911">
                     
@@ -1440,7 +1447,7 @@
             </tr>
     
             <!-- Health and PE -->
-            <tr style="height: 40px">
+            <tr style="height: 75px">
                 <td>Health & Phys. Ed.</td>
                 <td class="nine-1" id="hpe911">
                     
@@ -1469,7 +1476,7 @@
             </tr>
     
             <!-- Arts -->
-            <tr style="height: 40px">
+            <tr style="height: 75px">
                 <td>Visual and Perf. Arts</td>
                 <td class="nine-1" id="vpa911">
                     
@@ -1498,7 +1505,7 @@
             </tr>
     
             <!-- World Languages -->
-            <tr style="height: 40px">
+            <tr style="height: 75px">
                 <td>World Languages</td>
                 <td colspan="2" class="nine-1" id="wl091">
                     
@@ -1515,7 +1522,7 @@
             </tr>
     
             <!-- CTE Business -->
-            <tr style="height: 40px">
+            <tr style="height: 75px">
                 <td>CTE Business & Marketing</td>
                 <td class="nine-1" id="cte_b&m911">
                     
@@ -1544,7 +1551,7 @@
             </tr>
     
             <!-- CTE IT -->
-            <tr style="height: 40px">
+            <tr style="height: 75px">
                 <td>CTE Information Technologies</td>
                 <td class="nine-1" id="cte_it911">
                     
@@ -1573,7 +1580,7 @@
             </tr>
     
             <!-- CTE Health -->
-            <tr style="height: 40px">
+            <tr style="height: 75px">
                 <td>CTE Health Services</td>
                 <td class="nine-1" id="cte_health911">
                     
@@ -1602,7 +1609,7 @@
             </tr>
     
             <!-- CTE Human -->
-            <tr style="height: 40px">
+            <tr style="height: 75px">
                 <td>CTE Human Services</td>
                 <td class="nine-1" id="cte_human911">
                     
@@ -1631,7 +1638,7 @@
             </tr>
     
             <!-- CTE Tech Sciences -->
-            <tr style="height: 40px">
+            <tr style="height: 75px">
                 <td>CTE Skilled & Tech. Sciences</td>
                 <td class="nine-1" id="cte_tech_science911">
                     
@@ -1660,7 +1667,7 @@
             </tr>
     
             <!-- CTE Tech Art -->
-            <tr style="height: 40px">
+            <tr style="height: 75px">
                 <td>CTE Skilled & Tech. Art</td>
                 <td class="nine-1" id="cte_tech_art911">
                     
@@ -1689,7 +1696,7 @@
             </tr>
     
             <!-- CTE STEM -->
-            <tr style="height: 40px">
+            <tr style="height: 75px">
                 <td>CTE STEM</td>
                 <td class="nine-1" id="cte_stem911">
                     
@@ -1718,6 +1725,7 @@
             </tr>
     
         </table>
+        <button onclick='HideSummaryPage();' style="width: 7.5%">Back to Main Page</button>
     </div>
 </body>
 </html>
