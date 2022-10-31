@@ -55,11 +55,6 @@
                 districtDDL.add(o);
             });
 
-            // TODO: Remove this code
-            districtDDL.value = "101";
-            OnDistrictSelectionChanged();
-            var schoolDDL = document.getElementById("schoolDDL");
-            schoolDDL.value = "1001";
         }
 
 
@@ -644,7 +639,7 @@
     <h1>High School Credit Planner</h1>
 
     <div id="disclaimer" class="disclaimer">
-        <h3 style="text-align:center">All the information displayed here is not certified with any school district or school. The content provided here should not be a taken as a definitive guide to selecting courses. The content here is for informational purposes only. When finalizing a schedule, please always refer to a school's official website for more information about courses.</h3>
+        <h3 style="text-align:center">All the information displayed here is not certified with any school district or school. The content provided here should not be a taken as a definitive guide to selecting courses, and serves informational purposes only. When finalizing a schedule, please always refer to a school's official website for more information about courses.</h3>
         <br />
         <button id="disclaimerToSelection" onclick='LoadSelectionDiv();' class="center" style="font-size: 24px; width: 25%; height: 50px; background-color:darkseagreen;">Proceed</button>
     </div>

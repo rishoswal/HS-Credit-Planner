@@ -2,54 +2,54 @@ let school_districts_collection =
     [
         {
             "school_district_id": "101",
-            "school_district_name": "Lake Washington School District"
+            "school_district_name": "Lake Washington"
         },
         {
             "school_district_id": "102",
-            "school_district_name": "Issaquah School District"
+            "school_district_name": "Issaquah"
         },
         {
             "school_district_id": "103",
-            "school_district_name": "Riverview School District"
+            "school_district_name": "Riverview"
         },
         {
             "school_district_id": "104",
-            "school_district_name": "Skykomish School District"
+            "school_district_name": "Skykomish"
         },
         {
             "school_district_id": "105",
-            "school_district_name": "Snoqualmie Valley School District"
+            "school_district_name": "Snoqualmie Valley"
         },
         {
             "school_district_id": "106",
-            "school_district_name": "Northshore School District"
+            "school_district_name": "Northshore"
         },
         {
             "school_district_id": "107",
-            "school_district_name": "Monroe School District"
+            "school_district_name": "Monroe"
         },
         {
             "school_district_id": "108",
-            "school_district_name": "Snohomish School District"
+            "school_district_name": "Snohomish"
         },
         {
             "school_district_id": "109",
-            "school_district_name": "Lake Stevens School District"
+            "school_district_name": "Lake Stevens"
         },
         {
             "school_district_id": "110",
-            "school_district_name": "Arlington School District"
+            "school_district_name": "Arlington"
         },
         {
             "school_district_id": "111",
-            "school_district_name": "Granite Falls School District"
+            "school_district_name": "Granite Falls"
         },
     ];
 
 let course_collection =
     [
         {
-            "school_id": "1001",
+            "school_id": "1011",
             "school_name": "Redmond High School",
             "school_district_id": "101",
             "class9":
@@ -361,7 +361,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, health"
+                            "credit_category": "health"
                         },
                         {   
                             "name": "American Sign Language 1", 
@@ -379,7 +379,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, world_lang"
+                            "credit_category": "world_lang"
                         },
                         {   
                             "name": "Child Development 1", 
@@ -415,7 +415,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, lab_science"
+                            "credit_category": "cte"
                         }
                     ],
                 "cte_tech_science":
@@ -457,7 +457,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, art"
+                            "credit_category": "cte"
                         },
                         {
                             "name": "Graphic Design", 
@@ -475,7 +475,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, art"
+                            "credit_category": "cte"
                         },
                         {
                             "name": "Technical Theater", 
@@ -493,7 +493,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, art"
+                            "credit_category": "cte"
                         },
                         {
                             "name": "Art and Design", 
@@ -511,7 +511,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, art"
+                            "credit_category": "cte"
                         },
                         {
                             "name": "Industrial Design - 3D Printing", 
@@ -529,7 +529,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, art"
+                            "credit_category": "cte"
                         },
                         {
                             "name": "Photography 1", 
@@ -547,7 +547,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, art"
+                            "credit_category": "cte"
                         }
                     ],
                 "cte_stem":
@@ -568,7 +568,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, mathematics"
+                            "credit_category": "cte"
                         }
                     ],
                 "health_pe":
@@ -589,7 +589,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "false",
-                            "credit_category": "health, pe"
+                            "credit_category": "health"
                         },
                         {
                             "name": "Physical Education 1", 
@@ -685,7 +685,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, world_lang"
+                            "credit_category": "cte"
                         },
                         {
                             "name": "French 1", 
@@ -745,8 +745,8 @@ let course_collection =
                             "name": "Spanish 2", 
                             "sem1_course_id": "for521", 
                             "sem2_course_id": "for522",
-                            "pre_req_all": "",
-                            "pre_req_any": "for511",
+                            "pre_req_all": "for511",
+                            "pre_req_any": "",
                             "grade_req": "",
                             "sem_count": "2",
                             "credit_count": "0.5",
@@ -1350,7 +1350,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, social_studies"
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "AP Macroeconomics", 
@@ -1368,7 +1368,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, social_studies"
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "Leadership 1", 
@@ -1425,7 +1425,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, mathematics"
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "Microsoft Office Specialist", 
@@ -1468,7 +1468,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, lab_science"
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "Family Health", 
@@ -1486,7 +1486,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, health"
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "American Sign Language 1", 
@@ -1504,7 +1504,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, world_lang"
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "American Sign Language 2", 
@@ -1522,7 +1522,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, world_lang"
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "Child Development 1", 
@@ -1558,7 +1558,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, lab_science"
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "Psychology", 
@@ -1576,7 +1576,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, social_studies"
+                            "credit_category": "cte"
                         }
                     ],
                 "cte_tech_science":
@@ -1597,7 +1597,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, lab_science"
+                            "credit_category": "cte"
                         },
                         {
                             "name": "Community Emergency Response", 
@@ -1636,7 +1636,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, art"
+                            "credit_category": "cte"
                         },
                         {
                             "name": "Video Production 1", 
@@ -1654,7 +1654,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, art"
+                            "credit_category": "cte"
                         },
                         {
                             "name": "Video Production 2", 
@@ -1672,7 +1672,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, art"
+                            "credit_category": "cte"
                         },
                         {
                             "name": "Graphic Design", 
@@ -1690,7 +1690,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, art"
+                            "credit_category": "cte"
                         },
                         {
                             "name": "Technical Theater", 
@@ -1708,7 +1708,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, art"
+                            "credit_category": "cte"
                         },
                         {
                             "name": "Art and Design", 
@@ -1726,7 +1726,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, art"
+                            "credit_category": "cte"
                         },
                         {
                             "name": "Commercial Art", 
@@ -1744,7 +1744,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, art"
+                            "credit_category": "cte"
                         },
                         {
                             "name": "AP Art and Design", 
@@ -1762,7 +1762,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, art"
+                            "credit_category": "cte"
                         },
                         {
                             "name": "Industrial Design - 3D Printing", 
@@ -1780,7 +1780,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, art"
+                            "credit_category": "cte"
                         },
                         {
                             "name": "Photography 1", 
@@ -1798,7 +1798,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, art"
+                            "credit_category": "cte"
                         },
                         {
                             "name": "Photography 2", 
@@ -1816,7 +1816,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, art"
+                            "credit_category": "cte"
                         }
                     ],
                 "cte_stem":
@@ -1837,7 +1837,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, mathematics"
+                            "credit_category": "cte"
                         },
                         {
                             "name": "Principles of Engineering", 
@@ -1855,7 +1855,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, lab_science"
+                            "credit_category": "cte"
                         },
                         {
                             "name": "Aerospace Engineering", 
@@ -1873,7 +1873,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, lab_science"
+                            "credit_category": "cte"
                         }
                     ],
                 "health_pe":
@@ -2134,7 +2134,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, world_lang"
+                            "credit_category": "cte"
                         },
                         {
                             "name": "American Sign Lang 2", 
@@ -2152,7 +2152,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, world_lang"
+                            "credit_category": "cte"
                         },
                         {
                             "name": "French 1", 
@@ -2248,8 +2248,8 @@ let course_collection =
                             "name": "Spanish 2", 
                             "sem1_course_id": "for521", 
                             "sem2_course_id": "for522",
-                            "pre_req_all": "",
-                            "pre_req_any": "for511",
+                            "pre_req_all": "for511",
+                            "pre_req_any": "",
                             "grade_req": "",
                             "sem_count": "2",
                             "credit_count": "0.5",
@@ -2953,7 +2953,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, mathematics"
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "AP Microeconomics", 
@@ -2971,7 +2971,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, social_studies"
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "AP Macroeconomics", 
@@ -2989,7 +2989,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, social_studies"
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "Leadership 1", 
@@ -3064,7 +3064,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, mathematics"
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "Microsoft Office Specialist", 
@@ -3121,7 +3121,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, lab_science"
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "Anatomy & Physiology", 
@@ -3139,7 +3139,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, lab_science"
+                            "credit_category": "cte"
                         }
                     ],
                 "cte_human":
@@ -3160,7 +3160,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, lab_science"
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "Family Health", 
@@ -3178,7 +3178,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, health"
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "American Sign Language 1", 
@@ -3196,7 +3196,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, world_lang"
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "American Sign Language 2", 
@@ -3214,7 +3214,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, world_lang"
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "American Sign Language 3", 
@@ -3232,7 +3232,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, world_lang"
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "Teacher Education Academy 1", 
@@ -3304,7 +3304,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, lab_science"
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "Psychology", 
@@ -3322,7 +3322,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, social_studies"
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "AP Psychology", 
@@ -3340,7 +3340,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, social_studies"
+                            "credit_category": "cte"
                         }
                     ],
                 "cte_tech_science":
@@ -3361,7 +3361,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, lab_science"
+                            "credit_category": "cte"
                         },
                         {
                             "name": "Community Emergency Response", 
@@ -3400,7 +3400,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, art"
+                            "credit_category": "cte"
                         },
                         {
                             "name": "Video Production 1", 
@@ -3418,7 +3418,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, art"
+                            "credit_category": "cte"
                         },
                         {
                             "name": "Video Production 2", 
@@ -3436,7 +3436,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, art"
+                            "credit_category": "cte"
                         },
                         {
                             "name": "Graphic Design", 
@@ -3454,7 +3454,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, art"
+                            "credit_category": "cte"
                         },
                         {
                             "name": "Technical Theater", 
@@ -3472,7 +3472,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, art"
+                            "credit_category": "cte"
                         },
                         {
                             "name": "Art and Design", 
@@ -3490,7 +3490,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, art"
+                            "credit_category": "cte"
                         },
                         {
                             "name": "Commercial Art", 
@@ -3508,7 +3508,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, art"
+                            "credit_category": "cte"
                         },
                         {
                             "name": "AP Art and Design", 
@@ -3526,7 +3526,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, art"
+                            "credit_category": "cte"
                         },
                         {
                             "name": "Industrial Design - 3D Printing", 
@@ -3544,7 +3544,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, art"
+                            "credit_category": "cte"
                         },
                         {
                             "name": "Photography 1", 
@@ -3562,7 +3562,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, art"
+                            "credit_category": "cte"
                         },
                         {
                             "name": "Photography 2", 
@@ -3580,7 +3580,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, art"
+                            "credit_category": "cte"
                         }
                     ],
                 "cte_stem":
@@ -3601,7 +3601,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, mathematics"
+                            "credit_category": "cte"
                         },
                         {
                             "name": "Principles of Engineering", 
@@ -3619,7 +3619,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, lab_science"
+                            "credit_category": "cte"
                         },
                         {
                             "name": "Engineering Design and Development", 
@@ -3655,7 +3655,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, lab_science"
+                            "credit_category": "cte"
                         }
                     ],
                 "health_pe":
@@ -3970,7 +3970,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, world_lang"
+                            "credit_category": "cte"
                         },
                         {
                             "name": "American Sign Lang 2", 
@@ -3988,7 +3988,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, world_lang"
+                            "credit_category": "cte"
                         },
                         {
                             "name": "American Sign Lang 3", 
@@ -4006,7 +4006,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, world_lang"
+                            "credit_category": "cte"
                         },
                         {
                             "name": "French 1", 
@@ -4138,8 +4138,8 @@ let course_collection =
                             "name": "Spanish 2", 
                             "sem1_course_id": "for521", 
                             "sem2_course_id": "for522",
-                            "pre_req_all": "",
-                            "pre_req_any": "for511",
+                            "pre_req_all": "for511",
+                            "pre_req_any": "",
                             "grade_req": "",
                             "sem_count": "2",
                             "credit_count": "0.5",
@@ -4877,7 +4877,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, mathematics"
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "AP Microeconomics", 
@@ -4895,7 +4895,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, social_studies"
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "AP Macroeconomics", 
@@ -4913,7 +4913,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, social_studies"
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "Leadership 1", 
@@ -4988,7 +4988,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, mathematics"
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "Microsoft Office Specialist", 
@@ -5045,7 +5045,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, lab_science"
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "Anatomy & Physiology", 
@@ -5063,7 +5063,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, lab_science"
+                            "credit_category": "cte"
                         }
                     ],
                 "cte_human":
@@ -5084,7 +5084,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, lab_science"
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "Family Health", 
@@ -5102,7 +5102,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, health"
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "American Sign Language 1", 
@@ -5120,7 +5120,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, world_lang"
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "American Sign Language 2", 
@@ -5138,7 +5138,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, world_lang"
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "American Sign Language 3", 
@@ -5156,7 +5156,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, world_lang"
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "Teacher Education Academy 1", 
@@ -5228,7 +5228,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, lab_science"
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "Psychology", 
@@ -5246,7 +5246,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, social_studies"
+                            "credit_category": "cte"
                         },
                         {   
                             "name": "AP Psychology", 
@@ -5264,7 +5264,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, social_studies"
+                            "credit_category": "cte"
                         }
                     ],
                 "cte_tech_science":
@@ -5285,7 +5285,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, lab_science"
+                            "credit_category": "cte"
                         },
                         {
                             "name": "Community Emergency Response", 
@@ -5324,7 +5324,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, art"
+                            "credit_category": "cte"
                         },
                         {
                             "name": "Video Production 1", 
@@ -5342,7 +5342,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, art"
+                            "credit_category": "cte"
                         },
                         {
                             "name": "Video Production 2", 
@@ -5360,7 +5360,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, art"
+                            "credit_category": "cte"
                         },
                         {
                             "name": "Graphic Design", 
@@ -5378,7 +5378,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, art"
+                            "credit_category": "cte"
                         },
                         {
                             "name": "Technical Theater", 
@@ -5396,7 +5396,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, art"
+                            "credit_category": "cte"
                         },
                         {
                             "name": "Art and Design", 
@@ -5414,7 +5414,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, art"
+                            "credit_category": "cte"
                         },
                         {
                             "name": "Commercial Art", 
@@ -5432,7 +5432,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, art"
+                            "credit_category": "cte"
                         },
                         {
                             "name": "AP Art and Design", 
@@ -5450,7 +5450,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, art"
+                            "credit_category": "cte"
                         },
                         {
                             "name": "Industrial Design - 3D Printing", 
@@ -5468,7 +5468,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, art"
+                            "credit_category": "cte"
                         },
                         {
                             "name": "Photography 1", 
@@ -5486,7 +5486,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, art"
+                            "credit_category": "cte"
                         },
                         {
                             "name": "Photography 2", 
@@ -5504,7 +5504,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "false",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, art"
+                            "credit_category": "cte"
                         }
                     ],
                 "cte_stem":
@@ -5525,7 +5525,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, mathematics"
+                            "credit_category": "cte"
                         },
                         {
                             "name": "Principles of Engineering", 
@@ -5543,7 +5543,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, lab_science"
+                            "credit_category": "cte"
                         },
                         {
                             "name": "Engineering Design and Development", 
@@ -5579,7 +5579,7 @@ let course_collection =
                             "CADR": "false",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, lab_science"
+                            "credit_category": "cte"
                         }
                     ],
                 "health_pe":
@@ -5912,7 +5912,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, world_lang"
+                            "credit_category": "cte"
                         },
                         {
                             "name": "American Sign Lang 2", 
@@ -5930,7 +5930,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, world_lang"
+                            "credit_category": "cte"
                         },
                         {
                             "name": "American Sign Lang 3", 
@@ -5948,7 +5948,7 @@ let course_collection =
                             "CADR": "true",
                             "dual_credit": "true",
                             "credit_equivalency": "true",
-                            "credit_category": "cte, world_lang"
+                            "credit_category": "cte"
                         },
                         {
                             "name": "French 1", 
@@ -6152,8 +6152,8 @@ let course_collection =
                             "name": "Spanish 2", 
                             "sem1_course_id": "for521", 
                             "sem2_course_id": "for522",
-                            "pre_req_all": "",
-                            "pre_req_any": "for511",
+                            "pre_req_all": "for511",
+                            "pre_req_any": "",
                             "grade_req": "",
                             "sem_count": "2",
                             "credit_count": "0.5",
@@ -6314,43 +6314,7296 @@ let course_collection =
             
         },
         {
-            "school_id": "1002",
+            "school_id": "1012",
             "school_name": "Eastlake High School",
             "school_district_id": "101",
             "class9":
             {
                 "english":
                     [
-                        { "name": "English 9 Eastlake", "course_id": "" },
-                        { "name": "English 9 Honors", "course_id": "" }
+
                     ],
                 "social_studies":
                     [
-                        { "name": "", "course_id": "" },
-                        { "name": "", "course_id": "" },
-                        { "name": "", "course_id": "" },
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
                     ]
             },
+
+            "class10":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class11":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class12":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+            "req_credits": 
+            {
+                "english":
+                {
+                    "name": "English",
+                    "total_credits": 4.0
+                },
+        
+
+                "soc1":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 0.5
+                },
+                
+                "soc2":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 1.0
+                },
+                
+                "soc3":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 1.0
+                },
+
+                "soc4":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 0.5
+                },
+
+                "mathematics":
+                {
+                    "name": "Mathematics",
+                    "total_credits": 3.0
+                },
+
+                "lab_science":
+                {
+                    "name": "Lab Science",
+                    "total_credits": 2.0
+                },
+
+                "science":
+                {
+                    "name": "Science",
+                    "total_credits": 1.0
+                },
+
+                "cte":
+                {
+                    "name": "CTE",
+                    "total_credits": 1.0
+                },
+
+                "world_lang":
+                {
+                    "name": "World Language",
+                    "total_credits": 2.0
+                },
+
+                "health":
+                {
+                    "name": "Health",
+                    "total_credits": 0.5
+                },
+
+                "pe":
+                {
+                    "name": "Phys. Ed.",
+                    "total_credits": 1.5
+                },
+
+                "art":
+                {
+                    "name": "Fine Arts",
+                    "total_credits": 2.0
+                },
+                
+                "elective":
+                {
+                    "name": "elective",
+                    "total_credits": 4.0
+                }
+            }   
+        },
+        {
+            "school_id": "1013",
+            "school_name": "Juanita High School",
+            "school_district_id": "101",
+            "class9":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class10":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class11":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class12":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+            "req_credits": 
+            {
+                "english":
+                {
+                    "name": "English",
+                    "total_credits": 4.0
+                },
+        
+
+                "soc1":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 0.5
+                },
+                
+                "soc2":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 1.0
+                },
+                
+                "soc3":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 1.0
+                },
+
+                "soc4":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 0.5
+                },
+
+                "mathematics":
+                {
+                    "name": "Mathematics",
+                    "total_credits": 3.0
+                },
+
+                "lab_science":
+                {
+                    "name": "Lab Science",
+                    "total_credits": 2.0
+                },
+
+                "science":
+                {
+                    "name": "Science",
+                    "total_credits": 1.0
+                },
+
+                "cte":
+                {
+                    "name": "CTE",
+                    "total_credits": 1.0
+                },
+
+                "world_lang":
+                {
+                    "name": "World Language",
+                    "total_credits": 2.0
+                },
+
+                "health":
+                {
+                    "name": "Health",
+                    "total_credits": 0.5
+                },
+
+                "pe":
+                {
+                    "name": "Phys. Ed.",
+                    "total_credits": 1.5
+                },
+
+                "art":
+                {
+                    "name": "Fine Arts",
+                    "total_credits": 2.0
+                },
+                
+                "elective":
+                {
+                    "name": "elective",
+                    "total_credits": 4.0
+                }
+            }   
+        },
+        {
+            "school_id": "1014",
+            "school_name": "Lake Washington High School",
+            "school_district_id": "101",
+            "class9":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class10":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class11":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class12":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+            "req_credits": 
+            {
+                "english":
+                {
+                    "name": "English",
+                    "total_credits": 4.0
+                },
+        
+
+                "soc1":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 0.5
+                },
+                
+                "soc2":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 1.0
+                },
+                
+                "soc3":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 1.0
+                },
+
+                "soc4":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 0.5
+                },
+
+                "mathematics":
+                {
+                    "name": "Mathematics",
+                    "total_credits": 3.0
+                },
+
+                "lab_science":
+                {
+                    "name": "Lab Science",
+                    "total_credits": 2.0
+                },
+
+                "science":
+                {
+                    "name": "Science",
+                    "total_credits": 1.0
+                },
+
+                "cte":
+                {
+                    "name": "CTE",
+                    "total_credits": 1.0
+                },
+
+                "world_lang":
+                {
+                    "name": "World Language",
+                    "total_credits": 2.0
+                },
+
+                "health":
+                {
+                    "name": "Health",
+                    "total_credits": 0.5
+                },
+
+                "pe":
+                {
+                    "name": "Phys. Ed.",
+                    "total_credits": 1.5
+                },
+
+                "art":
+                {
+                    "name": "Fine Arts",
+                    "total_credits": 2.0
+                },
+                
+                "elective":
+                {
+                    "name": "elective",
+                    "total_credits": 4.0
+                }
+            }   
         },
 
         {
-            "school_id": "1003",
+            "school_id": "1021",
+            "school_name": "Issaquah High School",
+            "school_district_id": "102",
+            "class9":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class10":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class11":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class12":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+            "req_credits": 
+            {
+                "english":
+                {
+                    "name": "English",
+                    "total_credits": 4.0
+                },
+        
+
+                "soc1":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 0.5
+                },
+                
+                "soc2":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 1.0
+                },
+                
+                "soc3":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 1.0
+                },
+
+                "soc4":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 0.5
+                },
+
+                "mathematics":
+                {
+                    "name": "Mathematics",
+                    "total_credits": 3.0
+                },
+
+                "lab_science":
+                {
+                    "name": "Lab Science",
+                    "total_credits": 2.0
+                },
+
+                "science":
+                {
+                    "name": "Science",
+                    "total_credits": 1.0
+                },
+
+                "cte":
+                {
+                    "name": "CTE",
+                    "total_credits": 1.0
+                },
+
+                "world_lang":
+                {
+                    "name": "World Language",
+                    "total_credits": 2.0
+                },
+
+                "health":
+                {
+                    "name": "Health",
+                    "total_credits": 0.5
+                },
+
+                "pe":
+                {
+                    "name": "Phys. Ed.",
+                    "total_credits": 1.5
+                },
+
+                "art":
+                {
+                    "name": "Fine Arts",
+                    "total_credits": 2.0
+                },
+                
+                "elective":
+                {
+                    "name": "elective",
+                    "total_credits": 4.0
+                }
+            }   
+        },
+        {
+            "school_id": "1022",
+            "school_name": "Liberty High School",
+            "school_district_id": "102",
+            "class9":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class10":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class11":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class12":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+            "req_credits": 
+            {
+                "english":
+                {
+                    "name": "English",
+                    "total_credits": 4.0
+                },
+        
+
+                "soc1":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 0.5
+                },
+                
+                "soc2":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 1.0
+                },
+                
+                "soc3":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 1.0
+                },
+
+                "soc4":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 0.5
+                },
+
+                "mathematics":
+                {
+                    "name": "Mathematics",
+                    "total_credits": 3.0
+                },
+
+                "lab_science":
+                {
+                    "name": "Lab Science",
+                    "total_credits": 2.0
+                },
+
+                "science":
+                {
+                    "name": "Science",
+                    "total_credits": 1.0
+                },
+
+                "cte":
+                {
+                    "name": "CTE",
+                    "total_credits": 1.0
+                },
+
+                "world_lang":
+                {
+                    "name": "World Language",
+                    "total_credits": 2.0
+                },
+
+                "health":
+                {
+                    "name": "Health",
+                    "total_credits": 0.5
+                },
+
+                "pe":
+                {
+                    "name": "Phys. Ed.",
+                    "total_credits": 1.5
+                },
+
+                "art":
+                {
+                    "name": "Fine Arts",
+                    "total_credits": 2.0
+                },
+                
+                "elective":
+                {
+                    "name": "elective",
+                    "total_credits": 4.0
+                }
+            }   
+        },
+        {
+            "school_id": "1023",
+            "school_name": "Skyline High School",
+            "school_district_id": "102",
+            "class9":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class10":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class11":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class12":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+            "req_credits": 
+            {
+                "english":
+                {
+                    "name": "English",
+                    "total_credits": 4.0
+                },
+        
+
+                "soc1":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 0.5
+                },
+                
+                "soc2":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 1.0
+                },
+                
+                "soc3":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 1.0
+                },
+
+                "soc4":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 0.5
+                },
+
+                "mathematics":
+                {
+                    "name": "Mathematics",
+                    "total_credits": 3.0
+                },
+
+                "lab_science":
+                {
+                    "name": "Lab Science",
+                    "total_credits": 2.0
+                },
+
+                "science":
+                {
+                    "name": "Science",
+                    "total_credits": 1.0
+                },
+
+                "cte":
+                {
+                    "name": "CTE",
+                    "total_credits": 1.0
+                },
+
+                "world_lang":
+                {
+                    "name": "World Language",
+                    "total_credits": 2.0
+                },
+
+                "health":
+                {
+                    "name": "Health",
+                    "total_credits": 0.5
+                },
+
+                "pe":
+                {
+                    "name": "Phys. Ed.",
+                    "total_credits": 1.5
+                },
+
+                "art":
+                {
+                    "name": "Fine Arts",
+                    "total_credits": 2.0
+                },
+                
+                "elective":
+                {
+                    "name": "elective",
+                    "total_credits": 4.0
+                }
+            }   
+        },
+        
+        {
+            "school_id": "1031",
+            "school_name": "Cedarcrest High School",
+            "school_district_id": "103",
+            "class9":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class10":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class11":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class12":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+            "req_credits": 
+            {
+                "english":
+                {
+                    "name": "English",
+                    "total_credits": 4.0
+                },
+        
+
+                "soc1":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 0.5
+                },
+                
+                "soc2":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 1.0
+                },
+                
+                "soc3":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 1.0
+                },
+
+                "soc4":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 0.5
+                },
+
+                "mathematics":
+                {
+                    "name": "Mathematics",
+                    "total_credits": 3.0
+                },
+
+                "lab_science":
+                {
+                    "name": "Lab Science",
+                    "total_credits": 2.0
+                },
+
+                "science":
+                {
+                    "name": "Science",
+                    "total_credits": 1.0
+                },
+
+                "cte":
+                {
+                    "name": "CTE",
+                    "total_credits": 1.0
+                },
+
+                "world_lang":
+                {
+                    "name": "World Language",
+                    "total_credits": 2.0
+                },
+
+                "health":
+                {
+                    "name": "Health",
+                    "total_credits": 0.5
+                },
+
+                "pe":
+                {
+                    "name": "Phys. Ed.",
+                    "total_credits": 1.5
+                },
+
+                "art":
+                {
+                    "name": "Fine Arts",
+                    "total_credits": 2.0
+                },
+                
+                "elective":
+                {
+                    "name": "elective",
+                    "total_credits": 4.0
+                }
+            }   
+        },
+
+        {
+            "school_id": "1041",
+            "school_name": "Skyhomish High School",
+            "school_district_id": "104",
+            "class9":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class10":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class11":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class12":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+            "req_credits": 
+            {
+                "english":
+                {
+                    "name": "English",
+                    "total_credits": 4.0
+                },
+        
+
+                "soc1":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 0.5
+                },
+                
+                "soc2":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 1.0
+                },
+                
+                "soc3":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 1.0
+                },
+
+                "soc4":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 0.5
+                },
+
+                "mathematics":
+                {
+                    "name": "Mathematics",
+                    "total_credits": 3.0
+                },
+
+                "lab_science":
+                {
+                    "name": "Lab Science",
+                    "total_credits": 2.0
+                },
+
+                "science":
+                {
+                    "name": "Science",
+                    "total_credits": 1.0
+                },
+
+                "cte":
+                {
+                    "name": "CTE",
+                    "total_credits": 1.0
+                },
+
+                "world_lang":
+                {
+                    "name": "World Language",
+                    "total_credits": 2.0
+                },
+
+                "health":
+                {
+                    "name": "Health",
+                    "total_credits": 0.5
+                },
+
+                "pe":
+                {
+                    "name": "Phys. Ed.",
+                    "total_credits": 1.5
+                },
+
+                "art":
+                {
+                    "name": "Fine Arts",
+                    "total_credits": 2.0
+                },
+                
+                "elective":
+                {
+                    "name": "elective",
+                    "total_credits": 4.0
+                }
+            }   
+        },
+
+        {
+            "school_id": "1051",
+            "school_name": "Mount Si High School",
+            "school_district_id": "105",
+            "class9":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class10":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class11":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class12":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+            "req_credits": 
+            {
+                "english":
+                {
+                    "name": "English",
+                    "total_credits": 4.0
+                },
+        
+
+                "soc1":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 0.5
+                },
+                
+                "soc2":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 1.0
+                },
+                
+                "soc3":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 1.0
+                },
+
+                "soc4":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 0.5
+                },
+
+                "mathematics":
+                {
+                    "name": "Mathematics",
+                    "total_credits": 3.0
+                },
+
+                "lab_science":
+                {
+                    "name": "Lab Science",
+                    "total_credits": 2.0
+                },
+
+                "science":
+                {
+                    "name": "Science",
+                    "total_credits": 1.0
+                },
+
+                "cte":
+                {
+                    "name": "CTE",
+                    "total_credits": 1.0
+                },
+
+                "world_lang":
+                {
+                    "name": "World Language",
+                    "total_credits": 2.0
+                },
+
+                "health":
+                {
+                    "name": "Health",
+                    "total_credits": 0.5
+                },
+
+                "pe":
+                {
+                    "name": "Phys. Ed.",
+                    "total_credits": 1.5
+                },
+
+                "art":
+                {
+                    "name": "Fine Arts",
+                    "total_credits": 2.0
+                },
+                
+                "elective":
+                {
+                    "name": "elective",
+                    "total_credits": 4.0
+                }
+            }   
+        },
+        {
+            "school_id": "1052",
+            "school_name": "Two Rivers High School",
+            "school_district_id": "105",
+            "class9":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class10":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class11":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class12":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+            "req_credits": 
+            {
+                "english":
+                {
+                    "name": "English",
+                    "total_credits": 4.0
+                },
+        
+
+                "soc1":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 0.5
+                },
+                
+                "soc2":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 1.0
+                },
+                
+                "soc3":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 1.0
+                },
+
+                "soc4":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 0.5
+                },
+
+                "mathematics":
+                {
+                    "name": "Mathematics",
+                    "total_credits": 3.0
+                },
+
+                "lab_science":
+                {
+                    "name": "Lab Science",
+                    "total_credits": 2.0
+                },
+
+                "science":
+                {
+                    "name": "Science",
+                    "total_credits": 1.0
+                },
+
+                "cte":
+                {
+                    "name": "CTE",
+                    "total_credits": 1.0
+                },
+
+                "world_lang":
+                {
+                    "name": "World Language",
+                    "total_credits": 2.0
+                },
+
+                "health":
+                {
+                    "name": "Health",
+                    "total_credits": 0.5
+                },
+
+                "pe":
+                {
+                    "name": "Phys. Ed.",
+                    "total_credits": 1.5
+                },
+
+                "art":
+                {
+                    "name": "Fine Arts",
+                    "total_credits": 2.0
+                },
+                
+                "elective":
+                {
+                    "name": "elective",
+                    "total_credits": 4.0
+                }
+            }   
+        },
+
+        {
+            "school_id": "1061",
+            "school_name": "Bothell High School",
+            "school_district_id": "106",
+            "class9":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class10":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class11":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class12":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+            "req_credits": 
+            {
+                "english":
+                {
+                    "name": "English",
+                    "total_credits": 4.0
+                },
+        
+
+                "soc1":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 0.5
+                },
+                
+                "soc2":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 1.0
+                },
+                
+                "soc3":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 1.0
+                },
+
+                "soc4":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 0.5
+                },
+
+                "mathematics":
+                {
+                    "name": "Mathematics",
+                    "total_credits": 3.0
+                },
+
+                "lab_science":
+                {
+                    "name": "Lab Science",
+                    "total_credits": 2.0
+                },
+
+                "science":
+                {
+                    "name": "Science",
+                    "total_credits": 1.0
+                },
+
+                "cte":
+                {
+                    "name": "CTE",
+                    "total_credits": 1.0
+                },
+
+                "world_lang":
+                {
+                    "name": "World Language",
+                    "total_credits": 2.0
+                },
+
+                "health":
+                {
+                    "name": "Health",
+                    "total_credits": 0.5
+                },
+
+                "pe":
+                {
+                    "name": "Phys. Ed.",
+                    "total_credits": 1.5
+                },
+
+                "art":
+                {
+                    "name": "Fine Arts",
+                    "total_credits": 2.0
+                },
+                
+                "elective":
+                {
+                    "name": "elective",
+                    "total_credits": 4.0
+                }
+            }   
+        },
+        {
+            "school_id": "1062",
+            "school_name": "Inglemoor High School",
+            "school_district_id": "106",
+            "class9":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class10":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class11":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class12":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+            "req_credits": 
+            {
+                "english":
+                {
+                    "name": "English",
+                    "total_credits": 4.0
+                },
+        
+
+                "soc1":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 0.5
+                },
+                
+                "soc2":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 1.0
+                },
+                
+                "soc3":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 1.0
+                },
+
+                "soc4":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 0.5
+                },
+
+                "mathematics":
+                {
+                    "name": "Mathematics",
+                    "total_credits": 3.0
+                },
+
+                "lab_science":
+                {
+                    "name": "Lab Science",
+                    "total_credits": 2.0
+                },
+
+                "science":
+                {
+                    "name": "Science",
+                    "total_credits": 1.0
+                },
+
+                "cte":
+                {
+                    "name": "CTE",
+                    "total_credits": 1.0
+                },
+
+                "world_lang":
+                {
+                    "name": "World Language",
+                    "total_credits": 2.0
+                },
+
+                "health":
+                {
+                    "name": "Health",
+                    "total_credits": 0.5
+                },
+
+                "pe":
+                {
+                    "name": "Phys. Ed.",
+                    "total_credits": 1.5
+                },
+
+                "art":
+                {
+                    "name": "Fine Arts",
+                    "total_credits": 2.0
+                },
+                
+                "elective":
+                {
+                    "name": "elective",
+                    "total_credits": 4.0
+                }
+            }   
+        },
+        {
+            "school_id": "1063",
+            "school_name": "North Creek High School",
+            "school_district_id": "106",
+            "class9":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class10":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class11":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class12":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+            "req_credits": 
+            {
+                "english":
+                {
+                    "name": "English",
+                    "total_credits": 4.0
+                },
+        
+
+                "soc1":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 0.5
+                },
+                
+                "soc2":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 1.0
+                },
+                
+                "soc3":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 1.0
+                },
+
+                "soc4":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 0.5
+                },
+
+                "mathematics":
+                {
+                    "name": "Mathematics",
+                    "total_credits": 3.0
+                },
+
+                "lab_science":
+                {
+                    "name": "Lab Science",
+                    "total_credits": 2.0
+                },
+
+                "science":
+                {
+                    "name": "Science",
+                    "total_credits": 1.0
+                },
+
+                "cte":
+                {
+                    "name": "CTE",
+                    "total_credits": 1.0
+                },
+
+                "world_lang":
+                {
+                    "name": "World Language",
+                    "total_credits": 2.0
+                },
+
+                "health":
+                {
+                    "name": "Health",
+                    "total_credits": 0.5
+                },
+
+                "pe":
+                {
+                    "name": "Phys. Ed.",
+                    "total_credits": 1.5
+                },
+
+                "art":
+                {
+                    "name": "Fine Arts",
+                    "total_credits": 2.0
+                },
+                
+                "elective":
+                {
+                    "name": "elective",
+                    "total_credits": 4.0
+                }
+            }   
+        },
+        {
+            "school_id": "1064",
+            "school_name": "Woodinville High School",
+            "school_district_id": "106",
+            "class9":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class10":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class11":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class12":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+            "req_credits": 
+            {
+                "english":
+                {
+                    "name": "English",
+                    "total_credits": 4.0
+                },
+        
+
+                "soc1":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 0.5
+                },
+                
+                "soc2":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 1.0
+                },
+                
+                "soc3":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 1.0
+                },
+
+                "soc4":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 0.5
+                },
+
+                "mathematics":
+                {
+                    "name": "Mathematics",
+                    "total_credits": 3.0
+                },
+
+                "lab_science":
+                {
+                    "name": "Lab Science",
+                    "total_credits": 2.0
+                },
+
+                "science":
+                {
+                    "name": "Science",
+                    "total_credits": 1.0
+                },
+
+                "cte":
+                {
+                    "name": "CTE",
+                    "total_credits": 1.0
+                },
+
+                "world_lang":
+                {
+                    "name": "World Language",
+                    "total_credits": 2.0
+                },
+
+                "health":
+                {
+                    "name": "Health",
+                    "total_credits": 0.5
+                },
+
+                "pe":
+                {
+                    "name": "Phys. Ed.",
+                    "total_credits": 1.5
+                },
+
+                "art":
+                {
+                    "name": "Fine Arts",
+                    "total_credits": 2.0
+                },
+                
+                "elective":
+                {
+                    "name": "elective",
+                    "total_credits": 4.0
+                }
+            }   
+        },
+
+        {
+            "school_id": "1071",
+            "school_name": "Monroe High School",
+            "school_district_id": "107",
+            "class9":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class10":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class11":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class12":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+            "req_credits": 
+            {
+                "english":
+                {
+                    "name": "English",
+                    "total_credits": 4.0
+                },
+        
+
+                "soc1":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 0.5
+                },
+                
+                "soc2":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 1.0
+                },
+                
+                "soc3":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 1.0
+                },
+
+                "soc4":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 0.5
+                },
+
+                "mathematics":
+                {
+                    "name": "Mathematics",
+                    "total_credits": 3.0
+                },
+
+                "lab_science":
+                {
+                    "name": "Lab Science",
+                    "total_credits": 2.0
+                },
+
+                "science":
+                {
+                    "name": "Science",
+                    "total_credits": 1.0
+                },
+
+                "cte":
+                {
+                    "name": "CTE",
+                    "total_credits": 1.0
+                },
+
+                "world_lang":
+                {
+                    "name": "World Language",
+                    "total_credits": 2.0
+                },
+
+                "health":
+                {
+                    "name": "Health",
+                    "total_credits": 0.5
+                },
+
+                "pe":
+                {
+                    "name": "Phys. Ed.",
+                    "total_credits": 1.5
+                },
+
+                "art":
+                {
+                    "name": "Fine Arts",
+                    "total_credits": 2.0
+                },
+                
+                "elective":
+                {
+                    "name": "elective",
+                    "total_credits": 4.0
+                }
+            }   
+        },
+
+        {
+            "school_id": "1081",
+            "school_name": "Glacier Peak High School",
+            "school_district_id": "108",
+            "class9":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class10":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class11":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class12":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+            "req_credits": 
+            {
+                "english":
+                {
+                    "name": "English",
+                    "total_credits": 4.0
+                },
+        
+
+                "soc1":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 0.5
+                },
+                
+                "soc2":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 1.0
+                },
+                
+                "soc3":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 1.0
+                },
+
+                "soc4":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 0.5
+                },
+
+                "mathematics":
+                {
+                    "name": "Mathematics",
+                    "total_credits": 3.0
+                },
+
+                "lab_science":
+                {
+                    "name": "Lab Science",
+                    "total_credits": 2.0
+                },
+
+                "science":
+                {
+                    "name": "Science",
+                    "total_credits": 1.0
+                },
+
+                "cte":
+                {
+                    "name": "CTE",
+                    "total_credits": 1.0
+                },
+
+                "world_lang":
+                {
+                    "name": "World Language",
+                    "total_credits": 2.0
+                },
+
+                "health":
+                {
+                    "name": "Health",
+                    "total_credits": 0.5
+                },
+
+                "pe":
+                {
+                    "name": "Phys. Ed.",
+                    "total_credits": 1.5
+                },
+
+                "art":
+                {
+                    "name": "Fine Arts",
+                    "total_credits": 2.0
+                },
+                
+                "elective":
+                {
+                    "name": "elective",
+                    "total_credits": 4.0
+                }
+            }   
+        },
+
+        {
+            "school_id": "1091",
+            "school_name": "Calvero Mid High School",
+            "school_district_id": "109",
+            "class9":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class10":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class11":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class12":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+            "req_credits": 
+            {
+                "english":
+                {
+                    "name": "English",
+                    "total_credits": 4.0
+                },
+        
+
+                "soc1":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 0.5
+                },
+                
+                "soc2":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 1.0
+                },
+                
+                "soc3":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 1.0
+                },
+
+                "soc4":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 0.5
+                },
+
+                "mathematics":
+                {
+                    "name": "Mathematics",
+                    "total_credits": 3.0
+                },
+
+                "lab_science":
+                {
+                    "name": "Lab Science",
+                    "total_credits": 2.0
+                },
+
+                "science":
+                {
+                    "name": "Science",
+                    "total_credits": 1.0
+                },
+
+                "cte":
+                {
+                    "name": "CTE",
+                    "total_credits": 1.0
+                },
+
+                "world_lang":
+                {
+                    "name": "World Language",
+                    "total_credits": 2.0
+                },
+
+                "health":
+                {
+                    "name": "Health",
+                    "total_credits": 0.5
+                },
+
+                "pe":
+                {
+                    "name": "Phys. Ed.",
+                    "total_credits": 1.5
+                },
+
+                "art":
+                {
+                    "name": "Fine Arts",
+                    "total_credits": 2.0
+                },
+                
+                "elective":
+                {
+                    "name": "elective",
+                    "total_credits": 4.0
+                }
+            }   
+        },
+        {
+            "school_id": "1092",
+            "school_name": "Lake Stevens High School",
+            "school_district_id": "109",
+            "class9":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class10":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class11":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class12":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+            "req_credits": 
+            {
+                "english":
+                {
+                    "name": "English",
+                    "total_credits": 4.0
+                },
+        
+
+                "soc1":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 0.5
+                },
+                
+                "soc2":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 1.0
+                },
+                
+                "soc3":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 1.0
+                },
+
+                "soc4":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 0.5
+                },
+
+                "mathematics":
+                {
+                    "name": "Mathematics",
+                    "total_credits": 3.0
+                },
+
+                "lab_science":
+                {
+                    "name": "Lab Science",
+                    "total_credits": 2.0
+                },
+
+                "science":
+                {
+                    "name": "Science",
+                    "total_credits": 1.0
+                },
+
+                "cte":
+                {
+                    "name": "CTE",
+                    "total_credits": 1.0
+                },
+
+                "world_lang":
+                {
+                    "name": "World Language",
+                    "total_credits": 2.0
+                },
+
+                "health":
+                {
+                    "name": "Health",
+                    "total_credits": 0.5
+                },
+
+                "pe":
+                {
+                    "name": "Phys. Ed.",
+                    "total_credits": 1.5
+                },
+
+                "art":
+                {
+                    "name": "Fine Arts",
+                    "total_credits": 2.0
+                },
+                
+                "elective":
+                {
+                    "name": "elective",
+                    "total_credits": 4.0
+                }
+            }   
+        },
+
+        {
+            "school_id": "1101",
             "school_name": "Arlington High School",
             "school_district_id": "110",
             "class9":
             {
                 "english":
                     [
-                        { "name": "English 9 Arlington", "course_id": "" },
-                        { "name": "English 9 Honors", "course_id": "" }
+
                     ],
                 "social_studies":
                     [
-                        { "name": "", "course_id": "" },
-                        { "name": "", "course_id": "" },
-                        { "name": "", "course_id": "" },
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
                     ]
             },
-        }
+
+            "class10":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class11":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class12":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+            "req_credits": 
+            {
+                "english":
+                {
+                    "name": "English",
+                    "total_credits": 4.0
+                },
+        
+
+                "soc1":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 0.5
+                },
+                
+                "soc2":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 1.0
+                },
+                
+                "soc3":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 1.0
+                },
+
+                "soc4":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 0.5
+                },
+
+                "mathematics":
+                {
+                    "name": "Mathematics",
+                    "total_credits": 3.0
+                },
+
+                "lab_science":
+                {
+                    "name": "Lab Science",
+                    "total_credits": 2.0
+                },
+
+                "science":
+                {
+                    "name": "Science",
+                    "total_credits": 1.0
+                },
+
+                "cte":
+                {
+                    "name": "CTE",
+                    "total_credits": 1.0
+                },
+
+                "world_lang":
+                {
+                    "name": "World Language",
+                    "total_credits": 2.0
+                },
+
+                "health":
+                {
+                    "name": "Health",
+                    "total_credits": 0.5
+                },
+
+                "pe":
+                {
+                    "name": "Phys. Ed.",
+                    "total_credits": 1.5
+                },
+
+                "art":
+                {
+                    "name": "Fine Arts",
+                    "total_credits": 2.0
+                },
+                
+                "elective":
+                {
+                    "name": "elective",
+                    "total_credits": 4.0
+                }
+            }   
+        },
+        {
+            "school_id": "1102",
+            "school_name": "Weston High School",
+            "school_district_id": "110",
+            "class9":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class10":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class11":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class12":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+            "req_credits": 
+            {
+                "english":
+                {
+                    "name": "English",
+                    "total_credits": 4.0
+                },
+        
+
+                "soc1":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 0.5
+                },
+                
+                "soc2":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 1.0
+                },
+                
+                "soc3":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 1.0
+                },
+
+                "soc4":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 0.5
+                },
+
+                "mathematics":
+                {
+                    "name": "Mathematics",
+                    "total_credits": 3.0
+                },
+
+                "lab_science":
+                {
+                    "name": "Lab Science",
+                    "total_credits": 2.0
+                },
+
+                "science":
+                {
+                    "name": "Science",
+                    "total_credits": 1.0
+                },
+
+                "cte":
+                {
+                    "name": "CTE",
+                    "total_credits": 1.0
+                },
+
+                "world_lang":
+                {
+                    "name": "World Language",
+                    "total_credits": 2.0
+                },
+
+                "health":
+                {
+                    "name": "Health",
+                    "total_credits": 0.5
+                },
+
+                "pe":
+                {
+                    "name": "Phys. Ed.",
+                    "total_credits": 1.5
+                },
+
+                "art":
+                {
+                    "name": "Fine Arts",
+                    "total_credits": 2.0
+                },
+                
+                "elective":
+                {
+                    "name": "elective",
+                    "total_credits": 4.0
+                }
+            }   
+        },
+
+        {
+            "school_id": "1111",
+            "school_name": "Granite Falls High School",
+            "school_district_id": "111",
+            "class9":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class10":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class11":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class12":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+            "req_credits": 
+            {
+                "english":
+                {
+                    "name": "English",
+                    "total_credits": 4.0
+                },
+        
+
+                "soc1":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 0.5
+                },
+                
+                "soc2":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 1.0
+                },
+                
+                "soc3":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 1.0
+                },
+
+                "soc4":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 0.5
+                },
+
+                "mathematics":
+                {
+                    "name": "Mathematics",
+                    "total_credits": 3.0
+                },
+
+                "lab_science":
+                {
+                    "name": "Lab Science",
+                    "total_credits": 2.0
+                },
+
+                "science":
+                {
+                    "name": "Science",
+                    "total_credits": 1.0
+                },
+
+                "cte":
+                {
+                    "name": "CTE",
+                    "total_credits": 1.0
+                },
+
+                "world_lang":
+                {
+                    "name": "World Language",
+                    "total_credits": 2.0
+                },
+
+                "health":
+                {
+                    "name": "Health",
+                    "total_credits": 0.5
+                },
+
+                "pe":
+                {
+                    "name": "Phys. Ed.",
+                    "total_credits": 1.5
+                },
+
+                "art":
+                {
+                    "name": "Fine Arts",
+                    "total_credits": 2.0
+                },
+                
+                "elective":
+                {
+                    "name": "elective",
+                    "total_credits": 4.0
+                }
+            }   
+        },
+        {
+            "school_id": "1112",
+            "school_name": "Crossroads High School",
+            "school_district_id": "111",
+            "class9":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class10":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class11":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+
+            "class12":
+            {
+                "english":
+                    [
+
+                    ],
+                "social_studies":
+                    [
+
+                    ],
+                "science":
+                    [
+
+                    ],
+                "mathematics":
+                    [
+
+                    ],
+                "cte_bm":
+                    [
+
+                    ],
+                "cte_it":
+                    [
+
+                    ],
+                "cte_health":
+                    [
+
+                    ],
+                "cte_human":
+                    [
+
+                    ],
+                "cte_tech_science":
+                    [
+
+                    ],
+                "cte_tech_art":
+                    [
+
+                    ],
+                "cte_stem":
+                    [
+
+                    ],
+                "world_lang":
+                    [
+
+                    ],
+                "health_pe":
+                    [
+
+                    ],
+                "visual_perf_arts":
+                    [
+
+                    ]
+            },
+            "req_credits": 
+            {
+                "english":
+                {
+                    "name": "English",
+                    "total_credits": 4.0
+                },
+        
+
+                "soc1":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 0.5
+                },
+                
+                "soc2":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 1.0
+                },
+                
+                "soc3":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 1.0
+                },
+
+                "soc4":
+                {
+                    "name": "Social Studies",
+                    "total_credits": 0.5
+                },
+
+                "mathematics":
+                {
+                    "name": "Mathematics",
+                    "total_credits": 3.0
+                },
+
+                "lab_science":
+                {
+                    "name": "Lab Science",
+                    "total_credits": 2.0
+                },
+
+                "science":
+                {
+                    "name": "Science",
+                    "total_credits": 1.0
+                },
+
+                "cte":
+                {
+                    "name": "CTE",
+                    "total_credits": 1.0
+                },
+
+                "world_lang":
+                {
+                    "name": "World Language",
+                    "total_credits": 2.0
+                },
+
+                "health":
+                {
+                    "name": "Health",
+                    "total_credits": 0.5
+                },
+
+                "pe":
+                {
+                    "name": "Phys. Ed.",
+                    "total_credits": 1.5
+                },
+
+                "art":
+                {
+                    "name": "Fine Arts",
+                    "total_credits": 2.0
+                },
+                
+                "elective":
+                {
+                    "name": "elective",
+                    "total_credits": 4.0
+                }
+            }   
+        },
 
     ];
