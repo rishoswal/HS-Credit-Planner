@@ -5,6 +5,6 @@ Across the US, high school students have gone through the tedious process of sel
 
 The logic (coded in JS) and functionality of the website is fully functional. The database can be customized to a school's preference by forking the repository and modifying the database.
 
-Currently it just contains empty / incorrect courses for any school other than Redmond High School (located in Redmond, WA)
+Currently it just contains **empty / incorrect courses for any school other than Redmond High School** (located in Redmond, WA)
 
 Initially created for the Congressional App Challenge 2022.
